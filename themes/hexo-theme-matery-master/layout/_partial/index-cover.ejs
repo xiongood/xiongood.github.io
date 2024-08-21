@@ -1,0 +1,230 @@
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color: rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+<%
+// get all cover posts.
+var coverPosts = [];
+site.posts.forEach(function (post) {
+    if (post.cover) {
+        coverPosts.push(post);
+    }
+});
+var coverPostsCount = coverPosts.length;
+%>
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    <div style="margin-top: 80px;">
+        <div class="cover-btns">
+            <%
+                var books = theme.book;
+                var i = 1;
+            %>
+            <% Object.keys(books).forEach(function(index) { %>
+                <% i ++; %>
+                <a href="<%- books[index].url %>" class="waves-effect"><%- books[index].name %></a>
+                <% if (i % 8 == 0) { %>
+                    <br>
+                <% } %>
+            <% })%>
+        </div>
+    </div>
+    <div class="carousel-item red white-text bg-cover about-cover">
+
+        <div class="container">
+            <%- partial('_partial/bg-cover-content') %>
+            <input id="myInput" type = "text" style="color: white;" placeholder="输入要搜索的内容...">
+            <div class="cover-btns">
+                <a href="<%=
+                        [theme.dream, theme.music, theme.video, theme.recommend]
+                                .every(i=>i.enable)? "#indexCard": "#articles"
+                        %>" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i><%- __('startRead') %>
+                </a>
+
+                <% if (theme.indexbtn && theme.indexbtn.enable) { %>
+                    <a href="<%- url_for(theme.indexbtn.url) %>" class="waves-effect waves-light btn" target="_blank">
+                        <i class="<%- theme.indexbtn.icon %>"></i><%= theme.indexbtn.name %>
+                    </a>
+                <% } else if (theme.githubLink.enable) { %>
+                    <a href="<%- theme.githubLink.url %>" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github %>"></i><%= theme.githubLink.title %>
+                    </a>
+                <% } %>
+            </div>
+            <div class="cover-social-link"><%- partial('_partial/social-link') %></div>
+        </div>
+    </div>
+
+    <% if (coverPostsCount > 0) { %>
+        <%
+            var hashCode = function (str) {
+                if (!str && str.length === 0) {
+                    return 0;
+                }
+
+                var hash = 0;
+                for (var i = 0, len = str.length; i < len; i++) {
+                    hash = ((hash << 5) - hash) + str.charCodeAt(i);
+                    hash |= 0;
+                }
+                return hash;
+            };
+
+            var featureImages = theme.featureImages;
+            var imgCount = featureImages.length;
+        %>
+
+        <% for (var i = 0; i < coverPostsCount; i++) { %>
+            <%
+                var post = coverPosts[i];
+                var featureImage = featureImages[Math.abs(hashCode(post.title) % imgCount)];
+
+                var coverImg;
+                if (post.coverImg) {
+                    coverImg = post.coverImg;
+                } else if (post.img) {
+                    coverImg = post.img;
+                } else {
+                    coverImg = featureImage;
+                }
+            %>
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('<%- theme.jsDelivr.url %><%- url_for(coverImg) %>');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align"><%= post.title %></div>
+                            <div class="description center-align">
+                                <% if (post.summary && post.summary.length > 0) { %>
+                                    <%- post.summary %>
+                                <% } else { %>
+                                    <%- strip_html(post.content).substring(0, 120) %>
+                                <% } %>
+                            </div>
+                            <div class="cover-btns">
+                                <a href="<%- url_for(post.path) %>" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i><%- __('readMore') %>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    <% } %>
+</div>
+
+<script>
+    // 查询
+    document.getElementById('myInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        event.preventDefault(); // 阻止表单默认的提交行为（如果有的话）
+        // 假设我们有一个URL模板，我们将使用输入的值来构造URL
+        var baseUrl = 'https://www.baidu.com/s?wd=';
+        var inputValue = this.value; // 获取输入框的值
+        var url = baseUrl + encodeURIComponent(inputValue); // 对值进行URL编码，并构造完整的URL
+
+        // 跳转到新的URL
+        window.location.href = url;
+      }
+    });
+
+    $(function () {
+        let coverSlider = $('.carousel');
+
+        //用户触摸轮播自动 restartPlay 是否生效
+        let initUserPressedOrDraggedActive = false
+
+        //用户触摸轮播自动 restartPlay
+        function initUserPressedOrDragged(instance) {
+            setInterval(() => {
+                if (instance.pressed || instance.dragged) {
+                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
+                    restartPlay()
+                }
+            }, 1000)
+        }
+
+        coverSlider.carousel({
+            duration: Number('<%- theme.cover.duration %>'),
+            fullWidth: true,
+            indicators: '<%- theme.cover.showIndicators %>' === 'true',
+            onCycleTo() {
+                if (!initUserPressedOrDraggedActive) {
+                    // console.log('initUserPressedOrDraggedActive')
+                    initUserPressedOrDragged(this)
+                    initUserPressedOrDraggedActive = true
+                }
+            },
+        })
+
+        let carouselIntervalId;
+        <% if (theme.cover.autoLoop) { %>
+        // Loop to call the next cover article picture.
+        let autoCarousel = function () {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, <%- theme.cover.intervalTime %>);
+        };
+        autoCarousel();
+        <% } %>
+
+        function restartPlay() {
+            <% if (theme.cover.autoLoop) { %>
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            <% } %>
+        };
+
+        <% if (theme.cover.showPrevNext) { %>
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        <% } %>
+    });
+</script>
