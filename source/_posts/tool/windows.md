@@ -35,6 +35,16 @@ https://github.com/TGSAN/CMWTAT_Digital_Edition
 
 ![image-20240308093143517](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240308093146.png)
 
+## 永久关闭安全中心
+
+Windows+x，以管理员打开命令提示符（cmd），执行以下命令：
+
+```
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /d 1 /t REG_DWORD /f
+```
+
+看到提示“操作成功完成”即代表Windows Defender已被关闭，可尝试重启电脑
+
 ## 设置右击菜单
 
 ### 自动打开更多选项

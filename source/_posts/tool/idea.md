@@ -386,6 +386,10 @@ time()
 R2OWuOKu0JLNCg9w7xDxPtsBjwXj79Pc
 ```
 
+## mybatisX
+
+![image-20240821174120186](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240821174120186.png)
+
 ## 关于jdk
 
 ### 修改项目jdk

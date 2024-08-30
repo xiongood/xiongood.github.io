@@ -432,6 +432,38 @@ location ~*.(gif|jpg|swf)$ {
 }
 ```
 
+### 例子
+
+#### 精准匹配与正则匹配
+
+下面两个例子中，= 是精准匹配  /或者~等属于正则匹配
+
+```sh
+location /music/ {  
+    alias   /home/xsftp/music/;  
+    # 尝试直接服务文件，如果请求的是目录（以/结尾），则返回403禁止访问  
+    try_files $uri $uri/ =403;  
+}  
+```
+
+```sh
+ location /music/ {  
+     alias   /home/xsftp/music/;  
+    # 尝试直接服务文件，如果请求的是目录（以/结尾），则返回403禁止访问  
+    try_files $uri $uri/ =403;  
+}  
+```
+
+#### 不允许访问文件夹
+
+```sh
+location /music/ {  
+     alias   /home/xsftp/music/;  
+    # 尝试直接服务文件，如果请求的是目录（以/结尾），则返回403禁止访问  
+    try_files $uri $uri/ =403;  
+}  
+```
+
 
 
 

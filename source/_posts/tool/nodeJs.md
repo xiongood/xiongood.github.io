@@ -76,7 +76,7 @@ https://github.com/coreybutler/nvm-windows/releases
 正常安装
 
 ```sh
-mvn -v
+nvm -v
 ```
 
 #### 配置数据源
@@ -87,6 +87,9 @@ mvn -v
 # 这个有问题
 node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
+# 这两个没问题
+node_mirror: https://npmmirror.com/mirrors/node/
+npm_mirror: https://npmmirror.com/mirrors/npm/
 ```
 
 ### 使用nvm

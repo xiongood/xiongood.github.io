@@ -52,7 +52,9 @@ docker version
 ### 常用命令
 
 ```sh
+# 启动
 service docker start
+# 停止
 service docker stop
 ```
 
@@ -79,6 +81,20 @@ sudo tee /etc/docker/daemon.json <<-'EOF'
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+
+
+
+
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["http://mirrors.ustc.edu.cn/"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+
 ```
 
 ### 测试
@@ -244,6 +260,10 @@ CMD java -jar demo-docker-1.jar ## 启动命令
 ```
 
 ### 新增pom插件
+
+注意注意注意注意！！！！！！！！！！！！！！！
+
+<artifactId>demo-common</artifactId> 名字不能有大写
 
 ```xml
 <build>
@@ -451,3 +471,55 @@ CMD java -jar demo-docker-1.jar ## 启动命令
 ### 查看
 
 ![image-20230615172139135](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230615172140.png)
+
+## 安装Portainer
+
+### 安装
+
+```sh
+docker volume create portainer_data
+docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+```
+
+参数说明
+
+```txt
+-d	#容器在后台运行
+-p 9000:9000	#宿主机9000端口映射容器中的9000端口，容器的默认端口为9000
+-v /var/run/docker.sock:/var/run/docker.sock	#重点配置参数，把宿主机的Docker守护进程(docker daemon)默认监听的Unix域套接字挂载到容器中
+-v /root/portainer:/data	#把宿主机目录 /root/portainer 挂载到容器 /data 目录；
+-name portainer	#指定运行容器的名称，这里会自动去容器的镜像站下载该镜像
+```
+
+### 查看是否启动
+
+```sh
+docker images
+docker ps -a
+```
+
+### 访问
+
+```http
+http://192.168.159.128:9000/#!/init/admin
+```
+
+### 创建用户
+
+密码必须大于12位
+
+Xiong1991!@#
+
+![image-20240830092158877](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240830092158877.png)
+
+### 查看运行情况
+
+![image-20240830092403839](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240830092403839.png)
+
+![image-20240830092607601](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240830092607601.png)
+
+### 查看日志
+
+![image-20240830092645322](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240830092645322.png)
+
+![image-20240830092712090](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240830092712090.png)
