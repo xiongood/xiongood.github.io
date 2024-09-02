@@ -1,3 +1,12 @@
+---
+title: xpath的使用
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/xpath040902.png
+categories:
+ - xpath
+tags:
+ - xpath
+---
+
 ## 常用语法
 
 ### 根据css获取元素

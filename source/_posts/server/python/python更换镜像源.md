@@ -1,3 +1,14 @@
+---
+title: python更换镜像源
+author: 张一雄
+summary: python更换镜像源
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/pip240902.png
+categories:
+ - 周边
+tags:
+ - python
+---
+
 ###  更换镜像源
 
 pip默认会从Python官方包索引（PyPI）下载包，但由于网络原因，国内访问国外网站可能会很慢。因此，更换为国内镜像源可以显著加速下载速度。常用的国内镜像源包括：

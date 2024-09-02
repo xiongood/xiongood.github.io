@@ -1,6 +1,6 @@
 ---
 title: shardingsphere-jdbc的使用
-img: ../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816111652.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816111652.png
 categories:
  - 后端
 tags:
