@@ -108,6 +108,16 @@ git checkout dev
 git config --system --unset credential.helper
 ```
 
+## 回退
+
+### 回退只修改未缓存的内容
+
+```sh
+git checkout  ./*
+```
+
+
+
 ## 问题
 
 ### 提交报错
