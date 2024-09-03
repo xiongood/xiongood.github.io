@@ -8,8 +8,6 @@ tags:
  - java
 ---
 
-![Snipaste_2023-08-16_08-48-16]()
-
 ## 出处
 
 ```http
@@ -39,8 +37,6 @@ http://repo.iotti.biz/CentOS/7/x86_64/
 ```http
 https://github.com/rabbitmq/rabbitmq-server/releases
 ```
-
-![image-20230607214930227](C:/Users/java0/AppData/Roaming/Typora/typora-user-images/image-20230607214930227.png)
 
 ## 安装
 

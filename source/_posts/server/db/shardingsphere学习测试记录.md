@@ -34,7 +34,7 @@ INSERT INTO t_user(uname) VALUES('zhang3');
 INSERT INTO t_user(uname) VALUES(@@hostname);
 ```
 
-### 搭建
+### 搭建springboot
 
 #### pom
 
@@ -295,7 +295,7 @@ http://localhost:8080/test/testInsert
 
 打印sql
 
-![image-20230421115820364](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421115821.png)
+![image-20230421115820364](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421115821.png)
 
 - 读
 
@@ -305,7 +305,7 @@ http://localhost:8080/test/testQuery
 
 打印sql
 
-![image-20230421115915640](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421115916.png)
+![image-20230421115915640](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421115916.png)
 
 ## 测试垂直分片
 
@@ -660,7 +660,7 @@ public class VerticalController {
 GET http://localhost:8080/vertical/testInster
 ```
 
-![image-20230421154310360](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421154312.png)
+![image-20230421154310360](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421154312.png)
 
 - 查
 
@@ -668,7 +668,7 @@ GET http://localhost:8080/vertical/testInster
 http://localhost:8080/vertical/testQuery
 ```
 
-![image-20230421154451997](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421154454.png)
+![image-20230421154451997](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421154454.png)
 
 - 测试没有进行配置规则的表
 
@@ -676,7 +676,7 @@ http://localhost:8080/vertical/testQuery
 http://localhost:8080/vertical/testNoV
 ```
 
-![image-20230423094825143](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230423094826.png)
+![image-20230423094825143](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230423094826.png)
 
 - 测试分片后关联查询(报错)
 
@@ -955,7 +955,7 @@ http://localhost:8080/level/testInster
 http://localhost:8080/level/testQuery
 ```
 
-![image-20230423164636035](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230423164637.png)
+![image-20230423164636035](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230423164637.png)
 
 ### 水平分表
 
@@ -1425,7 +1425,7 @@ http://localhost:8081/reQuery/testReQusey
 
 根据userid 分库
 
-![image-20230424145631720](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145633.png)
+![image-20230424145631720](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145633.png)
 
 问题：当分片策略字段，作为子查询的时候，不会自动去分片后的表中查询，而是会出现笛卡尔积，这情况如何解决？
 
@@ -1435,13 +1435,13 @@ http://localhost:8081/reQuery/testReQusey
 
 根据orderNo分表
 
-![image-20230424145800144](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145801.png)
+![image-20230424145800144](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145801.png)
 
 ### 测试分库分表
 
 根据userid 和 orderNo 分库分表（不会出现笛卡尔积）
 
-![image-20230424145930378](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145931.png)
+![image-20230424145930378](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424145931.png)
 
 ## 绑定表
 
@@ -1524,7 +1524,7 @@ public class BindingController {
 http://localhost:8081/binding/test
 ```
 
-![image-20230424151924342](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424151925.png)
+![image-20230424151924342](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424151925.png)
 
 ### 测试绑定表
 
@@ -1631,7 +1631,7 @@ spring:
 
 - 测试
 
-![image-20230424152702251](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424152703.png)
+![image-20230424152702251](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424152703.png)
 
 ### 错误（查询结构不对）
 
@@ -1683,7 +1683,7 @@ actual-data-nodes: server-order$->{0..1}.t_order$->{0..1}
 
 数据正常
 
-![image-20230424154725965](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424154727.png)
+![image-20230424154725965](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424154727.png)
 
 ## 广播表
 
@@ -1884,7 +1884,7 @@ public class BrController {
 http://localhost:8081/br/test
 ```
 
-![image-20230424162353605](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424162355.png)
+![image-20230424162353605](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424162355.png)
 
 #### 测试查询
 
@@ -1894,7 +1894,7 @@ http://localhost:8081/br/test
 http://localhost:8081/br/testQuery
 ```
 
-![image-20230424162559661](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424162600.png)
+![image-20230424162559661](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230424162600.png)
 
 
 
@@ -2102,7 +2102,7 @@ public class PageController {
 http://localhost:8081/page/testAllPage?current=5&size=10
 ```
 
-![image-20230428222319993](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428222321.png)
+![image-20230428222319993](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428222321.png)
 
 用 union 来查询所有的条数
 
@@ -2118,7 +2118,7 @@ http://localhost:8081/page/testAllPage?current=5&size=10
 http://localhost:8081/page/testPage1?current=5&size=10
 ```
 
-![image-20230428222957336](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428222958.png)
+![image-20230428222957336](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428222958.png)
 
 只查询了 order1库，也是查询了前50条
 
@@ -2128,7 +2128,7 @@ http://localhost:8081/page/testPage1?current=5&size=10
 http://localhost:8081/page/testPage2?current=5&size=10
 ```
 
-![image-20230428223410909](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428223412.png)
+![image-20230428223410909](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428223412.png)
 
 查询了两个库中的order1表，也是查询了50条
 
@@ -2138,7 +2138,7 @@ http://localhost:8081/page/testPage2?current=5&size=10
 http://localhost:8081/page/testPage4?current=5&size=10
 ```
 
-![image-20230428223717735](../https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428223719.png)
+![image-20230428223717735](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230428223719.png)
 
 精准查询，而且只查询了10条数据
 

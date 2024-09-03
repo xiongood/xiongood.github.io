@@ -135,15 +135,15 @@ nginx
 # 输入本机的ip3306+用户名和密码 可以访问192.168.220.137:3306的数据库
 stream {
     upstream cloudsocket1 {
-    hash $remote_addr consistent;
-    # $binary_remote_addr;
-    server mysql.sqlpub.com:3306 weight=5 max_fails=3 fail_timeout=30s;	#跳转到的服务器
+        hash $remote_addr consistent;
+        # $binary_remote_addr;
+        server mysql.sqlpub.com:3306 weight=5 max_fails=3 fail_timeout=30s;	#跳转到的服务器
     }
     server {
-    listen 13306;#数据库服务器监听端口
-    proxy_connect_timeout 10s;
-    proxy_timeout 300s;#设置客户端和代理服务之间的超时时间，如果5分钟内没操作将自动断开。
-    proxy_pass cloudsocket1;
+        listen 13306;#数据库服务器监听端口
+        proxy_connect_timeout 10s;
+        proxy_timeout 300s;#设置客户端和代理服务之间的超时时间，如果5分钟内没操作将自动断开。
+        proxy_pass cloudsocket1;
     }
 }
 ```
@@ -158,7 +158,7 @@ yum -y install epel-release
 
 #应该是缺少modules模块
 yum -y install nginx-all-modules.noarch
-然后在用nginx -t就好了
+# 然后在用nginx -t就好了
 [root@k8s-node2 ~]# nginx -t
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
@@ -166,22 +166,22 @@ nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 
 
-#### 配置ssh跳转
+#### 配置ssh跳转SFTP
 
 ```sh
 # 在配置文件最下方新增以下内容，位置与http{}平级
 # 数据本机的ip+122 来登录ssh，可以访问到192.168.1.101:22的服务器，可以用来操作服务器或者传输文件等
 stream {
     upstream cloudsocket2 {
-    hash $remote_addr consistent;
-    # $binary_remote_addr;
-    server 192.168.1.101:22 weight=5 max_fails=3 fail_timeout=30s;	#跳转到的服务器
+        hash $remote_addr consistent;
+        # $binary_remote_addr;
+        server 192.168.1.101:22 weight=5 max_fails=3 fail_timeout=30s;	#跳转到的服务器
     }
     server {
-    listen 122;#连接服务器ssh监听端口
-    proxy_connect_timeout 10s;
-    proxy_timeout 300s;#设置客户端和代理服务之间的超时时间，如果5分钟内没操作将自动断开。
-    proxy_pass cloudsocket2;
+        listen 122;#连接服务器ssh监听端口
+        proxy_connect_timeout 10s;
+        proxy_timeout 300s;#设置客户端和代理服务之间的超时时间，如果5分钟内没操作将自动断开。
+        proxy_pass cloudsocket2;
     }
 
 }
@@ -353,7 +353,7 @@ http {
 
 添加一个server
 
-```conf
+```sh
 server {
     listen       8099;                       #监听端口设置，也就是你vue项目的端口
     server_name  localhost;       
@@ -361,14 +361,6 @@ server {
       root   /root/project/opmApp/vue/dist;       #前端dist文件夹存放路径
       try_files $uri $uri/ /index.html;           #解决页面刷新报404错误
     }
-    
-    # 将项目放入nginx目录下
-    #location / {
-    #       root   html;
-	#		try_files $uri $uri/ /index.html;
-    #        index  index.html index.htm;
-    #}
-
     error_page 404 /404.html;
         location = /40x.html {
     }
@@ -447,7 +439,7 @@ location /music/ {
 ```
 
 ```sh
- location /music/ {  
+ location =/music/ {  
      alias   /home/xsftp/music/;  
     # 尝试直接服务文件，如果请求的是目录（以/结尾），则返回403禁止访问  
     try_files $uri $uri/ =403;  
@@ -464,9 +456,67 @@ location /music/ {
 }  
 ```
 
+#### 部署前端项目
 
+```sh
+# 部署前端代码
+server {  
+    listen       4000;  
+    server_name  localhost;  
 
+    location / {  
+    	# 前端项目所在的路径
+        root   /opt/hexo/public;  
+        try_files $uri $uri/ /index.html;  
+    }  
+    error_page   500 502 503 504  /50x.html;  
+    location = /50x.html {  
+        root   html;  
+    }  
+}  
+```
 
+#### 转发http
 
+```sh
+ server {  
+    listen       80;  
+    server_name  localhost;   
+    # 请求的地址
+    location /api/ {  
+        #转发的地址
+        proxy_pass http://localhost:8080/xtool/;  
+        proxy_http_version 1.1;  
+        proxy_set_header Upgrade $http_upgrade;  
+        proxy_set_header Connection 'upgrade';  
+        proxy_set_header Host $host;  
+        proxy_cache_bypass $http_upgrade;  
+    }  
+    error_page   500 502 503 504  /50x.html;  
+    location = /50x.html {  
+        root   html;  
+    }  
+}  
 
+```
 
+#### 指向本地文件
+
+```sh
+# 监听 9999 端口，统一处理静态文件服务  
+server {  
+    listen       9999;  
+    server_name  localhost;  
+   # 生成文件列表
+    location /mp3/ {  
+        alias   /home/xsftp/mp3/;  
+        # 自动生成目录
+        autoindex on;  
+    }  
+    # 默认错误页面  
+    error_page   500 502 503 504  /50x.html;  
+    location = /50x.html {  
+        root   html;  
+    }  
+}  
+```
