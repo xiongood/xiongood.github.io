@@ -250,7 +250,7 @@ tar -xf 'PanWeiDB-2.0.0_Build0(03b85d1)-bclinux-64bit-om.tar.gz'
 
 ```sh
 vim /database/panweidb/soft/panweidb1m.xml
-# 用localhost会报错
+# 用localhost会报错,所以需要写死ip地址，不知道用127.0.0.1行不行
 ```
 
 ```xml
@@ -324,12 +324,14 @@ chmod -R 755 /database/panweidb
 ```sh
 su - omm
 cd /database/panweidb/soft/script
+
 #单节点
+# dbcompatibility=A 为兼容oracle
 gs_install -X /database/panweidb/soft/panweidb1m.xml \
 --gsinit-parameter="--encoding=UTF8" \
 --gsinit-parameter="--lc-collate=C" \
 --gsinit-parameter="--lc-ctype=C" \
---gsinit-parameter="--dbcompatibility=B"
+--gsinit-parameter="--dbcompatibility=A"
 
 #两节点：一主一备
 gs_install -X /database/panweidb/soft/panweidb1m1s.xml \
@@ -349,7 +351,7 @@ gs_install -X /database/panweidb/soft/panweidb1m2s.xml \
 ### 设置最大内存
 
 ```sh
- gs_guc set -N all -c "max_process_memory=6000MB"
+gs_guc set -N all -c "max_process_memory=6000MB"
 ```
 
 ## 使用
@@ -359,8 +361,11 @@ gs_install -X /database/panweidb/soft/panweidb1m2s.xml \
 ```sh
  # 登录客户端
  gsql -U omm -r
+ 
+ gsql -U omm -d panweidb -p 17700 -h localhost
+
  # 查询
- select * from pg_user_mapping
+ select * from pg_user_mapping;
  # 退出
  \q
 ```
@@ -408,5 +413,45 @@ gs_om -t stop && gs_om -t start
 jdbc:postgresql://[{host::localhost}[:{port::5432}]]/[{database:database/[^?]+:postgres::%}?][\?<&,user={user:param},password={password:param},{:identifier}={:param}>]
 ```
 
+### 外部链接
 
+#### 添加白名单
 
+```sh
+gs_guc reload -N all -I all -h 'host all all 192.168.100.0/24 sha256'
+
+gs_guc reload -N all -I all -h 'host all all 192.168.1.60/24 sha256'
+```
+
+#### 创建新用户
+
+**omm用户不能直接登录**
+
+```sql
+gsql -U omm -r
+create user testuser with sysadmin  IDENTIFIED BY 'Panwei2024';
+
+gsql -U testuser -d panweidb -p 17700 -h localhost
+```
+
+#### 远程链接
+
+新建驱动
+
+![image-20240904095800848](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904095800848.png)
+
+创建链接
+
+```txt
+jdbc:panweidb://192.168.159.128:17700/panweidb
+```
+
+![image-20240904095834791](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904095834791.png)
+
+#### 报错
+
+```txt
+[0A000][9684] org.panweidb.util.PSQLException: ERROR: units "epoch" not supported 在位置：referenced column: startup_time.
+```
+
+![image-20240904095918040](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904095918040.png)

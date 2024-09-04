@@ -71,3 +71,21 @@ mvn -v
   </profiles>
 </settings>
 ```
+
+## 使用
+
+### maven使用本地jar包
+
+```xml
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <!--依赖范围-->
+    <scope>system</scope>
+    <version>1.0-SNAPSHOT</version>
+    <!--依赖所在位置-->
+    <systemPath>${project.basedir}/src/main/resources/lib/postgresql.jar</systemPath>
+</dependency>
+```
+
+![image-20240904155227327](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904155227327.png)
