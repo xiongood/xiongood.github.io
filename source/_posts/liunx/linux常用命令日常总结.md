@@ -48,3 +48,12 @@ chronyc tracking
 
 
 这样，你的系统时间就会自动与网络上的标准时间保持同步。
+
+## 查看文本
+
+### 查看不是已“#”开头的行且不展示空白行
+
+```sh
+awk 'NF' postgresql.conf | grep -v '#'
+```
+

@@ -23,6 +23,12 @@ npm install -g hexo-cli
 npm install
 ```
 
+### 清空
+
+```sh
+hexo clean
+```
+
 ### 生成内容
 
 ```sh

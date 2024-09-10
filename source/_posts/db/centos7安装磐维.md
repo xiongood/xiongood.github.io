@@ -105,19 +105,19 @@ EOF
 ### 关闭RemoveIPC
 
 ```sh
- (1) 修改/etc/systemd/logind.conf文件中的“RemoveIPC”值为“no”
+#修改/etc/systemd/logind.conf文件中的“RemoveIPC”值为“no”
 vim  /etc/systemd/logind.conf
 RemoveIPC=no
 
-(2) 修改/usr/lib/systemd/system/systemd-logind.service文件中的“RemoveIPC”值为“no”
+#修改/usr/lib/systemd/system/systemd-logind.service文件中的“RemoveIPC”值为“no”
 vim /usr/lib/systemd/system/systemd-logind.service
 RemoveIPC=no
 
-(3) 重启服务
+#重启服务
 systemctl daemon-reload
 systemctl restart systemd-logind.service
 
-(4) 结果验证确认
+#结果验证确认
 loginctl show-session | grep RemoveIPC
 systemctl show systemd-logind | grep RemoveIPC
 ```
@@ -196,9 +196,9 @@ yum -y install libaio-devel flex bison ncurses-devel glibc-devel patch readline-
 ### 修改用户名
 
 ```sh
-# 用localhost会报错
+# 用localhost会报错 修改成自己的ip
 cat >> /etc/hosts <<-ROF
-192.168.159.128 hostname1
+127.0.0.1 hostname1
 ROF
 
 # 修改
@@ -264,7 +264,7 @@ vim /database/panweidb/soft/panweidb1m.xml
     <PARAM name="tmpMppdbPath" value="/database/panweidb/tmp"/>
     <PARAM name="gaussdbToolPath" value="/database/panweidb/tool" />
     <PARAM name="corePath" value="/database/panweidb/corefile"/>
-    <PARAM name="backIp1s" value="192.168.159.128"/>
+    <PARAM name="backIp1s" value="127.0.0.1"/>
   </CLUSTER>
   
   <DEVICELIST>
@@ -272,8 +272,8 @@ vim /database/panweidb/soft/panweidb1m.xml
       <PARAM name="name" value="hostname1"/>
       <PARAM name="azName" value="AZ1"/>
       <PARAM name="azPriority" value="1"/>
-      <PARAM name="backIp1" value="192.168.159.128"/>
-      <PARAM name="sshIp1" value="192.168.159.128"/>
+      <PARAM name="backIp1" value="127.0.0.1"/>
+      <PARAM name="sshIp1" value="127.0.0.1"/>
       <PARAM name="dataNum" value="1"/>
       <PARAM name="dataPortBase" value="17700"/>
       <PARAM name="dataNode1" value="/database/panweidb/data"/>
@@ -292,9 +292,15 @@ chmod -R 755 /database/panweidb
 ### 预安装
 
 ```sh
-cd /database/panweidb/soft/script
 tar -zxvf PanWeiDB-2.0.0_Build0\(9fbca90\)-CentOS-64bit-om.tar.gz
 tar -zxvf PanWeiDB-2.0.0_Build0\(9fbca90\)-centos_7-x86_64-no_mot.tar.gz 
+tar -zxvf PanWeiDB-2.0.0_Build0\(9fbca90\)-CentOS-64bit-om.tar.gz
+# 先删除这个文件夹要不然会报错
+cd /database/panweidb
+rm -rf app
+/database/panweidb/data
+rm -rf ./*
+# 进入脚本目录进行安装
 cd /database/panweidb/soft/script
 #单节点
 ./gs_preinstall -U omm -G dbgrp -X /database/panweidb/soft/panweidb1m.xml
@@ -311,7 +317,7 @@ cd /database/panweidb/soft/script
 ### 授权
 
 ```sh
-chown -R omm:dbgrp /database/panweidb
+chown -R omm:dbgrp /database/panweidb 
 chmod -R 755 /database/panweidb
 ```
 
@@ -320,6 +326,8 @@ chmod -R 755 /database/panweidb
 输入的密码 必须是8位以上 包含三种字符
 
 密码：Xiong1991
+
+密码：Panwei2024
 
 ```sh
 su - omm
@@ -351,8 +359,17 @@ gs_install -X /database/panweidb/soft/panweidb1m2s.xml \
 ### 设置最大内存
 
 ```sh
+# 设置内存
 gs_guc set -N all -c "max_process_memory=6000MB"
+# 启动
+gs_om -t stop && gs_om -t start
 ```
+
+### 设置开机自动启动数据库
+
+
+
+
 
 ## 使用
 
@@ -379,7 +396,7 @@ gs_om -t stop && gs_om -t start
 ### 修改外网访问
 
 ```sh
-/database/panweidb/data
+cd /database/panweidb/data
 vim postgresql.conf
 ```
 
@@ -401,6 +418,8 @@ vim pg_hba.conf
 
 ```
 host    all             all             10.1.161.184/32         sha256
+host all all 0.0.0.0/0 sha256
+host all all 0.0.0.0/0 trust
 ```
 
 重启
@@ -435,6 +454,8 @@ gsql -U testuser -d panweidb -p 17700 -h localhost
 ```
 
 #### 远程链接
+
+注意：与idea不太兼容
 
 新建驱动
 

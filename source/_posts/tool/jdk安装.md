@@ -9,7 +9,7 @@ categories:
   - 工具
 ---
 
-## centos7
+## centos7安装jdk8
 
 ### 准备工作
 
@@ -81,3 +81,29 @@ java -version
 ### windows
 
 带整理
+
+## centos7安装jdk6
+
+```sh
+mkdir -R /opt/jdk
+wget https://repo.huaweicloud.com/java/jdk/6u45-b06/jdk-6u45-linux-x64.bin
+# 执行安装
+./jdk-6u45-linux-x64.bin
+# 修改系统变量
+vi /etc/profile
+```
+
+```txt
+export JAVA_HOME=/opt/jdk/jdk1.6.0_45
+export JAVA_BIN=/opt/jdk/jdk1.6.0_45/bin
+export PATH=$PATH:$JAVA_HOME/bin 
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME JAVA_BIN PATH CLASSPATH
+```
+
+```sh
+#刷新
+cd /
+. /etc/profile
+```
+
