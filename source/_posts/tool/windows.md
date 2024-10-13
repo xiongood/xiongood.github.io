@@ -45,6 +45,14 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "Di
 
 看到提示“操作成功完成”即代表Windows Defender已被关闭，可尝试重启电脑
 
+## 设置cmd背景
+
+![image-20241013103855122](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241013103855122.png)
+
+![image-20241013103910733](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241013103910733.png)
+
+![image-20241013103921419](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241013103921419.png)
+
 ## 设置右击菜单
 
 ### 自动打开更多选项
