@@ -57,3 +57,11 @@ chronyc tracking
 awk 'NF' postgresql.conf | grep -v '#'
 ```
 
+### 根据关键字搜索
+
+```sh
+grep -C 10 "InquiryProVideoNumRouteSrvImpl" log-20241009.txt
+```
+
+
+
