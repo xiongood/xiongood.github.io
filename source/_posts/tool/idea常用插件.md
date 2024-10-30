@@ -136,3 +136,11 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 ### 使用方式
 
 ![image-20230804100542451](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230804100543.png)
+
+## 好看的主题
+
+Hiberbee Thrme
+
+## 打开excel
+
+ExcelReader

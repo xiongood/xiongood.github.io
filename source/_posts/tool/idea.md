@@ -390,6 +390,10 @@ time()
 R2OWuOKu0JLNCg9w7xDxPtsBjwXj79Pc
 ```
 
+### 复制进XML后格式变了
+
+![image-20241023154836537](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241023154836537.png)
+
 ## mybatisX
 
 ![image-20240821174120186](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240821174120186.png)
