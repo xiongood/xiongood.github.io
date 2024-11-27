@@ -1,3 +1,14 @@
+---
+title: linux权限命令
+author: 张一雄
+summary: 我们前端程序员所依赖的开发运行工具！
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816091455.png
+categories:
+ - 工具
+tags:
+ - linux
+---
+
 ## 方式一
 
 ### 给所属用户增加权限

@@ -1,3 +1,14 @@
+---
+title: windows开启sftp
+author: 张一雄
+summary: 我们前端程序员所依赖的开发运行工具！
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/title-sftp.png
+categories:
+ - 工具
+tags:
+ - sftp
+---
+
 ## 下载
 
 官方下载 freeSSHd
