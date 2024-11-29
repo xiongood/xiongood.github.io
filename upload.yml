@@ -1,0 +1,7 @@
+bucket_name: boke # 桶名称
+folder_path: public # 要上传的文件夹
+file_path:  # 要上传的文件
+r2_endpoint_url: https://fd61b9b3449c0b961358e87d94c18619.r2.cloudflarestorage.com # 桶中的文件夹
+target_folder:  # 地址
+access_key: 7e9beda67d306c2c7e53bb40e4ed344c #
+secret_key: 7450d976b7d31ef78e7e7f75a07bf4e8e49c1a4938b3159424b2971ed7f33851 #
