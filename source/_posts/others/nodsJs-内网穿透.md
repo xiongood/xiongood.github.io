@@ -2,7 +2,7 @@
 title: nodejs-内网穿透
 author: 张一雄
 summary: hexo常用命令
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816110839.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/nodejs.jpg
 categories:
  - 工具
 tags:

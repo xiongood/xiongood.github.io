@@ -1,7 +1,7 @@
 ---
 title: windows安装ftp
 author: 张一雄
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816090747.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/ftp.jpg
 summary: ftp是一种重要的网络传输协议，好多项目都是使用了ftp服务器作为了文件存储服务。所以我认为在本地搭建一个ftp服务，进行学习和测试，是一件很重要的事情
 tags:
   - ftp

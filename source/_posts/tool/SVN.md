@@ -1,7 +1,7 @@
 ---
 title: SVN常用设置
 summary: 版本控制
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20231226165919.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/svn.jpg
 categories:
  - 工具
 tags:

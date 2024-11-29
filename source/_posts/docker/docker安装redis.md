@@ -1,8 +1,8 @@
 ---
 title: docker安装redis
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/redis200809.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/redis.jpg
 categories:
- - redis
+ - 周边
 tags:
  - redis
  - coenos7

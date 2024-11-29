@@ -2,7 +2,7 @@
 title: Typora常用设置
 author: 张一雄
 summary: 文本神器！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816111139.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/typora.jpg
 categories:
  - 工具
 tags:

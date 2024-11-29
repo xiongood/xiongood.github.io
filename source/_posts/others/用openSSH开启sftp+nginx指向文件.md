@@ -2,7 +2,7 @@
 title: 用openSSH开启sftp+nginx访问文件
 author: 张一雄
 summary: 这样可以做文件储存服务器，感觉非常的方便！以后不用fastDfs了！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816090833.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/sftp.jpeg
 categories:
  - 周边
 tags:

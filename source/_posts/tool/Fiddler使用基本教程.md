@@ -2,7 +2,7 @@
 title: fiddler的搭建与使用
 author: 张一雄
 summary: 测试抓包工具
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/fiddler240902.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/fiddler.jpg
 categories:
  - 周边
 tags:

@@ -2,7 +2,7 @@
 title: webservice与cxf
 author: 张一雄
 summary: webservice感觉是很老的技术了，但是有些项目正常跑了十几年了，所以还是得知道这个技术才行。
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816150251.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/cxf.jpg
 categories:
  - 后端
 tags:

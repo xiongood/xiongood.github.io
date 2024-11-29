@@ -1,6 +1,6 @@
 ---
 title: springboot整合mybatis
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816111548.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/mybatis.jpg
 categories:
  - 后端
 tags:

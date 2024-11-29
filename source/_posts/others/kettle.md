@@ -2,7 +2,7 @@
 title: kettle的使用
 author: 张一雄
 summary: 数据抽取工具
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/kettle.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/kettle.jpg
 categories:
  - 周边
 tags:

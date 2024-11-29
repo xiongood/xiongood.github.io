@@ -1,6 +1,6 @@
 ---
 title: springboot拦截器、过滤器的使用
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816145534.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/springboot.jpg
 categories:
  - 后端
 tags:

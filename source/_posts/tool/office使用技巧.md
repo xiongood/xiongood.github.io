@@ -2,7 +2,7 @@
 title: office的使用技巧
 author: 张一雄
 summary: 遇到不常见的快捷操作，我就会记录在这个文档下面，持续更新
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816110953.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/office.jpg
 categories:
  - 工具
 tags:

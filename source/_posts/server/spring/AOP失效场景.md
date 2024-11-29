@@ -1,6 +1,6 @@
 ---
 title: AOP失效场景
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816145336.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/spring.jpg
 categories:
  - 后端
 tags:

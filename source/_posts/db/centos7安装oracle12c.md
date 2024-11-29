@@ -2,7 +2,7 @@
 title: linux安装oracle 12c
 author: 张一雄
 summary: oracle
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816090833.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/oracle.jpg
 categories:
  - 周边
 tags:

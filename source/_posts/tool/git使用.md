@@ -1,7 +1,7 @@
 ---
 title: git的使用
 summary: 在工作和学习中，遇到了不常见的命令，我就会记录在这个文章下面，持续更新
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816093602.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/git.jpg
 categories:
  - 工具
 tags:

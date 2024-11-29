@@ -1,6 +1,6 @@
 ---
 title: centos7安装磐维数据库
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/bttp.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/panwei.jpg
 categories:
  - 数据库
 tags:

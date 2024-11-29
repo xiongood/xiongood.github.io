@@ -242,7 +242,7 @@ mark {
 
 .bg-color {
     background-image: linear-gradient(to right, #000000 0%, #000000 100%);
-    opacity: 0.8; 
+    opacity: 0.8;
 }
 
 .text-color {
@@ -551,7 +551,7 @@ header .go-back i {
     height: 40vh !important;
 }
 
-/* 
+/*
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
@@ -892,7 +892,7 @@ article .card {
 }
 
 article .card-image {
-    background-color: #222;
+    background-color: green;
     border-radius: 8px;
 }
 
