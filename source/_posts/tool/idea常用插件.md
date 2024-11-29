@@ -1,7 +1,7 @@
 ---
 title: idea常用插件推荐
 summary: 遇到了好用的插件，我就会记录在这个博客下面，持续更新
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816110730.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/idea.jpg
 categories:
  - 工具
 tags:

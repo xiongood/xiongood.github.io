@@ -117,9 +117,9 @@ search:
 
 
 prism_plugin:
-  mode: "preprocess" # realtime/preprocess 
-  theme: "tomorrow" 
-  line_number: false # default false 
+  mode: "preprocess" # realtime/preprocess
+  theme: "tomorrow"
+  line_number: false # default false
   custom_css:
 
 permalink_pinyin:

@@ -1,6 +1,6 @@
 ---
 title: VUE常用方法
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240403101023.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/vue.jpg
 categories:
  - 前端
 tags:
@@ -287,4 +287,3 @@ Promise 常常与 async/await 语法一起使用，使得异步代码更加简�
   }).$mount('#app');
   ```
 
-  

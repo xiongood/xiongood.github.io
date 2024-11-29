@@ -1,6 +1,6 @@
 ---
 title: win11安装mysql(8.0)
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816090932.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/mysql.jpg
 categories:
  - 数据库
 tags:

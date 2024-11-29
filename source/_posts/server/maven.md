@@ -2,7 +2,7 @@
 title: maven的使用
 author: 张一雄
 summary: java程序员离不开的jar包管理工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816150128.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/maven.jpg
 categories:
  - 后端
 tags:

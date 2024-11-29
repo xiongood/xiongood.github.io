@@ -2,7 +2,7 @@
 title: dom4j解析xml
 author: 张一雄
 summary: 解析xml的神器，用webservice的时候，经常会解析xml，这是就是dom4j大展神威的时候
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816150018.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/xml.jpg
 categories:
  - 后端
 tags:

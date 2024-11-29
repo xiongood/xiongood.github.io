@@ -2,7 +2,7 @@
 title: notepad++常用配置
 author: 张一雄
 summary: 说实话的我不太喜欢这个软件，推荐大家使用notepad--
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816110914.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/notepad++.jpg
 categories:
  - 工具
 tags:

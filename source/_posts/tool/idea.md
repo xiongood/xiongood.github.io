@@ -1,7 +1,7 @@
 ---
 title: idea常用配置
 summary: java程序员离不开的工具，期待国产的开发工具能早日发扬光大
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816110730.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/idea.jpg
 categories:
  - 工具
 tags:

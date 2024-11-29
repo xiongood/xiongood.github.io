@@ -1,6 +1,17 @@
+---
+title: kettle的使用
+author: 张一雄
+summary: 数据抽取工具
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/kettle.jpg
+categories:
+ - 周边
+tags:
+ - kettle
+---
+
 ## kettle 安装
 
-
+略
 
 ## 输入输出的使用
 
@@ -141,3 +152,18 @@
 ### 基础知识
 
 ![image-20241016111940811](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241016111940811.png)
+
+## kettle引入达梦数据库
+
+### 导入驱动
+
+![image-20241016112628379](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241016112628379.png)
+
+### 配置
+
+```txt
+dm.jdbc.driver.DmDriver
+jdbc:dm://xxx.xx.xx.xxx:5236
+```
+
+![image-20241016113115257](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241016113115257.png)

@@ -2,7 +2,7 @@
 title: selenium的使用
 author: 张一雄
 summary: selenium是一款自动化测试工具，我用此工具做了个自动签到的工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816085751.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/selenium.jpg
 tags:
   - selenium
 categories:

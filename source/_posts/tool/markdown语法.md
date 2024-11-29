@@ -2,7 +2,7 @@
 title: 常用markdown语法
 author: 张一雄
 summary: 常用markdown语法
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240514190524.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/markdown.jpg
 categories:
  - 工具
 tags:

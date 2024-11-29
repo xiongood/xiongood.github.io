@@ -2,7 +2,7 @@
 title: github加速器推荐
 author: 张一雄
 summary: 油猴插件确实好用，希望网络长城早日放开
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816091646.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/github.jpg
 categories:
  - 周边
 tags:

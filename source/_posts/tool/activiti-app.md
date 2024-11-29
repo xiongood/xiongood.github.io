@@ -1,7 +1,7 @@
 ---
 title: activiti-app
 summary: activiti画图工具，当然网上还有好多其他的工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816092621.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/activiti.jpg
 categories:
  - 工具
 tags:

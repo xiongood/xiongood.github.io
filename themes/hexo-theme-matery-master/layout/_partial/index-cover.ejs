@@ -59,7 +59,7 @@ var coverPostsCount = coverPosts.length;
             %>
             <% Object.keys(books).forEach(function(index) { %>
                 <% i ++; %>
-                <a href="<%- books[index].url %>" class="waves-effect"><%- books[index].name %></a>
+                <a href="<%- books[index].url %>" class="waves-effect" style="color: #0D0A0A"><%- books[index].name %></a>
                 <% if (i % 8 == 0) { %>
                     <br>
                 <% } %>
@@ -70,17 +70,17 @@ var coverPostsCount = coverPosts.length;
 
         <div class="container">
             <%- partial('_partial/bg-cover-content') %>
-            <input id="myInput" type = "text" style="color: white;" placeholder="输入要搜索的内容...">
+            <input id="myInput" type = "text" style="color: black;" >
             <div class="cover-btns">
                 <a href="<%=
                         [theme.dream, theme.music, theme.video, theme.recommend]
                                 .every(i=>i.enable)? "#indexCard": "#articles"
-                        %>" class="waves-effect waves-light btn">
+                        %>" class="waves-effect waves-light btn" style="color: black">
                     <i class="fa fa-angle-double-down"></i><%- __('startRead') %>
                 </a>
 
                 <% if (theme.indexbtn && theme.indexbtn.enable) { %>
-                    <a href="<%- url_for(theme.indexbtn.url) %>" class="waves-effect waves-light btn" target="_blank">
+                    <a href="<%- url_for(theme.indexbtn.url) %>" class="waves-effect waves-light btn" style="color: black" target="_blank">
                         <i class="<%- theme.indexbtn.icon %>"></i><%= theme.indexbtn.name %>
                     </a>
                 <% } else if (theme.githubLink.enable) { %>

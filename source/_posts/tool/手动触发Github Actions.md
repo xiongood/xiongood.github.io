@@ -2,7 +2,7 @@
 title: 手动触发Github Actions
 author: 张一雄
 summary: 手动触发Github Actions
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816093602.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/github.jpg
 categories:
  - 工具
 tags:

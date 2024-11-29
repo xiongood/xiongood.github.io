@@ -2,7 +2,7 @@
 title: frp内网穿透
 author: 张一雄
 summary: 好多的内网穿透工具都收费的，有的被挡在了网络长城外面，这个也得又一个云服务器才能使用！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816091607.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/frp.jpg
 categories:
  - 周边
 tags:

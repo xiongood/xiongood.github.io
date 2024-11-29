@@ -1,6 +1,6 @@
 ---
 title: docker安装oracle-11
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816090833.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/oracle.jpg
 categories:
  - 数据库
 tags:

@@ -1,6 +1,6 @@
 ---
 title: centos7下部署rabbitmq
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230816112030.png
+img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/rabbitmq.jpg
 categories:
  - 后端
 tags:
