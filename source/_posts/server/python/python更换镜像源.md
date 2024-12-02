@@ -9,7 +9,7 @@ tags:
  - python
 ---
 
-###  更换镜像源
+##  更换镜像源
 
 pip默认会从Python官方包索引（PyPI）下载包，但由于网络原因，国内访问国外网站可能会很慢。因此，更换为国内镜像源可以显著加速下载速度。常用的国内镜像源包括：
 
@@ -27,3 +27,14 @@ pip默认会从Python官方包索引（PyPI）下载包，但由于网络原因�
     [global]  
     index-url = https://mirrors.aliyun.com/pypi/simple/
     ```
+
+## 清空所有下载的包
+
+### windows
+
+```sh
+pip freeze | ForEach-Object { pip uninstall -y $_.Split('=')[0] }
+```
+
+
+
