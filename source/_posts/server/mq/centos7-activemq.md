@@ -1,6 +1,6 @@
 ---
 title: centos7下部署activemq
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/activemq.jpg
+img: https://img.myfox.fun/img/activemq.jpg
 categories:
  - 后端
 tags:
@@ -134,7 +134,7 @@ http://192.168.31.245:8161
 
 账号密码都为admin
 
-![image-20230609222649393](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230609222650.png)
+![image-20230609222649393](https://img.myfox.fun/img/20230609222650.png)
 
 ### 添加用户
 
@@ -155,7 +155,7 @@ vim activemq.xml
 </plugins>
 ```
 
-![image-20230609222919160](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230609222920.png)
+![image-20230609222919160](https://img.myfox.fun/img/20230609222920.png)
 
 之后重启服务
 
@@ -163,7 +163,7 @@ vim activemq.xml
 
 *延迟队列需要在* <broker>标签上增加属性schedulerSupport="true"
 
-![image-20230609223709111](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230609223710.png)
+![image-20230609223709111](https://img.myfox.fun/img/20230609223710.png)
 
 ## 测试
 

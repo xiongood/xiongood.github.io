@@ -1,6 +1,6 @@
 ---
 title: springboot整合redis
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/springboot.jpg
+img: https://img.myfox.fun/img/springboot.jpg
 categories:
  - 后端
 tags:
@@ -107,7 +107,7 @@ http://localhost:8000/redis/test
 
 ### 发现乱码
 
-![image-20230425110819062](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230425110820.png)
+![image-20230425110819062](https://img.myfox.fun/img/20230425110820.png)
 
 ### 解决乱码
 
@@ -148,7 +148,7 @@ public class RedisConfig {
 http://localhost:8000/redis/test
 ```
 
-![image-20230425111112821](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230425111113.png)
+![image-20230425111112821](https://img.myfox.fun/img/20230425111113.png)
 
 ## redis API
 

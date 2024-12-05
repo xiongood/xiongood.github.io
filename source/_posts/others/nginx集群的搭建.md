@@ -2,7 +2,7 @@
 title: nginx集群的搭建
 author: 张一雄
 summary: nginx的集群搭建，平时用不到这功能，仅供学习测试使用！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/nginx.jpg
+img: https://img.myfox.fun/img/nginx.jpg
 categories:
  - 周边
 tags:

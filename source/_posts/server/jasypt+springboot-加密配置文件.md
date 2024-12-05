@@ -2,7 +2,7 @@
 title: jasypt-加密配置文件
 author: 张一雄
 summary: 加密配置文件，有些公司有这种特殊的需要，防止隐私数据的泄露，简单的配置就能实现程序的自动解密。
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/springboot.jpg
+img: https://img.myfox.fun/img/springboot.jpg
 categories:
  - 工具
 tags:

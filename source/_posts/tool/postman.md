@@ -2,7 +2,7 @@
 title: postman常用配置
 author: 张一雄
 summary: 调试的神器，但是现在测试记录默认存在了云端，如果网络不好的话，不建议使用，我就好多次找不到测试记录，而影响了开发进度！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/postman.jpg
+img: https://img.myfox.fun/img/postman.jpg
 categories:
  - 工具
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ## 修改主题
 
-![image-20230519171914645](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230519171915.png)
+![image-20230519171914645](https://img.myfox.fun/img/20230519171915.png)
 
 ## 汉化
 
@@ -26,11 +26,11 @@ https://www.alipan.com/s/Qnjym6XNZKa
 
 ### 安装后先关闭自动更新
 
-![image-20240417114654907](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240417114657.png)
+![image-20240417114654907](https://img.myfox.fun/img/20240417114657.png)
 
 ### 查看版本号
 
-![image-20230519171925469](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230519171926.png)
+![image-20230519171925469](https://img.myfox.fun/img/20230519171926.png)
 
 ### 下载对应的版本
 
@@ -53,11 +53,11 @@ Linux
 https://github.com/hlmd/Postman-cn/releases
 ```
 
-![image-20230519171943150](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230519171944.png)
+![image-20230519171943150](https://img.myfox.fun/img/20230519171944.png)
 
 ### 将下载的包放到安装目录下
 
-![image-20230519171350460](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230519171351.png)
+![image-20230519171350460](https://img.myfox.fun/img/20230519171351.png)
 
 ## 账号
 
@@ -74,7 +74,7 @@ Content-Type application/x-www-form-urlencoded; charset=UTF-8
 Accpet text/plain;charset=UTF-8
 ```
 
-![image-20240514152830386](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240514152832.png)
+![image-20240514152830386](https://img.myfox.fun/img/20240514152832.png)
 
 
 

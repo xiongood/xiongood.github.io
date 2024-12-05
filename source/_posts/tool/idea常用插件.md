@@ -1,7 +1,7 @@
 ---
 title: idea常用插件推荐
 summary: 遇到了好用的插件，我就会记录在这个博客下面，持续更新
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/idea.jpg
+img: https://img.myfox.fun/img/idea.jpg
 categories:
  - 工具
 tags:
@@ -31,7 +31,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 选择代码里的接口后，自动填充
 
-![image-20231121104755970](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20231121104758.png)
+![image-20231121104755970](https://img.myfox.fun/img/20231121104758.png)
 
 
 
@@ -45,13 +45,13 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 安装与设置
 
-![image-20230804094557435](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230804094601.png)
+![image-20230804094557435](https://img.myfox.fun/img/20230804094601.png)
 
 ### 使用方式
 
 按alt+inster键
 
-![image-20230804094641366](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230804094642.png)
+![image-20230804094641366](https://img.myfox.fun/img/20230804094642.png)
 
 ## 代码统计
 
@@ -63,11 +63,11 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 安装与设置
 
-![image-20230531105627269](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230531105628.png)
+![image-20230531105627269](https://img.myfox.fun/img/20230531105628.png)
 
 ### 使用方式
 
-![image-20230531105719658](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230531105720.png)
+![image-20230531105719658](https://img.myfox.fun/img/20230531105720.png)
 
 ## 改变漂亮的UI
 
@@ -87,7 +87,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 使用方式
 
-![image-20230418231003084](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230418231003084.png)
+![image-20230418231003084](https://img.myfox.fun/img/image-20230418231003084.png)
 
 ## 翻译
 
@@ -111,7 +111,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 使用方式
 
-![image-20230418231133904](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230418231133904.png)
+![image-20230418231133904](https://img.myfox.fun/img/image-20230418231133904.png)
 
 ## 根据url定位插件
 
@@ -123,7 +123,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 使用方式
 
-![image-20230510160637685](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230510160638.png)
+![image-20230510160637685](https://img.myfox.fun/img/20230510160638.png)
 
 ## 打印完整sql
 
@@ -135,7 +135,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ### 使用方式
 
-![image-20230804100542451](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230804100543.png)
+![image-20230804100542451](https://img.myfox.fun/img/20230804100543.png)
 
 ## 好看的主题
 

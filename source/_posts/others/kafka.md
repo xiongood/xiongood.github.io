@@ -2,7 +2,7 @@
 title: windows使用kafka
 author: 张一雄
 summary: 这个功能非常用好，我的博客全部用的就是gitee的图床，当然github也行哦！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/kafka.jpg
+img: https://img.myfox.fun/img/kafka.jpg
 categories:
  - 周边
 tags:
@@ -19,7 +19,7 @@ tags:
 cd config/zookeeper.properties
 ```
 
-![image-20241122175917422](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241122175917422.png)
+![image-20241122175917422](https://img.myfox.fun/img/image-20241122175917422.png)
 
 #### 启动
 
@@ -44,7 +44,7 @@ call D:\servers\kafka\kafka1\bin\windows\zookeeper-server-start.bat  D:\servers\
 
 修改文件D:\servers\kafka\kafka1\config\server.properties
 
-![image-20241122180755495](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241122180755495.png)
+![image-20241122180755495](https://img.myfox.fun/img/image-20241122180755495.png)
 
 ### 创建启动文件
 
@@ -56,7 +56,7 @@ call D:\servers\kafka\kafka1\bin\windows\kafka-server-start.bat D:\servers\kafka
 
 双击则可启动
 
-![image-20241122181159845](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241122181159845.png)
+![image-20241122181159845](https://img.myfox.fun/img/image-20241122181159845.png)
 
 ## 代码链接kafka
 
@@ -159,13 +159,13 @@ https://www.kafkatool.com/download.html
 
 ### 配置
 
-![image-20241125105520972](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241125105520972.png)
+![image-20241125105520972](https://img.myfox.fun/img/image-20241125105520972.png)
 
 ### 新增一个消息
 
-![image-20241125105733038](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241125105733038.png)
+![image-20241125105733038](https://img.myfox.fun/img/image-20241125105733038.png)
 
-![image-20241125105800945](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20241125105800945.png)
+![image-20241125105800945](https://img.myfox.fun/img/image-20241125105800945.png)
 
 ## 面试题
 

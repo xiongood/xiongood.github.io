@@ -1,6 +1,6 @@
 ---
 title: docker安装oracle-11
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/oracle.jpg
+img: https://img.myfox.fun/img/oracle.jpg
 categories:
  - 数据库
 tags:
@@ -101,7 +101,7 @@ orcl
 
 密码为 oracle
 
-![image-20220118220907310](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20220118220907310.png)
+![image-20220118220907310](https://img.myfox.fun/img/image-20220118220907310.png)
 
 ## 创建用户		
 

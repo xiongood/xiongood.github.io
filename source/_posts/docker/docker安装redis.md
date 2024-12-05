@@ -1,6 +1,6 @@
 ---
 title: docker安装redis
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/redis.jpg
+img: https://img.myfox.fun/img/redis.jpg
 categories:
  - 周边
 tags:

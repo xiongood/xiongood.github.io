@@ -2,7 +2,7 @@
 title: github加速器推荐
 author: 张一雄
 summary: 油猴插件确实好用，希望网络长城早日放开
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/github.jpg
+img: https://img.myfox.fun/img/github.jpg
 categories:
  - 周边
 tags:
@@ -13,19 +13,19 @@ tags:
 
 ### 扩展程序里面安装【暴力猴】
 
-![image-20230607114729251](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607114730.png)
+![image-20230607114729251](https://img.myfox.fun/img/20230607114730.png)
 
 ### 搜索github
 
-![image-20230607114856133](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607114857.png)
+![image-20230607114856133](https://img.myfox.fun/img/20230607114857.png)
 
-![image-20230607114945299](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607114946.png)
+![image-20230607114945299](https://img.myfox.fun/img/20230607114946.png)
 
 ### 使用效果
 
-![image-20230607115047625](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607115048.png)
+![image-20230607115047625](https://img.myfox.fun/img/20230607115048.png)
 
-![image-20230607115024490](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607115025.png)
+![image-20230607115024490](https://img.myfox.fun/img/20230607115025.png)
 
 
 

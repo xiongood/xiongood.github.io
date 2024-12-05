@@ -1,6 +1,6 @@
 ---
 title: html中使用js自定义弹窗
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/html.jpg
+img: https://img.myfox.fun/img/html.jpg
 categories:
  - 前端
 tags:
@@ -12,7 +12,7 @@ tags:
 
 ### 效果图
 
-![image-20230914102804898](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230914102806.png)![image-20230914102826064](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230914102827.png)
+![image-20230914102804898](https://img.myfox.fun/img/20230914102806.png)![image-20230914102826064](https://img.myfox.fun/img/20230914102827.png)
 
 ### 创建
 
@@ -190,7 +190,7 @@ ChatGPT生成
 
 ### 效果图
 
-![image-20231219103626678](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20231219103628.png)
+![image-20231219103626678](https://img.myfox.fun/img/20231219103628.png)
 
 代码
 

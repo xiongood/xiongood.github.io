@@ -1,6 +1,6 @@
 ---
 title: mysqlchangyongsql
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/mysql.jpg
+img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:
@@ -91,7 +91,7 @@ SELECT ROUND(100 / 33, 2); -- 3.03
 
 **分数表的表结构**
 
-![image-20240412193854811](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193856.png)
+![image-20240412193854811](https://img.myfox.fun/img/20240412193856.png)
 
 
 
@@ -104,7 +104,7 @@ GROUP BY name;
 ```
 **执行结果**
 
-![image-20240412193908598](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193910.png)
+![image-20240412193908598](https://img.myfox.fun/img/20240412193910.png)
 
  
 
@@ -118,7 +118,7 @@ GROUP BY name;
 
 **表结构：**
 
-![image-20240412193917471](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193919.png)
+![image-20240412193917471](https://img.myfox.fun/img/20240412193919.png)
 
  
 
@@ -133,7 +133,7 @@ GROUP BY name;
 ```
 **结果：**
 
-![image-20240412193926985](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193928.png)
+![image-20240412193926985](https://img.myfox.fun/img/20240412193928.png)
 
  
 
@@ -141,7 +141,7 @@ GROUP BY name;
 
 **分数表表结构：**
 
-![image-20240412193934874](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193936.png)
+![image-20240412193934874](https://img.myfox.fun/img/20240412193936.png)
 
  
 
@@ -156,7 +156,7 @@ ORDER BY A.score DESC
 ```
 **查询结果：**
 
-![image-20240412193951983](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412193953.png)
+![image-20240412193951983](https://img.myfox.fun/img/20240412193953.png)
 
  
 
@@ -164,7 +164,7 @@ ORDER BY A.score DESC
 
 **表结构：**
 
-![image-20240412193959406](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412194001.png)
+![image-20240412193959406](https://img.myfox.fun/img/20240412194001.png)
 
  
 
@@ -183,7 +183,7 @@ ORDER BY course, group_id;
 ```
 **查询结果：**
 
-![image-20240412194007560](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240412194009.png)
+![image-20240412194007560](https://img.myfox.fun/img/20240412194009.png)
 
  
 

@@ -2,7 +2,7 @@
 title: centos7安装ftp
 author: 张一雄
 summary: 我们前端程序员所依赖的开发运行工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/ftp.jpg
+img: https://img.myfox.fun/img/ftp.jpg
 categories:
  - 工具
 tags:
