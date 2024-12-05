@@ -41,9 +41,7 @@ tags:
 
 手机访问电脑IP+端口号，下载并且安装证书
 
-![image-20241102195213135](https://img.myfox.fun/None)
-
 ### 设置代理
 
-![22398013-afac6b00d56664a3](https://img.myfox.fun/None)
+略
 
