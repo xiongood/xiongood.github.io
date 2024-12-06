@@ -1,7 +1,7 @@
 ---
 title: CentOS7系统安装
 summary: centos7的安装以及网络的配置
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/linux.jpg
+img: https://img.myfox.fun/img/linux.jpg
 categories:
  - linux
 tags:
@@ -23,7 +23,7 @@ https://repo.huaweicloud.com/centos/
 https://repo.huaweicloud.com/centos/7.9.2009/isos/x86_64/
 ```
 
-![image-20230421095147566](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230421095148.png)
+![image-20230421095147566](https://img.myfox.fun/img/20230421095148.png)
 
 ### 阿里下载源
 
@@ -39,7 +39,7 @@ https://mirrors.aliyun.com/centos/
 
 ### 没有IP
 
-![image-20230419111252942](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230419111252942.png)
+![image-20230419111252942](https://img.myfox.fun/img/image-20230419111252942.png)
 
 - 修改配置文件
 
@@ -47,7 +47,7 @@ https://mirrors.aliyun.com/centos/
 vi /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-![image-20230419111308767](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230419111308767.png)
+![image-20230419111308767](https://img.myfox.fun/img/image-20230419111308767.png)
 
 - 重启网络
 
@@ -56,21 +56,21 @@ systemctl restart network
 ip addr
 ```
 
-![image-20230419111318355](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230419111318355.png)
+![image-20230419111318355](https://img.myfox.fun/img/image-20230419111318355.png)
 
 - 关闭虚拟机，设置网络连接模式
 
-![image-20230419111326030](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230419111326030.png)
+![image-20230419111326030](https://img.myfox.fun/img/image-20230419111326030.png)
 
 ### ping 不通百度
 
 NAT 模式虽然可以简单的链接上互联网，但是有两个问题，1、虚拟机ping不通主机；2、其他局域网机器ping不通虚拟机，只能单机玩，完整版的网络，可以用桥接模式，下面有记录⬇️
 
-![image-20240828170513587](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240828170513587.png)
+![image-20240828170513587](https://img.myfox.fun/img/image-20240828170513587.png)
 
 编辑》虚拟机网络配置器
 
-![image-20240828170539134](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240828170539134.png)
+![image-20240828170539134](https://img.myfox.fun/img/image-20240828170539134.png)
 
 ### 关闭防火墙
 
@@ -94,7 +94,7 @@ yum install unzip -y
 # yum install tar
 ```
 
-![image-20230419111336458](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20230419111336458.png)
+![image-20230419111336458](https://img.myfox.fun/img/image-20230419111336458.png)
 
 之后可以通过 xshell 进行链接
 
@@ -124,9 +124,9 @@ yum install unzip
 
 ### 还原默认设置
 
-![image-20240904201408427](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904201408427.png)
+![image-20240904201408427](https://img.myfox.fun/img/image-20240904201408427.png)
 
-![image-20240904201447083](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904201447083.png)
+![image-20240904201447083](https://img.myfox.fun/img/image-20240904201447083.png)
 
 ### 配置1
 

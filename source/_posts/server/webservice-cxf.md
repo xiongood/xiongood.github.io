@@ -2,7 +2,7 @@
 title: webservice与cxf
 author: 张一雄
 summary: webservice感觉是很老的技术了，但是有些项目正常跑了十几年了，所以还是得知道这个技术才行。
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/cxf.jpg
+img: https://img.myfox.fun/img/cxf.jpg
 categories:
  - 后端
 tags:
@@ -228,13 +228,13 @@ http://127.0.0.1:9090/MyService?wsdl
 
 ## 使用soapUI调用
 
-![image-20230517094358805](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230517094359.png)
+![image-20230517094358805](https://img.myfox.fun/img/20230517094359.png)
 
-![image-20230517094505621](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230517094506.png)
+![image-20230517094505621](https://img.myfox.fun/img/20230517094506.png)
 
 ## 使用postman 调用
 
-![image-20230517094719640](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230517094720.png)
+![image-20230517094719640](https://img.myfox.fun/img/20230517094720.png)
 
 ## 保存wsdl 文件
 
@@ -242,7 +242,7 @@ http://127.0.0.1:9090/MyService?wsdl
 
 打开http://127.0.0.1:9090/MyService?wsdl，然后ctrl+s
 
-![image-20230516180414991](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230516180416.png)
+![image-20230516180414991](https://img.myfox.fun/img/20230516180416.png)
 
 ## wsdl文件生成代码
 
@@ -260,7 +260,7 @@ wsdl2java -encoding utf-8 -d D:\server\cxf\output -client D:\server\cxf\input\Im
 
 ### 生成的代码如下
 
-### ![image-20230517103156819](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230517103157.png)
+### ![image-20230517103156819](https://img.myfox.fun/img/20230517103157.png)
 
 ## 根据生成的代码搭建客户端
 
@@ -404,7 +404,7 @@ http://localhost:8082/test/test
 
 ### 导入生成的代码
 
-![image-20230517115330669](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230517115332.png)
+![image-20230517115330669](https://img.myfox.fun/img/20230517115332.png)
 
 ### 实现生成的接口
 

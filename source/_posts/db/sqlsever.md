@@ -1,6 +1,6 @@
 ---
 title: sqlsever的安装
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/sqlserver.jpg
+img: https://img.myfox.fun/img/sqlserver.jpg
 categories:
  - 数据库
 tags:
@@ -58,7 +58,7 @@ sudo firewall-cmd --reload
 
 ## 连接sqlsever
 
-![image-20220329182556726](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20220329182556726.png)
+![image-20220329182556726](https://img.myfox.fun/img/image-20220329182556726.png)
 
 - 安装命令行链接
 

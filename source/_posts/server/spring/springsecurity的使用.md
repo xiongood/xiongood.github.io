@@ -1,6 +1,6 @@
 ---
 title: springSecurity的使用
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/security.jpg
+img: https://img.myfox.fun/img/security.jpg
 categories:
  - 后端
 tags:
@@ -957,7 +957,7 @@ http://localhost:8111/user/test
 }
 ```
 
-![image-20230509173638350](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230509173639.png)
+![image-20230509173638350](https://img.myfox.fun/img/20230509173639.png)
 
 
 
@@ -1100,13 +1100,13 @@ public class ValidateCodeFilter extends OncePerRequestFilter {
 
 #### 放行取验证码的接口，并且在登录过滤器前添加验证码过滤器
 
-![image-20230510101904077](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230510101905.png)
+![image-20230510101904077](https://img.myfox.fun/img/20230510101905.png)
 
 测试
 
-![image-20230510102014010](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230510102015.png)
+![image-20230510102014010](https://img.myfox.fun/img/20230510102015.png)
 
-![image-20230510102322237](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230510102323.png)
+![image-20230510102322237](https://img.myfox.fun/img/20230510102323.png)
 
 ### JWT的使用
 

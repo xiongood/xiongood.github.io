@@ -2,7 +2,7 @@
 title: jdk的安装
 author: 张一雄
 summary: 我们java程序员所依赖的开发运行工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/java.jpg
+img: https://img.myfox.fun/img/java.jpg
 tags:
   - jdk
 categories:

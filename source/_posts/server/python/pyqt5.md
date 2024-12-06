@@ -1,6 +1,6 @@
 ---
 title: pyqt的安装及使用
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/python.jpg
+img: https://img.myfox.fun/img/python.jpg
 author: 张一雄
 summary: pyqt的安装及使用
 categories:
@@ -41,11 +41,11 @@ exit(app.exec_())
 
 出现对如下对话框，则证明安装成功
 
-![image-20240416151326369](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416151328.png)
+![image-20240416151326369](https://img.myfox.fun/img/20240416151328.png)
 
 在设置中查看是否已经安装成功
 
-![image-20240416151635871](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416151638.png)
+![image-20240416151635871](https://img.myfox.fun/img/20240416151638.png)
 
 ### 设置外部文件
 
@@ -55,7 +55,7 @@ exit(app.exec_())
 
 Program：例如 C:\Users\java0\AppData\Local\Programs\Python\Python310\Lib\site-packages\qt5_applications\Qt\bin\designer.exe
 
-![image-20240416153245273](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416153247.png)
+![image-20240416153245273](https://img.myfox.fun/img/20240416153247.png)
 
 #### PyUIC
 
@@ -69,7 +69,7 @@ Working directory：
 $ProjectFileDir$
 ```
 
-![image-20240416154946801](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416154949.png)
+![image-20240416154946801](https://img.myfox.fun/img/20240416154949.png)
 
 #### 测试是否成功
 
@@ -94,15 +94,15 @@ first_window.show()  # 显示窗体
 sys.exit(app.exec())  # 运行程序
 ```
 
-![image-20240416155206351](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416155208.png)
+![image-20240416155206351](https://img.myfox.fun/img/20240416155208.png)
 
 ## 创建窗口
 
 ### 创建
 
-![image-20240416155309852](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416155312.png)
+![image-20240416155309852](https://img.myfox.fun/img/20240416155312.png)
 
-![image-20240416155344998](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416155347.png)
+![image-20240416155344998](https://img.myfox.fun/img/20240416155347.png)
 
 ### 生成ui
 
@@ -112,5 +112,5 @@ ctrl+s 保存成ui文件，之后，可以在项目中看到该项目文件
 
 右击文件
 
-![image-20240416155948485](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240416155950.png)
+![image-20240416155948485](https://img.myfox.fun/img/20240416155950.png)
 

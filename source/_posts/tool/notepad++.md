@@ -2,7 +2,7 @@
 title: notepad++常用配置
 author: 张一雄
 summary: 说实话的我不太喜欢这个软件，推荐大家使用notepad--
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/notepad++.jpg
+img: https://img.myfox.fun/img/notepad++.jpg
 categories:
  - 工具
 tags:
@@ -26,11 +26,11 @@ tags:
 
 ## 设置语言
 
-![image-20230420143200418](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230420143201.png)
+![image-20230420143200418](https://img.myfox.fun/img/20230420143201.png)
 
 ## 设置主题
 
-![image-20230420143211779](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230420143212.png)
+![image-20230420143211779](https://img.myfox.fun/img/20230420143212.png)
 
 ## 格式化json
 
@@ -40,11 +40,11 @@ tags:
 json viewer
 ```
 
-![image-20230420143221641](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230420143222.png)
+![image-20230420143221641](https://img.myfox.fun/img/20230420143222.png)
 
 ### 使用插件
 
-![image-20230420143230387](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230420143231.png)
+![image-20230420143230387](https://img.myfox.fun/img/20230420143231.png)
 
 快捷键
 
@@ -62,7 +62,7 @@ XML Tools
 
 ### 使用
 
-![image-20230420143240986](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230420143242.png)
+![image-20230420143240986](https://img.myfox.fun/img/20230420143242.png)
 
 快捷键
 

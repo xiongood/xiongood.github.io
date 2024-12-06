@@ -2,7 +2,7 @@
 title: selenium的使用
 author: 张一雄
 summary: selenium是一款自动化测试工具，我用此工具做了个自动签到的工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/selenium.jpg
+img: https://img.myfox.fun/img/selenium.jpg
 tags:
   - selenium
 categories:
@@ -21,11 +21,11 @@ selenium是一款自动化测试工具，我用此工具做了个自动签到的
 https://chromedriver.chromium.org/downloads
 ```
 
-![image-20230815113403248](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230815113404.png)
+![image-20230815113403248](https://img.myfox.fun/img/20230815113404.png)
 
 ### 加入环境变量
 
-![image-20230815113604564](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230815113605.png)
+![image-20230815113604564](https://img.myfox.fun/img/20230815113605.png)
 
 ## 整合selenium
 

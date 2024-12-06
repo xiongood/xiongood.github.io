@@ -1,6 +1,6 @@
 ---
 title: windows下部署recketMQ
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/recket.jpg
+img: https://img.myfox.fun/img/recket.jpg
 categories:
  - 后端
 tags:
@@ -36,7 +36,7 @@ https://dist.apache.org/repos/dist/release/rocketmq/
 
 ROCKETMQ_HOME
 
-![image-20230607111046166](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607111047.png)
+![image-20230607111046166](https://img.myfox.fun/img/20230607111047.png)
 
 ### 启动server
 
@@ -51,4 +51,4 @@ start mqnamesrv.cmd
 start mqbroker.cmd
 ```
 
-![image-20230607111452222](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230607111453.png)
+![image-20230607111452222](https://img.myfox.fun/img/20230607111453.png)

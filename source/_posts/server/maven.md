@@ -2,7 +2,7 @@
 title: maven的使用
 author: 张一雄
 summary: java程序员离不开的jar包管理工具！
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/maven.jpg
+img: https://img.myfox.fun/img/maven.jpg
 categories:
  - 后端
 tags:
@@ -20,7 +20,7 @@ https://maven.apache.org/docs/history.html
 
 ### 选择更多版本
 
-![image-20230904164729092](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230904164730.png)
+![image-20230904164729092](https://img.myfox.fun/img/20230904164730.png)
 
 ### 载并解压
 
@@ -32,11 +32,11 @@ https://maven.apache.org/download.cgi
 
 ### 配置
 
-![image-20230508152221543](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230508152222.png)![image-20230508152247843](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230508152248.png)
+![image-20230508152221543](https://img.myfox.fun/img/20230508152222.png)![image-20230508152247843](https://img.myfox.fun/img/20230508152248.png)
 
-![image-20230508152343204](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230508152344.png)
+![image-20230508152343204](https://img.myfox.fun/img/20230508152344.png)
 
-![image-20230508152511676](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20230508152512.png)
+![image-20230508152511676](https://img.myfox.fun/img/20230508152512.png)
 
 ### 测试
 
@@ -88,4 +88,4 @@ mvn -v
 </dependency>
 ```
 
-![image-20240904155227327](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/image-20240904155227327.png)
+![image-20240904155227327](https://img.myfox.fun/img/image-20240904155227327.png)

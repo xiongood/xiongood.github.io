@@ -2,7 +2,7 @@
 title: redis集群的搭建
 author: 张一雄
 summary: 集群的方式又好多种，此文档只列举了其中一种。
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/redis.jpg
+img: https://img.myfox.fun/img/redis.jpg
 categories:
  - 周边
 tags:

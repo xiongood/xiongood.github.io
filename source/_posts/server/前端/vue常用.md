@@ -1,6 +1,6 @@
 ---
 title: VUE常用方法
-img: https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/vue.jpg
+img: https://img.myfox.fun/img/vue.jpg
 categories:
  - 前端
 tags:
@@ -242,7 +242,7 @@ Promise 常常与 async/await 语法一起使用，使得异步代码更加简�
 
   在这个 store 中，我们定义了一个状态 `count`，一个 mutation `increment` 来修改这个状态，以及一个 action `incrementAction` 来触发这个 mutation。注意，action 通过调用 `commit` 方法来触发 mutation，而不是直接修改状态。这是 Vuex 的一个关键原则，以确保状态的变更能够被清晰地跟踪。
 
-  ![image-20240329183356132](https://pub-b24cf0a8c1f14e9386435977aa464959.r2.dev/img/20240329183358.png)
+  ![image-20240329183356132](https://img.myfox.fun/img/20240329183358.png)
 
 - 创建vue
 
