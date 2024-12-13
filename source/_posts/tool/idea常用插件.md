@@ -139,7 +139,7 @@ https://mp.apipost.cn/a/a2e8cfa8362abfb5
 
 ## 好看的主题
 
-Hiberbee Thrme
+Hiberbee Theme
 
 ## 打开excel
 

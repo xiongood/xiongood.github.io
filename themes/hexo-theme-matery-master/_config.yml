@@ -4,18 +4,18 @@ menu:
   Index:
     url: /
     icon: fas fa-home
-  Tags:
-    url: /tags
-    icon: fas fa-tags
-  Categories:
-    url: /categories
-    icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
-  About:
-    url: /about
-    icon: fas fa-user-circle
+#  Tags:
+#    url: /tags
+#    icon: fas fa-tags
+#  Categories:
+#    url: /categories
+#    icon: fas fa-bookmark
+#  Archives:
+#    url: /archives
+#    icon: fas fa-archive
+#  About:
+#    url: /about
+#    icon: fas fa-user-circle
 #  Contact:
 #    url: /contact
 #    icon: fas fa-comments
@@ -64,7 +64,7 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: false
+  enable: true
   showTitle: false
   title: 博客说明
   text: 此博客主要记录我在工作或学习中用到的一些知识，如果能对您有所帮助，我将不胜荣幸！
@@ -585,9 +585,9 @@ banner:
 
 #ICP备案信息尾部显示
 icp:
-  enable: false
-  url: # 备案链接
-  text: # 备案信息
+  enable: true
+  url: http://beian.miit.gov.cn/ # 备案链接
+  text: 备案/许可证编号为：冀ICP备2024094948号 # 备案信息
 
 # CDN访问加速
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！

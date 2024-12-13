@@ -51,21 +51,6 @@ var coverPostsCount = coverPosts.length;
 %>
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    <div style="margin-top: 80px;">
-        <div class="cover-btns">
-            <%
-                var books = theme.book;
-                var i = 1;
-            %>
-            <% Object.keys(books).forEach(function(index) { %>
-                <% i ++; %>
-                <a href="<%- books[index].url %>" class="waves-effect" style="color: #0D0A0A"><%- books[index].name %></a>
-                <% if (i % 8 == 0) { %>
-                    <br>
-                <% } %>
-            <% })%>
-        </div>
-    </div>
     <div class="carousel-item red white-text bg-cover about-cover">
 
         <div class="container">
