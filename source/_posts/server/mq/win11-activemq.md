@@ -365,8 +365,10 @@ public class TopicListener {
 ### 生产者
 
 ```java
-import com.xiong.demo.utils.R;
-import net.minidev.json.JSONObject;
+package fun.myfox.cleandemo.controller;
+
+import cn.hutool.json.JSONUtil;
+import fun.myfox.cleandemo.utils.R;
 import org.apache.activemq.ScheduledMessage;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
@@ -375,9 +377,13 @@ import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.jms.*;
+import javax.jms.Destination;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -390,7 +396,7 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/active")
 public class SendController {
-    //也可以注入JmsTemplate，JmsMessagingTemplate对JmsTemplate进行了封装
+    // 也可以注入JmsTemplate，JmsMessagingTemplate对JmsTemplate进行了封装
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
 
@@ -399,56 +405,137 @@ public class SendController {
      * 发送queue消息 ：http://127.0.0.1:8080/active/send?msg=ceshi1234
      * 发送topic 消息： http://127.0.0.1:8080/active/topic/send?msg=ceshi1234
      * 发送queue消息(延迟time毫秒) ：http://localhost:8080/active/test
-     * @param msg  消息
+     *
      * @param type url中参数,非必须
-     * @param time
-     * @return
+     * @param msg  消息
+     * @param time 延迟时间，单位毫秒
+     * @return 发送结果
      */
     @RequestMapping({"/send", "/{type}/send"})
-    public String send(@PathVariable(value = "type", required = false) String type, String msg, Long time) {
-        Destination destination = null;
-        if (type == null) {
-            type = "";
-        }
+    public R send(@PathVariable(value = "type", required = false) String type,
+                  @RequestParam("msg") String msg,
+                  @RequestParam(value = "time", required = false) Long time) {
+        try {
+            Destination destination;
+            if (type == null) {
+                type = "";
+            }
+            switch (type) {
+                case "topic":
+                    // 发送广播消息
+                    destination = new ActiveMQTopic("active.topic");
+                    break;
+                default:
+                    // 发送 队列消息
+                    destination = new ActiveMQQueue("active.queue");
+                    break;
+            }
 
-        switch (type) {
-            case "topic":
-                //发送广播消息
-                destination = new ActiveMQTopic("active.topic");
-                break;
-            default:
-                //发送 队列消息
-                destination = new ActiveMQQueue("active.queue");
-                break;
+            if (time != null && time > 0) {
+                // 发送延时消息
+                Map<String, Object> headers = new HashMap<>();
+                headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, time);
+                jmsMessagingTemplate.convertAndSend(destination, msg, headers);
+            } else {
+                // 发送普通消息
+                jmsMessagingTemplate.convertAndSend(destination, msg);
+            }
+            return R.success("消息发送成功");
+        } catch (Exception e) {
+            return R.error("消息发送失败：" + e.getMessage());
         }
-        return "activemq消息发送成功 队列消息：" + msg;
     }
-
 
     /**
      * 发送延时消息
      * 说明：延迟队列需要在 <broker>标签上增加属性 schedulerSupport="true"
-     * @return
+     *
+     * @return 发送结果
      */
     @GetMapping("/test")
-    public R test(){
+    public R test() {
+        try {
+            sendDelayedMessage("xiong5", 5000);
+            sendDelayedMessage("xiong10", 10000);
+            sendDelayedMessage("xiong15", 15000);
+            return R.success("延时消息发送成功");
+        } catch (Exception e) {
+            return R.error("延时消息发送失败：" + e.getMessage());
+        }
+    }
+
+    /**
+     * 发送延时消息的辅助方法
+     *
+     * @param name  消息内容
+     * @param delay 延迟时间，单位毫秒
+     */
+    private void sendDelayedMessage(String name, long delay) {
         Map<String, Object> headers = new HashMap<>();
-        //发送延迟队列，延迟5秒
-        headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, 1000 *5);
-        // 发送的数据实体
-        Map<String,String> map = new HashMap<>();
-        map.put("name","xiong");
-        // 发送消息 第一个参数是 订阅的名称
-        jmsMessagingTemplate.convertAndSend("active.queue", JSONObject.toJSONString(map), headers);
+        headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, delay);
+        Map<String, String> map = new HashMap<>();
+        map.put("name", name);
+        jmsMessagingTemplate.convertAndSend("active.queue", JSONUtil.toJsonStr(map), headers);
+    }
 
-        // 十秒后发送
-        headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, 1000 *10);
-        jmsMessagingTemplate.convertAndSend("active.queue", JSONObject.toJSONString(map), headers);
 
-        // 十五秒后发送
-        headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, 1000 *15);
-        jmsMessagingTemplate.convertAndSend("active.queue", JSONObject.toJSONString(map), headers);
-        return R.ok();
+
+
+
+
+
+    /**
+     * 发送消息在指定时间点发出
+     *
+     * @param type    url中参数,非必须
+     * @param msg     消息
+     * @param sendTime 指定的发送时间，格式：yyyy-MM-dd HH:mm:ss
+     * @return 发送结果
+     *
+     * http://127.0.0.1:8080/active/sendAtTime?msg=test&sendTime=2025-02-09 10:00:00
+     * http://127.0.0.1:8080/active/topic/sendAtTime?msg=test&sendTime=2025-02-09 10:00:00
+     */
+    @RequestMapping({"/sendAtTime", "/{type}/sendAtTime"})
+    public R sendAtTime(@PathVariable(value = "type", required = false) String type,
+                        @RequestParam("msg") String msg,
+                        @RequestParam("sendTime") String sendTime) {
+        try {
+            Destination destination;
+            if (type == null) {
+                type = "";
+            }
+            switch (type) {
+                case "topic":
+                    // 发送广播消息
+                    destination = new ActiveMQTopic("active.topic");
+                    break;
+                default:
+                    // 发送 队列消息
+                    destination = new ActiveMQQueue("active.queue");
+                    break;
+            }
+
+            // 解析指定的发送时间
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Date targetDate = sdf.parse(sendTime);
+            Date now = new Date();
+            long delay = targetDate.getTime() - now.getTime();
+
+            if (delay <= 0) {
+                return R.error("指定的时间已经过去，请选择一个未来的时间点");
+            }
+
+            // 发送延时消息
+            Map<String, Object> headers = new HashMap<>();
+            headers.put(ScheduledMessage.AMQ_SCHEDULED_DELAY, delay);
+            jmsMessagingTemplate.convertAndSend(destination, msg, headers);
+
+            return R.success("消息将在指定时间发送");
+        } catch (ParseException e) {
+            return R.error("时间格式错误，请使用 yyyy-MM-dd HH:mm:ss 格式");
+        } catch (Exception e) {
+            return R.error("消息发送失败：" + e.getMessage());
+        }
     }
 }
 ```
