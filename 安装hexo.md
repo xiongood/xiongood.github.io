@@ -8,6 +8,12 @@ npm uninstall hexo-cli -g
 
 hexo -version
 ```
+## 修改编译器
+```angular2html
+npm uninstall hexo-renderer-marked
+npm install hexo-renderer-markdown-it --save
+```
+
 ## 常用命令
 ```shell
 # 运行

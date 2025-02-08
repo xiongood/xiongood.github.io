@@ -73,6 +73,17 @@ http://localhost:8161/
 
 ![image-20230607162620537](https://img.myfox.fun/img/20230607162621.png)
 
+### 设置延时发送消息
+
+定时或者延时发送消息 需要开启此处，否则不生效，修改后需要重启服务
+
+修改conf目录下的 activemq.xml 文件，在broker 节点上新增schedulerSupport="true"
+
+```xml
+<broker xmlns="http://activemq.apache.org/schema/core" brokerName="localhost" dataDirectory="${activemq.data}" schedulerSupport="true">
+</broker>   
+```
+
 ## springboot整合mq
 
 ### pom
