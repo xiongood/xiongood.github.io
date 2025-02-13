@@ -12,7 +12,13 @@ tags:
 
 ## 说明
 
-软件的版本必须一致，否则会出现意想不到的问题
+<font color="red">注：软件的版本必须一致，否则会出现意想不到的问题</font>
+
+## Elasticsearch 和 JVM 版本对应关系
+
+```http
+https://www.elastic.co/cn/support/matrix#matrix_jvm
+```
 
 ## 下载地址
 
@@ -24,15 +30,21 @@ https://www.elastic.co/downloads/past-releases
 
 ### 安装 es
 
+<font color="red">目前使用7.16.3版本</font>
+
 - 下载解压
 
 - 修改配置文件【elasticsearch.yml】
 
+  <font color="red">注：使用8.17.1 版本，不用修改下面配置</font>
+
+  
+
   ```yml
   # 免认证
-  xpack.security.enabled:false
-  xpack.security.enrollment.enabled:false
-  xpack.security.transport.ssl.enabled:false
+  xpack.security.enabled: false
+  #xpack.security.enrollment.enabled: false
+  xpack.security.transport.ssl.enabled: false
   
   # 解决跨域（添加）
   http.cors.enabled: true
@@ -63,25 +75,27 @@ https://www.elastic.co/downloads/past-releases
 
   ```json
   {
-      "name": "XIONG",
-      "cluster_name": "elasticsearch",
-      "cluster_uuid": "a65wohquR1We8Y7jDo3UMA",
-      "version": {
-          "number": "8.6.1",
-          "build_flavor": "default",
-          "build_type": "zip",
-          "build_hash": "180c9830da956993e59e2cd70eb32b5e383ea42c",
-          "build_date": "2023-01-24T21:35:11.506992272Z",
-          "build_snapshot": false,
-          "lucene_version": "9.4.2",
-          "minimum_wire_compatibility_version": "7.17.0",
-          "minimum_index_compatibility_version": "7.0.0"
-      },
-      "tagline": "You Know, for Search"
+    "name" : "XIONG",
+    "cluster_name" : "elasticsearch",
+    "cluster_uuid" : "7666b60AR6S6NNuDcQruuw",
+    "version" : {
+      "number" : "7.16.3",
+      "build_flavor" : "default",
+      "build_type" : "zip",
+      "build_hash" : "4e6e4eab2297e949ec994e688dad46290d018022",
+      "build_date" : "2022-01-06T23:43:02.825887787Z",
+      "build_snapshot" : false,
+      "lucene_version" : "8.10.1",
+      "minimum_wire_compatibility_version" : "6.8.0",
+      "minimum_index_compatibility_version" : "6.0.0-beta1"
+    },
+    "tagline" : "You Know, for Search"
   }
   ```
 
-### 安装 ElasticSearch-head
+### 安装 ElasticSearch-head 可以不装
+
+ElasticSearch-head 是一个基于 Web 的 Elasticsearch 集群管理工具，它为 Elasticsearch 提供了图形化的用户界面，方便用户与 Elasticsearch 集群进行交互和管理
 
 - 安装node.js
 
@@ -118,6 +132,8 @@ https://www.elastic.co/downloads/past-releases
 
 ### 安装 kibana
 
+Kibana 是一款为 Elasticsearch 设计的开源数据可视化和探索工具，它与 Elasticsearch 紧密集成，为用户提供了强大的界面来分析、可视化和管理存储在 Elasticsearch 中的数据。
+
 - 下载
 
   ```http
@@ -128,30 +144,34 @@ https://www.elastic.co/downloads/past-releases
 
   ```sh
   # 更多配置信息，详见 https://www.elastic.co/guide/cn/kibana/current/settings.html
-      server.port: 5601
-      server.host: "127.0.0.1"
-      server.name: lqz
-      elasticsearch.hosts: ["http://localhost:9200/"]
+  server.port: 5601
+  server.host: "127.0.0.1"
+  server.name: lqz
+  elasticsearch.hosts: ["http://localhost:9200/"]
   ```
 
 - 启动
 
   ```sh
+  # 此过程有点慢
   ./bin/kibana
   ```
 
 - 访问
 
+  感觉有点慢，等了很久
+
   ```http
-  http://127.0.0.1:5601/app/kibana
+  http://localhost:5601
   ```
 
 - 查询页面
 
-  ![image-20230303093358454](D:/data/gitData/notes/notes/01-%E7%9F%A5%E8%AF%86%E5%BA%93/03-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%AF%87/es-elasticsearch/es-2023-02-13.assets/image-20230303093358454.png)
-
+  ![image-20250213101318474](http://img.myfox.fun/img/image-20250213101318474.png)
 
 ### 安装logstash
+
+它是一个开源的数据收集、处理和传输工具。
 
 - 下载(可能需要梯子)
 
@@ -179,7 +199,7 @@ https://www.elastic.co/downloads/past-releases
    output {
      elasticsearch {
        hosts => "localhost:9200"
-       index => "springboot-logstash-%{+YYYY.MM.dd}"
+       index => "springboot-logstash-%{+YYYY.MM.dd}" # es中的inde新名称 可以去掉后面的日期格式。
      }
    }
    
@@ -303,7 +323,6 @@ https://www.elastic.co/downloads/past-releases
   http://127.0.0.1:5601/app/dev_tools#/console
   ```
 
-  ![image-20230303105339877](D:/data/gitData/notes/notes/01-%E7%9F%A5%E8%AF%86%E5%BA%93/03-%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%AF%87/es-elasticsearch/es-2023-02-13.assets/image-20230303105339877.png)
 
 ## java 查询es中的日志
 
@@ -333,13 +352,124 @@ https://www.elastic.co/downloads/past-releases
               password:
   ```
 
+
+- DemoController.java
+
+  ```java
+  package fun.myfox.cleandemo.controller;
   
+  
+  import fun.myfox.cleandemo.entity.Log;
+  import fun.myfox.cleandemo.service.LogEntryRepository;
+  import fun.myfox.cleandemo.service.LogServiceImpl;
+  import fun.myfox.cleandemo.utils.R;
+  import lombok.extern.slf4j.Slf4j;
+  import org.springframework.beans.factory.annotation.Autowired;
+  import org.springframework.web.bind.annotation.GetMapping;
+  import org.springframework.web.bind.annotation.RequestMapping;
+  import org.springframework.web.bind.annotation.RestController;
+  
+  import java.io.IOException;
+  import java.util.Date;
+  
+  
+  /**
+   * @author 张一雄
+   */
+  @RestController
+  @RequestMapping("/demo")
+  @Slf4j
+  public class DemoController {
+  
+      @Autowired
+      LogServiceImpl logService;
+      @Autowired
+      private LogEntryRepository logEntryRepository;
+  
+  
+      // 查询方式1
+      @GetMapping("/query")
+      public R<Object> query() {
+          logService.query();
+          return R.success("success");
+      }
+  
+  
+      // 查询方式2
+      @GetMapping("/queryLog")
+      public R<Object> queryLog() throws IOException {
+          // 查询所有日志数据
+          Iterable<Log> allLogs = logEntryRepository.findAll();
+          for (Log allLog : allLogs) {
+              System.out.println(allLog.getPid());
+              System.out.println(allLog.getRest());
+          }
+  
+          // 根据日志级别查询
+          // 这里可以使用自定义查询方法或使用QueryBuilder构建复杂查询
+          return R.success("success");
+      }
+  
+  
+      // 创建index
+      @GetMapping("/checkAndCreateIndex")
+      public R<Object> checkAndCreateIndex() throws IOException {
+          logService.checkAndCreateIndex();
+          return R.success("success");
+      }
+  
+  
+      // 写入测试日志
+      @GetMapping("/writeLog")
+      public R<Object> writeLog() {
+          log.info("测试日志 info"+new Date().getTime());
+          log.error("测试日志 error"+new Date().getTime());
+          return R.success("success");
+      }
+  
+  }
+  
+  ```
+
+- 实体类Log
+
+  ```java
+  package fun.myfox.cleandemo.entity;
+  
+  import lombok.Data;
+  import lombok.ToString;
+  import org.springframework.data.annotation.Id;
+  import org.springframework.data.elasticsearch.annotations.Document;
+  import org.springframework.data.elasticsearch.annotations.Field;
+  import org.springframework.data.elasticsearch.annotations.FieldType;
+  
+  @Data
+  @ToString
+  // 这里的索引名要和实际的索引名一致,查询时的索引默认为 类名，可以通过此处进行修改
+  @Document(indexName = "springboot-logstash-2025.02.13")
+  public class Log {
+      private String severity;
+      private String service;
+      private String trace;
+      private String span;
+      @Field(type = FieldType.Keyword)
+      private String exportable;
+      @Id
+      private String pid;
+      private String thread;
+      private String rest;
+  }
+  
+  ```
 
 - service.java
 
   ```java
-  package com.pj.service;
-  import com.pj.entity.Log;
+  package fun.myfox.cleandemo.service;
+  
+  import fun.myfox.cleandemo.entity.Log;
+  import org.elasticsearch.client.RestHighLevelClient;
+  import org.elasticsearch.client.indices.CreateIndexResponse;
   import org.elasticsearch.index.query.MatchAllQueryBuilder;
   import org.elasticsearch.index.query.QueryBuilders;
   import org.elasticsearch.search.sort.FieldSortBuilder;
@@ -357,6 +487,10 @@ https://www.elastic.co/downloads/past-releases
   import org.springframework.stereotype.Service;
   import java.util.ArrayList;
   import java.util.List;
+  import org.elasticsearch.client.indices.CreateIndexRequest;
+  import org.elasticsearch.client.indices.GetIndexRequest;
+  import org.elasticsearch.client.RequestOptions;
+  import java.io.IOException;
   
   @Service
   public class LogServiceImpl {
@@ -364,18 +498,20 @@ https://www.elastic.co/downloads/past-releases
       @Autowired
       private ElasticsearchRestTemplate elasticsearchRestTemplate;
   
-      public Object test(){
+  
+      // 查询数据
+      public Object query(){
           // 构建查询条件(搜索全部)
           MatchAllQueryBuilder queryBuilder1 = QueryBuilders.matchAllQuery();
           // 分页
           Pageable pageable = PageRequest.of(0, 5);
           // 排序
-          //FieldSortBuilder balance = new FieldSortBuilder("pid").order(SortOrder.DESC);
+          FieldSortBuilder balance = new FieldSortBuilder("pid").order(SortOrder.DESC);
           // 执行查询
           NativeSearchQuery query = new NativeSearchQueryBuilder()
                   .withQuery(queryBuilder1)
                   .withPageable(pageable)
-                  //.withSort(balance)
+                  .withSort(balance)
                   .build();
           SearchHits<Log> searchHits = elasticsearchRestTemplate.search(query, Log.class);
   
@@ -390,23 +526,180 @@ https://www.elastic.co/downloads/past-releases
           System.out.println(page.getTotalElements());
           return new Object();
       }
+  
+  
+      @Autowired
+      private RestHighLevelClient restHighLevelClient;
+  
+      // 检查并创建索引
+      public void checkAndCreateIndex() throws IOException {
+          String indexName = "log"; // 这里要和你实体类对应的索引名一致
+          GetIndexRequest getIndexRequest = new GetIndexRequest(indexName);
+          boolean exists = restHighLevelClient.indices().exists(getIndexRequest, RequestOptions.DEFAULT);
+          if (!exists) {
+              CreateIndexRequest createIndexRequest = new CreateIndexRequest(indexName);
+              CreateIndexResponse createIndexResponse = restHighLevelClient.indices().create(createIndexRequest, RequestOptions.DEFAULT);
+              if (!createIndexResponse.isAcknowledged()) {
+                  throw new RuntimeException("Failed to create index: " + indexName);
+              }
+          }
+      }
   }
   
   ```
 
   
 
+- service2.java
+
+  ```java
+  package fun.myfox.cleandemo.service;
+  
+  import fun.myfox.cleandemo.entity.Log;
+  import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
+  
+  public interface LogEntryRepository extends ElasticsearchRepository<Log, String> {
+  }
+  ```
+
+- R.java
+
+  ```java
+  package fun.myfox.cleandemo.utils;
+  
+  import lombok.Data;
+  
+  /**
+   * @author 张一雄
+   */
+  @Data
+  public class R<T> {
+  
+      private String code;
+      private String message;
+      private T data;
+  
+      public R(String code, T data, String message) {
+          this.code = code;
+          this.message = message;
+          this.data = data;
+      }
+  
+      public static <T> R<T> success(T data) {
+          return new R<>(StatusCode.SUCCESS, data, "success");
+      }
+  
+      public static <T> R<T> error(String message) {
+          return new R<>(StatusCode.ERROR, null, message);
+      }
+  
+  }
+  
+  ```
+
+- StatusCode.java
+
+  ```java
+  package fun.myfox.cleandemo.utils;
+  
+  public class StatusCode {
+  
+      public static final String SUCCESS = "200";
+      public static final String ERROR = "500";
+  
+  }
+  
+  ```
+
+  
+
+## kibana 查询
+
+```txt
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+# 分页查询
+GET /springboot-logstash-2025.02.13/_search
+{
+
+    "query": {
+
+        "match_all": {}
+
+    },
+    "size": 100
+
+}
+
+# 创建时间倒序查询
+GET /springboot-logstash-2025.02.13/_search
+{
+    "query": {
+        "match_all": {}
+    },
+    "size": 100,
+    "sort": [
+        {
+            "@timestamp": {
+                "order": "desc"
+            }
+        }
+    ]
+}
+
+
+# 根据某字段 模糊查询
+GET /springboot-logstash-2025.02.13/_search
+{
+    "query": {
+        "match": {
+            "rest": "测试"
+        }
+    }
+}
+
+# 高亮显示
+GET /springboot-logstash-2025.02.13/_search
+{
+    "query": {
+        "match": {
+            "rest": "测试"
+        }
+    },
+    "highlight": {
+        "fields": {
+            "rest": {}
+        }
+    }
+}
+
+
+GET /springboot_logs/_search
+{
+
+    "query": {
+
+        "match_all": {}
+
+    }
+
+}
+```
 
 
 
+## 面试题
 
+持久化？
 
+集群？
 
-
-
-
-
-
+性能？
 
 
 

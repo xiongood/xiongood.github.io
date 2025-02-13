@@ -9,8 +9,25 @@ npm uninstall hexo-cli -g
 hexo -version
 ```
 
+## 修改环境
+
+![image-20250213123757314](http://img.myfox.fun/img/image-20250213123757314.png)
+
+```json
+const map = {
+  '&#39;': '\'',
+  '&amp;': '&',
+  '&gt;': '>',
+  '&lt;': '<',
+  '&quot;': '"',
+  '&#123;': '{',
+  '&#125;': '}'
+};
+
+```
 
 ## 常用命令
+
 ```shell
 # 运行
 hexo s
