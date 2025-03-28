@@ -102,6 +102,18 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 ![image-20230418224018582](https://img.myfox.fun/img/image-20230418224018582.png)
 
+### 设置自定义短语
+
+设置自动打印当前日期格式，自定义短语设置，加入“#$year年$month_mm月$day_dd日 星期$weekday_cn”，之后输入xq 则出现当前日期
+
+```txt
+#$year年$month_mm月$day_dd日 星期$weekday_cn
+```
+
+![image-20250305093547992](http://img.myfox.fun/img/image-20250305093547992.png)
+
+![image-20250305093634971](http://img.myfox.fun/img/image-20250305093634971.png)
+
 ## 设置开机启动
 
 ### 设置
