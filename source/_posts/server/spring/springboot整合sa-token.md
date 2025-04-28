@@ -1,6 +1,6 @@
 ---
 title: springboot整合sa-token
-img: https://img.myfox.fun/img/satoken.jpg
+img: https://gitee.com/xiongood/image/raw/master/satoken.jpg
 categories:
  - 后端
 tags:
@@ -26,7 +26,7 @@ springSecurity，用的都是各种自定义的过滤器，对于新手来说，
 
 ### 设计图
 
-![image-20230511095101617](https://img.myfox.fun/img/20230511095102.png)
+![image-20230511095101617](https://gitee.com/xiongood/image/raw/master/20230511095102.png)
 
 ### sql
 
@@ -135,7 +135,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 https://gitee.com/erhu02/demo
 ```
 
-![image-20230511172412894](https://img.myfox.fun/img/20230511172413.png)
+![image-20230511172412894](https://gitee.com/xiongood/image/raw/master/20230511172413.png)
 
 ## 实现登录认证
 
@@ -511,11 +511,11 @@ GET http://localhost:8080/test/count
 
 测试 postman中已经有了 cookies信息
 
-![image-20230511185825257](https://img.myfox.fun/img/20230511185826.png)
+![image-20230511185825257](https://gitee.com/xiongood/image/raw/master/20230511185826.png)
 
 如果没有cookies,则写下请求头中也可以通过认证
 
-![image-20230511185905431](https://img.myfox.fun/img/20230511185906.png)
+![image-20230511185905431](https://gitee.com/xiongood/image/raw/master/20230511185906.png)
 
 
 

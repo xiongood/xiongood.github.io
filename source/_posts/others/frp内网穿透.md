@@ -2,7 +2,7 @@
 title: frp内网穿透
 author: 张一雄
 summary: 好多的内网穿透工具都收费的，有的被挡在了网络长城外面，这个也得又一个云服务器才能使用！
-img: https://img.myfox.fun/img/frp.jpg
+img: https://gitee.com/xiongood/image/raw/master/frp.jpg
 categories:
  - 周边
 tags:
@@ -164,8 +164,3 @@ systemctl enable frps
   ```sh
   ./frpc -c ./frpc.ini
   ```
-
-- 访问
-
-  ![image-20230403155723477](https://raw.githubusercontent.com/xiongblhttps://img.myfox.fun/img/main/blogimage-20230403155723477.png)
-

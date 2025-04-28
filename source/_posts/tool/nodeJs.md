@@ -2,7 +2,7 @@
 title: nodejs的使用
 author: 张一雄
 summary: 我们前端程序员所依赖的开发运行工具！
-img: https://img.myfox.fun/img/nodejs.jpg
+img: https://gitee.com/xiongood/image/raw/master/nodejs.jpg
 categories:
  - 工具
 tags:
@@ -21,9 +21,9 @@ https://nodejs.org/zh-cn
 https://nodejs.org/en/download/releases
 ```
 
-![image-20230518101259936](https://img.myfox.fun/img/20230518101301.png)
+![image-20230518101259936](https://gitee.com/xiongood/image/raw/master/20230518101301.png)
 
-![image-20230518101349322](https://img.myfox.fun/img/20230518101350.png)
+![image-20230518101349322](https://gitee.com/xiongood/image/raw/master/20230518101350.png)
 
 直接安装
 
@@ -107,7 +107,7 @@ nvm use 16.20.0
 
 #### 常用命令
 
-![image-20230517181008038](https://img.myfox.fun/img/20230517181009.png)
+![image-20230517181008038](https://gitee.com/xiongood/image/raw/master/20230517181009.png)
 
 ## linux
 

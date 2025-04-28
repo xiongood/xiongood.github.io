@@ -1,6 +1,6 @@
 ---
 title: AOP失效场景
-img: https://img.myfox.fun/img/spring.jpg
+img: https://gitee.com/xiongood/image/raw/master/spring.jpg
 categories:
  - 后端
 tags:

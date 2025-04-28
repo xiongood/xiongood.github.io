@@ -1,7 +1,7 @@
 ---
 title: docker安装oracle12C
 summary: 感觉如果手动安装oracle实在是太费劲了，所以偷懒用了dockers，学习测试使用
-img: https://img.myfox.fun/img/oracle.jpg
+img: https://gitee.com/xiongood/image/raw/master/oracle.jpg
 categories:
  - 数据库
 tags:
@@ -58,7 +58,7 @@ SQL> grant sysdba to system;
 
 ### idea
 
-![image-20230829142129995](https://img.myfox.fun/img/20230829142131.png)
+![image-20230829142129995](https://gitee.com/xiongood/image/raw/master/20230829142131.png)
 
 ```shell
 账户：system
@@ -80,8 +80,8 @@ xe =
   )
 ```
 
-![image-20230829143848859](https://img.myfox.fun/img/20230829143850.png)
+![image-20230829143848859](https://gitee.com/xiongood/image/raw/master/20230829143850.png)
 
 登录
 
-![image-20230829143943869](https://img.myfox.fun/img/20230829143944.png)
+![image-20230829143943869](https://gitee.com/xiongood/image/raw/master/20230829143944.png)

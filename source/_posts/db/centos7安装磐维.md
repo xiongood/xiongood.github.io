@@ -1,6 +1,6 @@
 ---
 title: centos7安装磐维数据库
-img: https://img.myfox.fun/img/panwei.jpg
+img: https://gitee.com/xiongood/image/raw/master/panwei.jpg
 categories:
  - 数据库
 tags:
@@ -459,7 +459,7 @@ gsql -U testuser -d panweidb -p 17700 -h localhost
 
 新建驱动
 
-![image-20240904095800848](https://img.myfox.fun/img/image-20240904095800848.png)
+![image-20240904095800848](https://gitee.com/xiongood/image/raw/master/image-20240904095800848.png)
 
 创建链接
 
@@ -467,7 +467,7 @@ gsql -U testuser -d panweidb -p 17700 -h localhost
 jdbc:panweidb://192.168.159.128:17700/panweidb
 ```
 
-![image-20240904095834791](https://img.myfox.fun/img/image-20240904095834791.png)
+![image-20240904095834791](https://gitee.com/xiongood/image/raw/master/image-20240904095834791.png)
 
 #### 报错
 
@@ -475,4 +475,4 @@ jdbc:panweidb://192.168.159.128:17700/panweidb
 [0A000][9684] org.panweidb.util.PSQLException: ERROR: units "epoch" not supported 在位置：referenced column: startup_time.
 ```
 
-![image-20240904095918040](https://img.myfox.fun/img/image-20240904095918040.png)
+![image-20240904095918040](https://gitee.com/xiongood/image/raw/master/image-20240904095918040.png)

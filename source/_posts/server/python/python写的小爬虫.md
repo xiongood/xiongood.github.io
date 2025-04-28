@@ -1,6 +1,6 @@
 ---
 title: python写的小爬虫
-img: https://img.myfox.fun/img/python.jpg
+img: https://gitee.com/xiongood/image/raw/master/python.jpg
 author: 张一雄
 summary: 爬取壁纸网站
 categories:

@@ -2,7 +2,7 @@
 title: 使用Cloudreve搭建私人网盘
 author: 张一雄
 summary: 随着阿里网盘的限速，我找到了这个私人网盘工具，不过网盘的尽头应该是NAS吧。
-img: https://img.myfox.fun/img/cloudreve.jpg
+img: https://gitee.com/xiongood/image/raw/master/cloudreve.jpg
 categories:
  - 周边
 tags:

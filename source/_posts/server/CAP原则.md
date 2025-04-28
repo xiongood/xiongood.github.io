@@ -2,7 +2,7 @@
 title: CAP原则
 author: 张一雄
 summary: 理论性质的东西，希望可以帮助到大家
-img: https://img.myfox.fun/img/cap.jpg
+img: https://gitee.com/xiongood/image/raw/master/cap.jpg
 categories:
  - 后端
 tags:

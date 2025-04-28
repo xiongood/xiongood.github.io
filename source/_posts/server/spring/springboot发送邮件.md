@@ -1,6 +1,6 @@
 ---
 title: springboot发送邮件
-img: https://img.myfox.fun/img/springboot.jpg
+img: https://gitee.com/xiongood/image/raw/master/springboot.jpg
 categories:
  - 后端
 tags:
@@ -47,9 +47,9 @@ spring:
 
 密码不是登录密码，获取方式：
 
-![image-20230510183446216](https://img.myfox.fun/img/20230510183447.png)
+![image-20230510183446216](https://gitee.com/xiongood/image/raw/master/20230510183447.png)
 
-![image-20230510183505194](https://img.myfox.fun/img/20230510183506.png)
+![image-20230510183505194](https://gitee.com/xiongood/image/raw/master/20230510183506.png)
 
 ### 接口
 
@@ -340,11 +340,11 @@ public class EmailController {
 
 ### 目录结构
 
-![image-20230510183815242](https://img.myfox.fun/img/20230510183816.png)
+![image-20230510183815242](https://gitee.com/xiongood/image/raw/master/20230510183816.png)
 
 ## 测试
 
-![image-20230510183918249](https://img.myfox.fun/img/20230510183919.png)
+![image-20230510183918249](https://gitee.com/xiongood/image/raw/master/20230510183919.png)
 
 
 

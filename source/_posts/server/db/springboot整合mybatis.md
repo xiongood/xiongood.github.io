@@ -1,6 +1,6 @@
 ---
 title: springboot整合mybatis
-img: https://img.myfox.fun/img/mybatis.jpg
+img: https://gitee.com/xiongood/image/raw/master/mybatis.jpg
 categories:
  - 后端
 tags:

@@ -1,6 +1,6 @@
 ---
 title: html常用方法
-img: https://img.myfox.fun/img/html.jpg
+img: https://gitee.com/xiongood/image/raw/master/html.jpg
 categories:
  - 前端
 tags:

@@ -1,6 +1,6 @@
 ---
 title: python常用方法
-img: https://img.myfox.fun/img/python.jpg
+img: https://gitee.com/xiongood/image/raw/master/python.jpg
 author: 张一雄
 summary: 人生苦短，我用python
 categories:

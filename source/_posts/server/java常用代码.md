@@ -2,7 +2,7 @@
 title: java常用代码
 author: 张一雄
 summary: 简单的elk的实现，方便理解其运行过程及实现原理！
-img: https://img.myfox.fun/img/java.jpg
+img: https://gitee.com/xiongood/image/raw/master/java.jpg
 categories:
  - 后端
 tags:

@@ -1,6 +1,6 @@
 ---
 title: springboot拦截器、过滤器的使用
-img: https://img.myfox.fun/img/springboot.jpg
+img: https://gitee.com/xiongood/image/raw/master/springboot.jpg
 categories:
  - 后端
 tags:
@@ -12,7 +12,7 @@ tags:
 
 二者区别：
 
-![image-20230428102735175](https://img.myfox.fun/img/20230428102736.png)
+![image-20230428102735175](https://gitee.com/xiongood/image/raw/master/20230428102736.png)
 
 ### 过滤器
 
@@ -122,7 +122,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
         // 对所有访问路径，都通过MyInterceptor类型的拦截器进行拦截
         registry.addInterceptor(new MyInterceptor()).addPathPatterns("/**")
-                .excludePathPatterns("/login", "/index.html", "/user/login", "/css/**",https://img.myfox.fun/img/**", "/js/**", "/fonts/**");
+                .excludePathPatterns("/login", "/index.html", "/user/login", "/css/**",https://gitee.com/xiongood/image/raw/master/**", "/js/**", "/fonts/**");
         //放行登录页，登陆操作，静态资源
     }
 }

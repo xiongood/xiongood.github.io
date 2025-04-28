@@ -2,7 +2,7 @@
 title: springboot整合swagger
 author: 张一雄
 summary: 调试工具，但是现在springboot3.0现在还不能使用哦
-img: https://img.myfox.fun/img/springboot.jpg
+img: https://gitee.com/xiongood/image/raw/master/springboot.jpg
 categories:
  - 后端
 tags:

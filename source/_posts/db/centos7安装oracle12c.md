@@ -2,7 +2,7 @@
 title: linux安装oracle 12c
 author: 张一雄
 summary: oracle
-img: https://img.myfox.fun/img/oracle.jpg
+img: https://gitee.com/xiongood/image/raw/master/oracle.jpg
 categories:
  - 周边
 tags:
@@ -381,7 +381,7 @@ select status from v$instance;
 # 如图数据库创建成功
 ```
 
-![image-20240906154821556](https://img.myfox.fun/img/image-20240906154821556.png)
+![image-20240906154821556](https://gitee.com/xiongood/image/raw/master/image-20240906154821556.png)
 
 ## 配置监听
 
@@ -392,7 +392,7 @@ select status from v$instance;
 netca -silent -responseFile /home/oracle/database/response/netca.rsp
 ```
 
-![image-20240906154947110](https://img.myfox.fun/img/image-20240906154947110.png)
+![image-20240906154947110](https://gitee.com/xiongood/image/raw/master/image-20240906154947110.png)
 
 ### 修改端口
 
@@ -411,7 +411,7 @@ lsnrctl stop
 
 将localhost改成0.0.0.0 则外网可以访问
 
-![image-20240906155539811](https://img.myfox.fun/img/image-20240906155539811.png)
+![image-20240906155539811](https://gitee.com/xiongood/image/raw/master/image-20240906155539811.png)
 
 ## 远程链接
 
@@ -419,7 +419,7 @@ lsnrctl stop
 lsnrctl stop && lsnrctl start
 ```
 
-![image-20240906161337686](https://img.myfox.fun/img/image-20240906161337686.png)
+![image-20240906161337686](https://gitee.com/xiongood/image/raw/master/image-20240906161337686.png)
 
 ## 开机自动启动
 

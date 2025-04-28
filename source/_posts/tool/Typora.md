@@ -2,7 +2,7 @@
 title: Typora常用设置
 author: 张一雄
 summary: 文本神器！
-img: https://img.myfox.fun/img/typora.jpg
+img: https://gitee.com/xiongood/image/raw/master/typora.jpg
 categories:
  - 工具
 tags:
@@ -14,19 +14,19 @@ tags:
 
 打开网站
 
-![image-20230614175750873](https://img.myfox.fun/img/20230614175752.png)
+![image-20230614175750873](https://gitee.com/xiongood/image/raw/master/20230614175752.png)
 
 选择主题
 
-![image-20230614175925162](https://img.myfox.fun/img/20230614175926.png)
+![image-20230614175925162](https://gitee.com/xiongood/image/raw/master/20230614175926.png)
 
 打开后，将css保存到主题文件夹
 
-![image-20230614180102574](https://img.myfox.fun/img/20230614180103.png)
+![image-20230614180102574](https://gitee.com/xiongood/image/raw/master/20230614180103.png)
 
 选择相应的主题
 
-![image-20230810155608062](https://img.myfox.fun/img/20230810155609.png)
+![image-20230810155608062](https://gitee.com/xiongood/image/raw/master/20230810155609.png)
 
 ## Typora+cloudflare图床
 
@@ -45,7 +45,7 @@ goto :eof
 - 将main.exe放到一个文件夹下
 - 配置Typora图片
 
-![image-20240820111919217](https://img.myfox.fun/img/image-20240820111919217.png)
+![image-20240820111919217](https://gitee.com/xiongood/image/raw/master/image-20240820111919217.png)
 
 ## Typora+PicGo-Core+gitee图床搭配使用
 
@@ -53,7 +53,7 @@ goto :eof
 
 下载过程可能比较慢，最好有个梯子
 
-![image-20230420142444640](https://img.myfox.fun/img/20230420142445.png)
+![image-20230420142444640](https://gitee.com/xiongood/image/raw/master/20230420142445.png)
 
 ```json
 {
@@ -87,7 +87,7 @@ cd C:\Users\jaymie\AppData\Roaming\Typora\picgo\win64
 .\picgo.exe install super-prefix
 ```
 
-![image-20230420142909659](https://img.myfox.fun/img/20230420142910.png)
+![image-20230420142909659](https://gitee.com/xiongood/image/raw/master/20230420142910.png)
 
 ### 测试
 

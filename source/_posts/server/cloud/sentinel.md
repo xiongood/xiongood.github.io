@@ -1,6 +1,6 @@
 ---
 title: sentinel的简单使用
-img: https://img.myfox.fun/img/sentinel.jpg
+img: https://gitee.com/xiongood/image/raw/master/sentinel.jpg
 categories:
  - 后端
 tags:
@@ -174,11 +174,11 @@ public class TestController {
 
 配置美秒请求次数超过一，则报错
 
-![image-20230529164233926](https://img.myfox.fun/img/20230529164235.png)
+![image-20230529164233926](https://gitee.com/xiongood/image/raw/master/20230529164235.png)
 
 ### 测试
 
-![image-20230529164327298](https://img.myfox.fun/img/20230529164328.png)
+![image-20230529164327298](https://gitee.com/xiongood/image/raw/master/20230529164328.png)
 
 ## 配置持久化
 
@@ -199,7 +199,7 @@ public class TestController {
 ]
 ```
 
-![image-20230529164452579](https://img.myfox.fun/img/20230529164453.png)
+![image-20230529164452579](https://gitee.com/xiongood/image/raw/master/20230529164453.png)
 
 ### 测试
 
@@ -213,7 +213,7 @@ public class TestController {
 
 ### 测试熔断
 
-![image-20230529165058041](https://img.myfox.fun/img/20230529165059.png)
+![image-20230529165058041](https://gitee.com/xiongood/image/raw/master/20230529165059.png)
 
 ### 在nacos新增熔断规则
 
@@ -244,10 +244,10 @@ public class TestController {
 
 #### nacos新增配置文件
 
-![image-20230529171542454](https://img.myfox.fun/img/20230529171543.png)
+![image-20230529171542454](https://gitee.com/xiongood/image/raw/master/20230529171543.png)
 
 ### json如何编写
 
 在页面上可以找到
 
-![image-20230529171729159](https://img.myfox.fun/img/20230529171730.png)
+![image-20230529171729159](https://gitee.com/xiongood/image/raw/master/20230529171730.png)

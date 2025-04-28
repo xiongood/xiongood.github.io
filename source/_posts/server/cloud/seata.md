@@ -1,6 +1,6 @@
 ---
 title: seata的简单使用
-img: https://img.myfox.fun/img/seata.jpg
+img: https://gitee.com/xiongood/image/raw/master/seata.jpg
 categories:
  - 后端
 tags:
@@ -21,7 +21,7 @@ tags:
 https://github.com/seata/seata/releases/tag/v1.3.0
 ```
 
-![image-20230614140448345](https://img.myfox.fun/img/20230614140449.png)
+![image-20230614140448345](https://gitee.com/xiongood/image/raw/master/20230614140449.png)
 
 ### 配置数据库
 
@@ -29,7 +29,7 @@ https://github.com/seata/seata/releases/tag/v1.3.0
 
 创建seata库
 
-![image-20230614140642862](https://img.myfox.fun/img/20230614140643.png)
+![image-20230614140642862](https://gitee.com/xiongood/image/raw/master/20230614140643.png)
 
 ```sql
 -- -------------------------------- The script used when storeMode is 'db' --------------------------------
@@ -115,9 +115,9 @@ CREATE TABLE `undo_log` (
 
 主要是将数据库换为db
 
-![image-20230614142153911](https://img.myfox.fun/img/20230614142154.png)
+![image-20230614142153911](https://gitee.com/xiongood/image/raw/master/20230614142154.png)
 
-![image-20230614142122792](https://img.myfox.fun/img/20230614142123.png)
+![image-20230614142122792](https://gitee.com/xiongood/image/raw/master/20230614142123.png)
 
 完整版如下：
 
@@ -185,15 +185,15 @@ store {
 
 19e11a82-91ea-4d16-8dfc-fa989e748c83
 
-![image-20230614143747718](https://img.myfox.fun/img/20230614143748.png)
+![image-20230614143747718](https://gitee.com/xiongood/image/raw/master/20230614143748.png)
 
 #### 修改配置registry.conf
 
 此处直接修改了 配置中心和注册中心的 配置
 
-![image-20230614143934142](https://img.myfox.fun/img/20230614143935.png)
+![image-20230614143934142](https://gitee.com/xiongood/image/raw/master/20230614143935.png)
 
-![image-20230614153628255](https://img.myfox.fun/img/20230614153629.png)
+![image-20230614153628255](https://gitee.com/xiongood/image/raw/master/20230614153629.png)
 
 ```shell
 registry {
@@ -293,7 +293,7 @@ config {
 
 ##### 修改配置(执行时将注释去掉)
 
-![image-20230614144759044](https://img.myfox.fun/img/20230614144800.png)
+![image-20230614144759044](https://gitee.com/xiongood/image/raw/master/20230614144800.png)
 
 完整的配置如下：（执行时去掉注释）
 
@@ -395,7 +395,7 @@ sh nacos-config.sh -h 140.143.225.240 -p 8848 -g SEATA_GROUP -t 19e11a82-91ea-4d
 
 修改完后如下：
 
-![image-20230614153346404](https://img.myfox.fun/img/20230614153347.png)
+![image-20230614153346404](https://gitee.com/xiongood/image/raw/master/20230614153347.png)
 
 #### 修改配置
 
@@ -407,11 +407,11 @@ sh nacos-config.sh -h 140.143.225.240 -p 8848 -g SEATA_GROUP -t 19e11a82-91ea-4d
 seata-server.bat
 ```
 
-![image-20230614150927036](https://img.myfox.fun/img/20230614150928.png)
+![image-20230614150927036](https://gitee.com/xiongood/image/raw/master/20230614150928.png)
 
 启动后
 
-![image-20230614151522749](https://img.myfox.fun/img/20230614151523.png)
+![image-20230614151522749](https://gitee.com/xiongood/image/raw/master/20230614151523.png)
 
 ## 客户端整合seata
 

@@ -17,9 +17,9 @@ https://github.com/Genymobile/scrcpy
 
 ### 手机需要开启的功能
 
-![image-20241102133401986](https://img.myfox.fun/img/image-20241102133401986.png)
+![image-20241102133401986](https://gitee.com/xiongood/image/raw/master/image-20241102133401986.png)
 
-![image-20241102134333969](https://img.myfox.fun/img/image-20241102134333969.png)
+![image-20241102134333969](https://gitee.com/xiongood/image/raw/master/image-20241102134333969.png)
 
 ### 启动命令
 
@@ -35,7 +35,7 @@ scrcpy
 
 ### 安装插件
 
-![image-20241102142238240](https://img.myfox.fun/img/image-20241102142238240.png)
+![image-20241102142238240](https://gitee.com/xiongood/image/raw/master/image-20241102142238240.png)
 
 ### 启动命令
 
@@ -45,13 +45,13 @@ scrcpy
 
 ctrl + shift+p
 
-![image-20241102144505436](https://img.myfox.fun/img/image-20241102144505436.png)
+![image-20241102144505436](https://gitee.com/xiongood/image/raw/master/image-20241102144505436.png)
 
-![image-20241102144624981](https://img.myfox.fun/img/image-20241102144624981.png)
+![image-20241102144624981](https://gitee.com/xiongood/image/raw/master/image-20241102144624981.png)
 
 ### 常用命令
 
-![image-20241102145004052](https://img.myfox.fun/img/image-20241102145004052.png)
+![image-20241102145004052](https://gitee.com/xiongood/image/raw/master/image-20241102145004052.png)
 
 ## 常用语法
 
@@ -108,4 +108,4 @@ toast('xiong')
 
 ### 包不打印日志
 
-![image-20241102191057962](https://img.myfox.fun/img/image-20241102191057962.png)
+![image-20241102191057962](https://gitee.com/xiongood/image/raw/master/image-20241102191057962.png)

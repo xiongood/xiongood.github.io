@@ -1,7 +1,7 @@
 ---
 title: oracle常用sql
 summary: oracle常用sql，持续更新
-img: https://img.myfox.fun/img/oracle.jpg
+img: https://gitee.com/xiongood/image/raw/master/oracle.jpg
 categories:
  - 数据库
 tags:
@@ -324,7 +324,7 @@ https://blog.csdn.net/qq_45040372/article/details/128469659
 select * from dba_directories;
 ```
 
-![image-20230717093917586](https://img.myfox.fun/img/20230717093918.png)
+![image-20230717093917586](https://gitee.com/xiongood/image/raw/master/20230717093918.png)
 
 打开cmd终端
 

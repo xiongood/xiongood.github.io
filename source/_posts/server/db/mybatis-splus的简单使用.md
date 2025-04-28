@@ -1,6 +1,6 @@
 ---
 title: mybatis-plus的简单使用
-img: https://img.myfox.fun/img/mybatis.jpg
+img: https://gitee.com/xiongood/image/raw/master/mybatis.jpg
 categories:
  - 后端
 tags:
@@ -54,9 +54,9 @@ mybatis-plus:
 
 ### 代码生成
 
-![image-20230306180652311](https://img.myfox.fun/img/image-20230306180652311.png)
+![image-20230306180652311](https://gitee.com/xiongood/image/raw/master/image-20230306180652311.png)
 
-![image-20230306180726894](https://img.myfox.fun/img/image-20230306180726894.png)
+![image-20230306180726894](https://gitee.com/xiongood/image/raw/master/image-20230306180726894.png)
 
 ## 常用
 
