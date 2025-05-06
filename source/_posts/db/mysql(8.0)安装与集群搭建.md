@@ -1,6 +1,6 @@
 ---
 title: mysql(8.0)的安装及集群搭建
-img: https://gitee.com/xiongood/image/raw/master/mysql.jpg
+img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:
@@ -25,11 +25,11 @@ https://www.mysql.com/
 
 - 划到最下面
 
-![image-20230420214245838](https://gitee.com/xiongood/image/raw/master/20230420214247.png)
+![image-20230420214245838](https://img.myfox.fun/img/20230420214247.png)
 
-![image-20230420220711413](https://gitee.com/xiongood/image/raw/master/20230420220712.png)
+![image-20230420220711413](https://img.myfox.fun/img/20230420220712.png)
 
-![image-20230420214807804](https://gitee.com/xiongood/image/raw/master/20230420214809.png)
+![image-20230420214807804](https://img.myfox.fun/img/20230420214809.png)
 
 - 下载地址：
 
@@ -275,7 +275,7 @@ show MASTER STATUS;
 -- 1063 为当前日志位置
 ```
 
-![image-20230420235342622](https://gitee.com/xiongood/image/raw/master/20230420235343.png)
+![image-20230420235342622](https://img.myfox.fun/img/20230420235343.png)
 
 ### 配置slave
 

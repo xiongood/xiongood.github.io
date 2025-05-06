@@ -1,7 +1,7 @@
 ---
 title: docker的安装与使用
 summary: 有了docker，就可以偷懒了，安装电脑软件的时候，再也不用手写各种配置了！
-img: https://gitee.com/xiongood/image/raw/master/docker.jpg
+img: https://img.myfox.fun/img/docker.jpg
 categories:
  - 工具
 tags:
@@ -66,9 +66,9 @@ service docker stop
 https://www.aliyun.com/
 ```
 
-![image-20230615151944172](https://gitee.com/xiongood/image/raw/master/20230615151945.png)
+![image-20230615151944172](https://img.myfox.fun/img/20230615151945.png)
 
-![image-20230615152120708](https://gitee.com/xiongood/image/raw/master/20230615152121.png)
+![image-20230615152120708](https://img.myfox.fun/img/20230615152121.png)
 
 ### 配置
 
@@ -136,7 +136,7 @@ service docker start
 docker info
 ```
 
-![image-20230615153237805](https://gitee.com/xiongood/image/raw/master/20230615153238.png)
+![image-20230615153237805](https://img.myfox.fun/img/20230615153238.png)
 
 ## 常用命令
 
@@ -221,13 +221,13 @@ systemctl restart docker
 http://192.168.1.58:2375/version
 ```
 
-![image-20230615163049661](https://gitee.com/xiongood/image/raw/master/20230615163050.png)
+![image-20230615163049661](https://img.myfox.fun/img/20230615163050.png)
 
 ### idea配置
 
-![image-20230615163331382](https://gitee.com/xiongood/image/raw/master/20230615163332.png)
+![image-20230615163331382](https://img.myfox.fun/img/20230615163332.png)
 
-![image-20230615163511717](https://gitee.com/xiongood/image/raw/master/20230615163512.png)
+![image-20230615163511717](https://img.myfox.fun/img/20230615163512.png)
 
 
 
@@ -450,27 +450,27 @@ CMD java -jar demo-docker-1.jar ## 启动命令
 
 
 
-![image-20230615170606973](https://gitee.com/xiongood/image/raw/master/20230615170608.png)
+![image-20230615170606973](https://img.myfox.fun/img/20230615170608.png)
 
 ### 查看
 
 已经有了该镜像
 
-![image-20230615165154420](https://gitee.com/xiongood/image/raw/master/20230615165155.png)
+![image-20230615165154420](https://img.myfox.fun/img/20230615165155.png)
 
 
 
 ### 启动容器
 
-![image-20230615170705036](https://gitee.com/xiongood/image/raw/master/20230615170706.png)
+![image-20230615170705036](https://img.myfox.fun/img/20230615170706.png)
 
-![image-20230615172021720](https://gitee.com/xiongood/image/raw/master/20230615172022.png)
+![image-20230615172021720](https://img.myfox.fun/img/20230615172022.png)
 
-![image-20230615172107289](https://gitee.com/xiongood/image/raw/master/20230615172108.png)
+![image-20230615172107289](https://img.myfox.fun/img/20230615172108.png)
 
 ### 查看
 
-![image-20230615172139135](https://gitee.com/xiongood/image/raw/master/20230615172140.png)
+![image-20230615172139135](https://img.myfox.fun/img/20230615172140.png)
 
 ## 安装Portainer
 
@@ -510,19 +510,19 @@ http://192.168.159.128:9000/#!/init/admin
 
 Xiong1991!@#
 
-![image-20240830092158877](https://gitee.com/xiongood/image/raw/master/image-20240830092158877.png)
+![image-20240830092158877](https://img.myfox.fun/img/image-20240830092158877.png)
 
 ### 查看运行情况
 
-![image-20240830092403839](https://gitee.com/xiongood/image/raw/master/image-20240830092403839.png)
+![image-20240830092403839](https://img.myfox.fun/img/image-20240830092403839.png)
 
-![image-20240830092607601](https://gitee.com/xiongood/image/raw/master/image-20240830092607601.png)
+![image-20240830092607601](https://img.myfox.fun/img/image-20240830092607601.png)
 
 ### 查看日志
 
-![image-20240830092645322](https://gitee.com/xiongood/image/raw/master/image-20240830092645322.png)
+![image-20240830092645322](https://img.myfox.fun/img/image-20240830092645322.png)
 
-![image-20240830092712090](https://gitee.com/xiongood/image/raw/master/image-20240830092712090.png)
+![image-20240830092712090](https://img.myfox.fun/img/image-20240830092712090.png)
 
 ## 开机启动docker
 

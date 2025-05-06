@@ -2,7 +2,7 @@
 title: 手动触发Github Actions
 author: 张一雄
 summary: 手动触发Github Actions
-img: https://gitee.com/xiongood/image/raw/master/github.jpg
+img: https://img.myfox.fun/img/github.jpg
 categories:
  - 工具
 tags:
@@ -53,9 +53,9 @@ curl -X POST \
   -d '{"event_type": "manual-trigger"}'
 ```
 
-![image-20240513092104915](https://gitee.com/xiongood/image/raw/master/20240513092107.png)
+![image-20240513092104915](https://img.myfox.fun/img/20240513092107.png)
 
-![image-20240513092118584](https://gitee.com/xiongood/image/raw/master/20240513092120.png)
+![image-20240513092118584](https://img.myfox.fun/img/20240513092120.png)
 
 注意：
 

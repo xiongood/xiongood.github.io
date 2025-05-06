@@ -1,6 +1,6 @@
 ---
 title: docker安装redis
-img: https://gitee.com/xiongood/image/raw/master/redis.jpg
+img: https://img.myfox.fun/img/redis.jpg
 categories:
  - 周边
 tags:

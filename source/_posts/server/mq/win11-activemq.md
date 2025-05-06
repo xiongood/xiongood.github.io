@@ -1,6 +1,6 @@
 ---
 title: activemq的部署与使用
-img: https://gitee.com/xiongood/image/raw/master/activemq.jpg
+img: https://img.myfox.fun/img/activemq.jpg
 categories:
  - 后端
 tags:
@@ -27,15 +27,15 @@ https://activemq.apache.org/download-archives
 https://activemq.apache.org/getting-started#Pre-InstallationRequirements
 ```
 
-![image-20230625172804505](https://gitee.com/xiongood/image/raw/master/20230625172805.png)
+![image-20230625172804505](https://img.myfox.fun/img/20230625172805.png)
 
-![image-20230607154249549](https://gitee.com/xiongood/image/raw/master/20230607154250.png)
+![image-20230607154249549](https://img.myfox.fun/img/20230607154250.png)
 
 ## windows版启动
 
 ### 直接启动
 
-![image-20230607161848692](https://gitee.com/xiongood/image/raw/master/20230607161849.png)
+![image-20230607161848692](https://img.myfox.fun/img/20230607161849.png)
 
 ### 访问
 
@@ -45,11 +45,11 @@ http://localhost:8161/
 
 账号密码 都为 admin
 
-![image-20230607162019968](https://gitee.com/xiongood/image/raw/master/20230607162021.png)
+![image-20230607162019968](https://img.myfox.fun/img/20230607162021.png)
 
 ### 后台静寂启动
 
-![image-20230607162341347](https://gitee.com/xiongood/image/raw/master/20230607162342.png)
+![image-20230607162341347](https://img.myfox.fun/img/20230607162342.png)
 
 ## 配置
 
@@ -71,7 +71,7 @@ http://localhost:8161/
 </plugins>
 ```
 
-![image-20230607162620537](https://gitee.com/xiongood/image/raw/master/20230607162621.png)
+![image-20230607162620537](https://img.myfox.fun/img/20230607162621.png)
 
 ### 设置延时发送消息
 

@@ -1,7 +1,7 @@
 ---
 title: linux常用命令日常总结
 summary: 在学习和工作中，遇到了不熟悉的命令，我就将其写在此博客下，持续更新
-img: https://gitee.com/xiongood/image/raw/master/linux.jpg
+img: https://img.myfox.fun/img/linux.jpg
 categories:
  - linux
 tags:

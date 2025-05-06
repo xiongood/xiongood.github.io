@@ -1,6 +1,6 @@
 ---
 title: mybatis-plus多数据源
-img: https://gitee.com/xiongood/image/raw/master/mybatis.jpg
+img: https://img.myfox.fun/img/mybatis.jpg
 categories:
  - 后端
 tags:

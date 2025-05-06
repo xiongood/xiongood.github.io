@@ -1,6 +1,6 @@
 ---
 title: python 操作word文档
-img: https://gitee.com/xiongood/image/raw/master/python.jpg
+img: https://img.myfox.fun/img/python.jpg
 author: 张一雄
 summary: python 操作word文档
 categories:

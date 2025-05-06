@@ -2,7 +2,7 @@
 title: dom4j解析xml
 author: 张一雄
 summary: 解析xml的神器，用webservice的时候，经常会解析xml，这是就是dom4j大展神威的时候
-img: https://gitee.com/xiongood/image/raw/master/xml.jpg
+img: https://img.myfox.fun/img/xml.jpg
 categories:
  - 后端
 tags:
@@ -63,7 +63,7 @@ import javax.xml.bind.annotation.XmlSchema;
 
 如同这样
 
-![image-20230525175733597](https://gitee.com/xiongood/image/raw/master/20230525175734.png)
+![image-20230525175733597](https://img.myfox.fun/img/20230525175734.png)
 
 ### 创建 header
 
@@ -108,7 +108,7 @@ public class MyHeader {
 
 对用的报文
 
-![image-20230525180138254](https://gitee.com/xiongood/image/raw/master/20230525180139.png)
+![image-20230525180138254](https://img.myfox.fun/img/20230525180139.png)
 
 ### 创建body
 
@@ -216,7 +216,7 @@ public class MyBody<T> {
 
 body 对应的报文
 
-![image-20230525180500435](https://gitee.com/xiongood/image/raw/master/20230525180501.png)
+![image-20230525180500435](https://img.myfox.fun/img/20230525180501.png)
 
 ### 写根目录
 
@@ -256,7 +256,7 @@ public class MyRoot {
 
 在报文中的体现如下：
 
-![image-20230525180018730](https://gitee.com/xiongood/image/raw/master/20230525180019.png)
+![image-20230525180018730](https://img.myfox.fun/img/20230525180019.png)
 
 ### 转成xml
 

@@ -2,7 +2,7 @@
 title: office的使用技巧
 author: 张一雄
 summary: 遇到不常见的快捷操作，我就会记录在这个文档下面，持续更新
-img: https://gitee.com/xiongood/image/raw/master/office.jpg
+img: https://img.myfox.fun/img/office.jpg
 categories:
  - 工具
 tags:
@@ -14,31 +14,31 @@ tags:
 
 ### 展示左侧目录
 
-![image-20230518174452678](https://gitee.com/xiongood/image/raw/master/20230518174453.png)
+![image-20230518174452678](https://img.myfox.fun/img/20230518174453.png)
 
-![image-20230518174452678](https://gitee.com/xiongood/image/raw/master/20230518174453.png)
+![image-20230518174452678](https://img.myfox.fun/img/20230518174453.png)
 
 ### 段落自动换行
 
-![image-20231128110231669](https://gitee.com/xiongood/image/raw/master/20231128110233.png)
+![image-20231128110231669](https://img.myfox.fun/img/20231128110233.png)
 
-![image-20231128110300445](https://gitee.com/xiongood/image/raw/master/20231128110302.png)
+![image-20231128110300445](https://img.myfox.fun/img/20231128110302.png)
 
 ### 选择所有的正文
 
-![image-20231130172746703](https://gitee.com/xiongood/image/raw/master/20231130172748.png)
+![image-20231130172746703](https://img.myfox.fun/img/20231130172748.png)
 
 ### 加入目录
 
-![image-20231201174827928](https://gitee.com/xiongood/image/raw/master/20231201174830.png)
+![image-20231201174827928](https://img.myfox.fun/img/20231201174830.png)
 
 ### 多页并排展示
 
-![image-20231201175029632](https://gitee.com/xiongood/image/raw/master/20231201175031.png)
+![image-20231201175029632](https://img.myfox.fun/img/20231201175031.png)
 
 ### 修改主题颜色
 
-![image-20231214202314781](https://gitee.com/xiongood/image/raw/master/20231214202318.png)
+![image-20231214202314781](https://img.myfox.fun/img/20231214202318.png)
 
 ## excel
 
@@ -48,7 +48,7 @@ tags:
 
 光标放到输入框，然后单击快捷键ctrl+j，出现了闪烁的逗号
 
-![image-20240429181605620](https://gitee.com/xiongood/image/raw/master/20240429181607.png)
+![image-20240429181605620](https://img.myfox.fun/img/20240429181607.png)
 
 ### 复制粘贴
 
@@ -57,81 +57,81 @@ tags:
 - 复制一个行
 - 粘贴成列（粘贴时选择转换）
 
-![image-20240429181433366](https://gitee.com/xiongood/image/raw/master/20240429181435.png)
+![image-20240429181433366](https://img.myfox.fun/img/20240429181435.png)
 
 ### 添加下拉框一
 
-![image-20230518174732750](https://gitee.com/xiongood/image/raw/master/20230518174733.png)
+![image-20230518174732750](https://img.myfox.fun/img/20230518174733.png)
 
-![image-20230518174741249](https://gitee.com/xiongood/image/raw/master/20230518174742.png)
+![image-20230518174741249](https://img.myfox.fun/img/20230518174742.png)
 
 ### 添加下拉框二
 
-![image-20230518174758083](https://gitee.com/xiongood/image/raw/master/20230518174759.png)
+![image-20230518174758083](https://img.myfox.fun/img/20230518174759.png)
 
 
 
 ### 固定行
 
-![image-20230518174849582](https://gitee.com/xiongood/image/raw/master/20230518174850.png)
+![image-20230518174849582](https://img.myfox.fun/img/20230518174850.png)
 
 ### 单元格格式
 
 #### 清楚所有格式
 
-![image-20240413174336606](https://gitee.com/xiongood/image/raw/master/20240413174338.png)
+![image-20240413174336606](https://img.myfox.fun/img/20240413174338.png)
 
 #### 设置跨列居中
 
 此方法不用合并单元格，实现多单元格居中
 
-![image-20240413174724154](https://gitee.com/xiongood/image/raw/master/20240413174726.png)
+![image-20240413174724154](https://img.myfox.fun/img/20240413174726.png)
 
 #### 自动换行
 
-![image-20240413174914352](https://gitee.com/xiongood/image/raw/master/20240413174916.png)
+![image-20240413174914352](https://img.myfox.fun/img/20240413174916.png)
 
 #### 设置货币格式
 
-![image-20240413175608981](https://gitee.com/xiongood/image/raw/master/20240413175611.png)
+![image-20240413175608981](https://img.myfox.fun/img/20240413175611.png)
 
 #### 自动调整列宽
 
-![image-20240413175924831](https://gitee.com/xiongood/image/raw/master/20240413175926.png)
+![image-20240413175924831](https://img.myfox.fun/img/20240413175926.png)
 
 #### 自定义格式
 
-![image-20240413181002835](https://gitee.com/xiongood/image/raw/master/20240413181005.png)
+![image-20240413181002835](https://img.myfox.fun/img/20240413181005.png)
 
-![image-20240413181218363](https://gitee.com/xiongood/image/raw/master/20240413181220.png)
+![image-20240413181218363](https://img.myfox.fun/img/20240413181220.png)
 
 #### 设置一位小数
 
-![image-20240413181119272](https://gitee.com/xiongood/image/raw/master/20240413181121.png)
+![image-20240413181119272](https://img.myfox.fun/img/20240413181121.png)
 
 ### 页面布局
 
 #### 是否显示网格线
 
-![image-20240413175242287](https://gitee.com/xiongood/image/raw/master/20240413175244.png)
+![image-20240413175242287](https://img.myfox.fun/img/20240413175244.png)
 
 ### 数据验证
 
 #### 选中列表是出现提示信息
 
-![image-20240413163939570](https://gitee.com/xiongood/image/raw/master/20240413163941.png)
+![image-20240413163939570](https://img.myfox.fun/img/20240413163941.png)
 
 #### 设置下拉框
 
-![image-20240413164343228](https://gitee.com/xiongood/image/raw/master/20240413164345.png)
+![image-20240413164343228](https://img.myfox.fun/img/20240413164345.png)
 
 #### 输入错误提示
 
-​	![image-20240413165150000](https://gitee.com/xiongood/image/raw/master/20240413165151.png)
+​	![image-20240413165150000](https://img.myfox.fun/img/20240413165151.png)
 
-![image-20240413165249962](https://gitee.com/xiongood/image/raw/master/20240413165251.png)
+![image-20240413165249962](https://img.myfox.fun/img/20240413165251.png)
 
-![image-20240413165304095](https://gitee.com/xiongood/image/raw/master/20240413165306.png)
+![image-20240413165304095](https://img.myfox.fun/img/20240413165306.png)
 
 ### 导入数据
 
@@ -141,13 +141,13 @@ tags:
 
 https://movie.douban.com/coming
 
-![image-20240413170852957](https://gitee.com/xiongood/image/raw/master/20240413170855.png)
+![image-20240413170852957](https://img.myfox.fun/img/20240413170855.png)
 
-![image-20240413171225607](https://gitee.com/xiongood/image/raw/master/20240413171227.png)
+![image-20240413171225607](https://img.myfox.fun/img/20240413171227.png)
 
 #### 定时刷新数据
 
-![image-20240413171614844](https://gitee.com/xiongood/image/raw/master/20240413171616.png)
+![image-20240413171614844](https://img.myfox.fun/img/20240413171616.png)
 
 
 
@@ -155,7 +155,7 @@ https://movie.douban.com/coming
 
 #### 判断两列是否相同
 
-![image-20240429181837537](https://gitee.com/xiongood/image/raw/master/20240429181839.png)
+![image-20240429181837537](https://img.myfox.fun/img/20240429181839.png)
 
 ### 快捷键
 

@@ -1,6 +1,6 @@
 ---
 title: nacos单机版使用
-img: https://gitee.com/xiongood/image/raw/master/nacos.jpg
+img: https://img.myfox.fun/img/nacos.jpg
 categories:
  - 后端
 tags:
@@ -200,13 +200,13 @@ spring:
 
 ## 启动并查看nacos
 
-![image-20230524171017984](https://gitee.com/xiongood/image/raw/master/20230524171020.png)
+![image-20230524171017984](https://img.myfox.fun/img/20230524171020.png)
 
 ## nacos做配置中心
 
 ### 首先在nacos中新增配置文件
 
-![image-20230526104205837](https://gitee.com/xiongood/image/raw/master/20230526104207.png)
+![image-20230526104205837](https://img.myfox.fun/img/20230526104207.png)
 
 ### 修改pom
 
@@ -251,7 +251,7 @@ spring:
       #- nacos:test03.yml # 在拉取nacos配置异常时会快速失败，会导致 spring 容器启动失败
 ```
 
-![image-20230526104335176](https://gitee.com/xiongood/image/raw/master/20230526104336.png)
+![image-20230526104335176](https://img.myfox.fun/img/20230526104336.png)
 
 ### 写测试方法
 

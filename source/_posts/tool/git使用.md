@@ -1,7 +1,7 @@
 ---
 title: git的使用
 summary: 在工作和学习中，遇到了不常见的命令，我就会记录在这个文章下面，持续更新
-img: https://gitee.com/xiongood/image/raw/master/git.jpg
+img: https://img.myfox.fun/img/git.jpg
 categories:
  - 工具
 tags:
@@ -47,7 +47,7 @@ git config --system --unset credential.helper
 
 我感觉使用 命令倒是不方便
 
-![image-20230612171733974](https://gitee.com/xiongood/image/raw/master/20230612171735.png)
+![image-20230612171733974](https://img.myfox.fun/img/20230612171735.png)
 
 ### 合并
 
@@ -91,9 +91,9 @@ git checkout dev
 
 ### 生成令牌
 
-![image-20240429192612539](https://gitee.com/xiongood/image/raw/master/20240429192614.png)
+![image-20240429192612539](https://img.myfox.fun/img/20240429192614.png)
 
-![image-20240429192635570](https://gitee.com/xiongood/image/raw/master/20240429192637.png)
+![image-20240429192635570](https://img.myfox.fun/img/20240429192637.png)
 
 ### 提交代码
 
@@ -122,7 +122,7 @@ git checkout  ./*
 
 ### 提交报错
 
-![image-20240508160601710](https://gitee.com/xiongood/image/raw/master/20240508160603.png)
+![image-20240508160601710](https://img.myfox.fun/img/20240508160603.png)
 
 执行该命令
 

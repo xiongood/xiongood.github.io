@@ -1,6 +1,6 @@
 ---
 title: AOP的使用例子
-img: https://gitee.com/xiongood/image/raw/master/spring.jpg
+img: https://img.myfox.fun/img/spring.jpg
 categories:
  - 后端
 tags:

@@ -1,7 +1,7 @@
 ---
 title: activiti-app
 summary: activiti画图工具，当然网上还有好多其他的工具！
-img: https://gitee.com/xiongood/image/raw/master/activiti.jpg
+img: https://img.myfox.fun/img/activiti.jpg
 categories:
  - 工具
 tags:
@@ -23,7 +23,7 @@ https://www.activiti.org/get-started
 https://wwut.lanzoul.com/i05uD0wm7b8b
 ```
 
-![](https://gitee.com/xiongood/image/raw/master/20230518230905.png)
+![](https://img.myfox.fun/img/20230518230905.png)
 
 ### 下载tomcat
 
@@ -49,4 +49,4 @@ http://localhost:8080/activiti-app
 
 ## 画流程图
 
-![image-20230518233213797](https://gitee.com/xiongood/image/raw/master/20230518233215.png)
+![image-20230518233213797](https://img.myfox.fun/img/20230518233215.png)

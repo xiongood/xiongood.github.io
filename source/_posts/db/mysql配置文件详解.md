@@ -1,6 +1,6 @@
 ---
 title: mysql配置文件详解
-img: https://gitee.com/xiongood/image/raw/master/mysql.jpg
+img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:

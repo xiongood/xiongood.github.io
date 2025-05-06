@@ -1,6 +1,6 @@
 ---
 title: pgsql的安装
-img: https://gitee.com/xiongood/image/raw/master/pgsql.jpg
+img: https://img.myfox.fun/img/pgsql.jpg
 categories:
  - 数据库
 tags:

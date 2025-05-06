@@ -1,7 +1,7 @@
 ---
 title: cetos7安装gitlib
 summary: 私域的git，每个公司的必备工具。当然也可以用github、gitee等！
-img: https://gitee.com/xiongood/image/raw/master/gitlib.jpg
+img: https://img.myfox.fun/img/gitlib.jpg
 categories:
  - 工具
 tags:
@@ -100,7 +100,7 @@ http://192.168.43.111:8888/
 
 ### 修改自己的邮箱
 
-![image-20230615102956275](https://gitee.com/xiongood/image/raw/master/20230615102957.png)
+![image-20230615102956275](https://img.myfox.fun/img/20230615102957.png)
 
 
 

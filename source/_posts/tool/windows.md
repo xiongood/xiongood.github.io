@@ -2,7 +2,7 @@
 title: windows常用配置
 author: 张一雄
 summary: 遇到不常见的设置，我就会将其记录在此文档下，持续更新
-img: https://gitee.com/xiongood/image/raw/master/windows.jpg
+img: https://img.myfox.fun/img/windows.jpg
 categories:
  - 工具
 tags:
@@ -17,7 +17,7 @@ tags:
 https://www.microsoft.com/zh-cn/software-download/windows11/
 ```
 
-![image-20230630155810072](https://gitee.com/xiongood/image/raw/master/20230630155811.png)
+![image-20230630155810072](https://img.myfox.fun/img/20230630155811.png)
 
 
 
@@ -31,9 +31,9 @@ https://github.com/TGSAN/CMWTAT_Digital_Edition
 
 ## 关闭自动更新
 
-![image-20231127091028436](https://gitee.com/xiongood/image/raw/master/20231127091030.png)
+![image-20231127091028436](https://img.myfox.fun/img/20231127091030.png)
 
-![image-20240308093143517](https://gitee.com/xiongood/image/raw/master/20240308093146.png)
+![image-20240308093143517](https://img.myfox.fun/img/20240308093146.png)
 
 ## 永久关闭安全中心
 
@@ -47,11 +47,11 @@ reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "Di
 
 ## 设置cmd背景
 
-![image-20241013103855122](https://gitee.com/xiongood/image/raw/master/image-20241013103855122.png)
+![image-20241013103855122](https://img.myfox.fun/img/image-20241013103855122.png)
 
-![image-20241013103910733](https://gitee.com/xiongood/image/raw/master/image-20241013103910733.png)
+![image-20241013103910733](https://img.myfox.fun/img/image-20241013103910733.png)
 
-![image-20241013103921419](https://gitee.com/xiongood/image/raw/master/image-20241013103921419.png)
+![image-20241013103921419](https://img.myfox.fun/img/image-20241013103921419.png)
 
 ## 设置右击菜单
 
@@ -72,7 +72,7 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 下载并且打开 shexview.exe
 
-![image-20240428181951860](https://gitee.com/xiongood/image/raw/master/20240428181954.png)
+![image-20240428181951860](https://img.myfox.fun/img/20240428181954.png)
 
 右击全部，选择disable……
 
@@ -82,9 +82,9 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 有的通知实在是麻烦
 
-![image-20230418223847862](https://gitee.com/xiongood/image/raw/master/image-20230418223847862.png)
+![image-20230418223847862](https://img.myfox.fun/img/image-20230418223847862.png)
 
-![image-20230418223916312](https://gitee.com/xiongood/image/raw/master/image-20230418223916312.png)
+![image-20230418223916312](https://img.myfox.fun/img/image-20230418223916312.png)
 
 ## 输入法
 
@@ -92,15 +92,15 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 ### 删除自带输入法
 
-![image-20230418223945616](https://gitee.com/xiongood/image/raw/master/image-20230418223945616.png)
+![image-20230418223945616](https://img.myfox.fun/img/image-20230418223945616.png)
 
-![image-20230418223954195](https://gitee.com/xiongood/image/raw/master/image-20230418223954195.png)
+![image-20230418223954195](https://img.myfox.fun/img/image-20230418223954195.png)
 
-![image-20230418223958619](https://gitee.com/xiongood/image/raw/master/image-20230418223958619.png)
+![image-20230418223958619](https://img.myfox.fun/img/image-20230418223958619.png)
 
 ### 隐藏搜狗输入法
 
-![image-20230418224018582](https://gitee.com/xiongood/image/raw/master/image-20230418224018582.png)
+![image-20230418224018582](https://img.myfox.fun/img/image-20230418224018582.png)
 
 ### 设置自定义短语
 
@@ -118,11 +118,11 @@ reg delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" 
 
 ### 设置
 
-![image-20230420101903494](https://gitee.com/xiongood/image/raw/master/image-20230420101903494.png)
+![image-20230420101903494](https://img.myfox.fun/img/image-20230420101903494.png)
 
 ### 任务管理器
 
-![image-20230420102002418](https://gitee.com/xiongood/image/raw/master/image-20230420102002418.png)
+![image-20230420102002418](https://img.myfox.fun/img/image-20230420102002418.png)
 
 ### 新增开机启动项
 
@@ -134,11 +134,11 @@ shell:startup
 
 可打开文件夹
 
-![image-20230420102016644](https://gitee.com/xiongood/image/raw/master/image-20230420102016644.png)
+![image-20230420102016644](https://img.myfox.fun/img/image-20230420102016644.png)
 
 将开机启动的快捷方式或者脚本，放入该文件夹下，则开机时会 自动启动
 
-![image-20230420102146222](https://gitee.com/xiongood/image/raw/master/image-20230420102146222.png)
+![image-20230420102146222](https://img.myfox.fun/img/image-20230420102146222.png)
 
 ## 小键盘不开启
 
@@ -159,27 +159,27 @@ shell:startup
 
 5. **关闭注册表编辑器**，重启电脑。下次启动时，小键盘应该会自动开启。
 
-![image-20240821090644158](https://gitee.com/xiongood/image/raw/master/image-20240821090644158.png)
+![image-20240821090644158](https://img.myfox.fun/img/image-20240821090644158.png)
 
 ## 关于浏览器
 
 ### win11打开ie
 
-![image-20230619165048282](https://gitee.com/xiongood/image/raw/master/20230619165049.png)
+![image-20230619165048282](https://img.myfox.fun/img/20230619165049.png)
 
-![image-20230815092844382](https://gitee.com/xiongood/image/raw/master/20230815092845.png)
+![image-20230815092844382](https://img.myfox.fun/img/20230815092845.png)
 
 ### 安全设置
 
-![image-20230619165230615](https://gitee.com/xiongood/image/raw/master/20230619165231.png)
+![image-20230619165230615](https://img.myfox.fun/img/20230619165231.png)
 
-![image-20230619165201344](https://gitee.com/xiongood/image/raw/master/20230619165202.png)
+![image-20230619165201344](https://img.myfox.fun/img/20230619165202.png)
 
 ### win11打开ie浏览器
 
 #### 桌面右键创建快捷方式
 
-![image-20230815170245783](https://gitee.com/xiongood/image/raw/master/20230815170246.png)
+![image-20230815170245783](https://img.myfox.fun/img/20230815170246.png)
 
 #### 输入以下内容
 
@@ -193,7 +193,7 @@ shell:startup
 
 
 
-![image-20230815170406393](https://gitee.com/xiongood/image/raw/master/20230815170407.png)
+![image-20230815170406393](https://img.myfox.fun/img/20230815170407.png)
 
 注意：此种方式只能在桌面上打开。
 
@@ -205,25 +205,25 @@ shell:startup
 
 taskschd.msc
 
-![image-20230821093212838](https://gitee.com/xiongood/image/raw/master/20230821093213.png)
+![image-20230821093212838](https://img.myfox.fun/img/20230821093213.png)
 
 #### 点击常规页签
 
-![image-20230821093327198](https://gitee.com/xiongood/image/raw/master/20230821093328.png)
+![image-20230821093327198](https://img.myfox.fun/img/20230821093328.png)
 
 #### 选择触发器
 
-![image-20230821093443802](https://gitee.com/xiongood/image/raw/master/20230821093444.png)
+![image-20230821093443802](https://img.myfox.fun/img/20230821093444.png)
 
 #### 选择事件
 
 选择bat文件
 
-![image-20230821093621884](https://gitee.com/xiongood/image/raw/master/20230821093622.png)
+![image-20230821093621884](https://img.myfox.fun/img/20230821093622.png)
 
 #### 查看任务
 
-![image-20230821093741773](https://gitee.com/xiongood/image/raw/master/20230821093742.png)
+![image-20230821093741773](https://img.myfox.fun/img/20230821093742.png)
 
 
 ## 如何卸载 copilot(预览版)
@@ -233,7 +233,7 @@ taskschd.msc
 3、双击打开【关闭WindowsCopilot】。
 4、关闭WindowsCopilot窗口，设置为【已启用】即禁止使用Copilot。
 
-![image-20231116165752021](https://gitee.com/xiongood/image/raw/master/20231116165754.png)
+![image-20231116165752021](https://img.myfox.fun/img/20231116165754.png)
 
 ## 遇到的问题
 

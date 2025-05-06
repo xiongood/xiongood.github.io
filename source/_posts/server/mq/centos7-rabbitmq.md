@@ -1,6 +1,6 @@
 ---
 title: centos7下部署rabbitmq
-img: https://gitee.com/xiongood/image/raw/master/rabbitmq.jpg
+img: https://img.myfox.fun/img/rabbitmq.jpg
 categories:
  - 后端
 tags:
@@ -22,7 +22,7 @@ https://blog.csdn.net/ShuSheng0007/article/details/125921491
 https://github.com/rabbitmq/erlang-rpm/releases
 ```
 
-![image-20230607214433126](https://gitee.com/xiongood/image/raw/master/20230607214434.png)
+![image-20230607214433126](https://img.myfox.fun/img/20230607214434.png)
 
 ### 下载socat
 
@@ -30,7 +30,7 @@ https://github.com/rabbitmq/erlang-rpm/releases
 http://repo.iotti.biz/CentOS/7/x86_64/
 ```
 
-![image-20230607214516383](https://gitee.com/xiongood/image/raw/master/20230607214517.png)
+![image-20230607214516383](https://img.myfox.fun/img/20230607214517.png)
 
 ### 下载rabbitmq
 
@@ -112,7 +112,7 @@ http://192.168.31.162:15672/
 
 会报如下错：
 
-![image-20230607220334716](https://gitee.com/xiongood/image/raw/master/20230607220335.png)
+![image-20230607220334716](https://img.myfox.fun/img/20230607220335.png)
 
 这是因为RabbitMQ默认只允许guest在服务器本地登录，我们需要重新创建账号
 
@@ -134,11 +134,11 @@ rabbitmqctl list_users
 
 ### 创建queue
 
-![image-20230607221803218](https://gitee.com/xiongood/image/raw/master/20230607221804.png)
+![image-20230607221803218](https://img.myfox.fun/img/20230607221804.png)
 
 ### 查看详情
 
-![image-20230607222102464](https://gitee.com/xiongood/image/raw/master/20230607222103.png)
+![image-20230607222102464](https://img.myfox.fun/img/20230607222103.png)
 
 
 
@@ -208,13 +208,13 @@ public class QueueConsumer {
 
 ### 启动项目后，发现有了一个监听者
 
-![image-20230607222417146](https://gitee.com/xiongood/image/raw/master/20230607222418.png)
+![image-20230607222417146](https://img.myfox.fun/img/20230607222418.png)
 
 ### 测试发送一个消息
 
 发现java中已经监听到
 
-![image-20230607222649517](https://gitee.com/xiongood/image/raw/master/20230607222650.png)
+![image-20230607222649517](https://img.myfox.fun/img/20230607222650.png)
 
 ### 创建生产者
 
@@ -357,7 +357,7 @@ public void sendTopicMsg(String msg,String route){
 
 发现已经有了自己设置的
 
-![image-20230607224737544](https://gitee.com/xiongood/image/raw/master/20230607224738.png)
+![image-20230607224737544](https://img.myfox.fun/img/20230607224738.png)
 
 ### 写两个controller
 
@@ -405,7 +405,7 @@ rabbitmq-plugins enable rabbitmq_delayed_message_exchange
 
 右此选项则成功
 
-![image-20230607234252419](https://gitee.com/xiongood/image/raw/master/20230607234253.png)
+![image-20230607234252419](https://img.myfox.fun/img/20230607234253.png)
 
 ### 整合springboot
 

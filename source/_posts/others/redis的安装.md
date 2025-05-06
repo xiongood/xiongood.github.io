@@ -2,7 +2,7 @@
 title: redis的安装
 author: 张一雄
 summary: 程序员最常用的中间件之一，该叫他缓存呢还是数据库呢？
-img: https://gitee.com/xiongood/image/raw/master/redis.jpg
+img: https://img.myfox.fun/img/redis.jpg
 categories:
  - 周边
 tags:

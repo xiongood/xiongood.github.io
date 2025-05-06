@@ -2,7 +2,7 @@
 title: python更换镜像源
 author: 张一雄
 summary: python更换镜像源
-img: https://gitee.com/xiongood/image/raw/master/python.jpg
+img: https://img.myfox.fun/img/python.jpg
 categories:
  - 周边
 tags:
