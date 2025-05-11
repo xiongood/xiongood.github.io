@@ -144,3 +144,14 @@ Hiberbee Theme
 ## 打开excel
 
 ExcelReader
+
+## 自动生成mybatisplus代码
+
+mybatis-plus代码
+
+mybaitsX
+
+![image-20250321101425645](http://img.myfox.fun/img/image-20250321101425645.png)
+
+
+

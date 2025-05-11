@@ -164,8 +164,3 @@ systemctl enable frps
   ```sh
   ./frpc -c ./frpc.ini
   ```
-
-- 访问
-
-  ![image-20230403155723477](https://raw.githubusercontent.com/xiongblhttps://img.myfox.fun/img/main/blogimage-20230403155723477.png)
-
