@@ -87,6 +87,8 @@ systemctl disable firewalld.service
 
 ```sh
 # 安装ifconfig
+yum update -y
+
 yum install net-tools -y\
 yum install vim	-y\
 yum install wget -y\
@@ -113,6 +115,7 @@ wget -O /etc/yum.repos.d/aliyun.repo http://mirrors.aliyun.com/repo/Centos-7.rep
 #3 清理并重新加载yum源
 yum clean all && yum makecache
 
+yum update -y
 
 yum install net-tools \
 yum install vim	\
