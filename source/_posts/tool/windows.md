@@ -140,6 +140,36 @@ shell:startup
 
 ![image-20230420102146222](https://img.myfox.fun/img/image-20230420102146222.png)
 
+## 开机自动静寂执行bat脚本
+
+### 编写脚本并且放到某个文件夹
+
+"C:\script\startSnbBook.cmd"
+
+```bash
+call cd /d "D:\project\gitee\snb\snbBook"
+call hexo clean
+call hexo g
+call hexo s -d
+EXIT
+```
+
+### 创建一个vbs文件，并且放到自启文件夹
+
+需要修改执行的bat或者cmd路径
+
+cmd 执行 shell:startup 可以快速打开自启文件夹
+
+"C:\Users\xiong\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\hexo.vbs"
+
+```sh
+Set WshShell = CreateObject("WScript.Shell") 
+WshShell.Run chr(34) & "C:\script\startSnbBook.cmd" & Chr(34), 0
+Set WshShell = Nothing
+```
+
+开机的时候，会自动执行cmd文件或者是bat文件
+
 ## 小键盘不开启
 
 修改注册表是一种较为直接且持久的方法，但请注意，修改注册表前务必备份重要数据，以防操作失误导致系统不稳定。

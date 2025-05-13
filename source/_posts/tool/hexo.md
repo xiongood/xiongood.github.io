@@ -13,6 +13,8 @@ tags:
 
 ```sh
 npm install -g hexo-cli
+# 新建一个项目
+hexo init
 ```
 
 ### 下载包

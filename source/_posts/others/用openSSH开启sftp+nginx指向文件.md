@@ -12,7 +12,13 @@ tags:
  - nginx
 ---
 
-## 开启sftp
+
+
+`环境：centos7`
+
+## 开启sftp方式一
+
+`此方法不推荐，但有详细配置介绍，但是感觉一般也用不到，推荐使用第二种方式，简单易用！`
 
 CentOS 自带openssh，不用在安装
 
@@ -134,6 +140,57 @@ su osmond
 # 赋予权限 
 chmod 777 /home/osmond/
 ```
+
+## 开启sftp方式二 （推荐）
+
+centos7默认自带并开启了sftp，所以只添加用户即可
+
+- 查看服务运行状态
+
+  ```sh
+  systemctl status sshd
+  ```
+
+- 新建用户 snbftp
+
+  ```sh
+  # 新增用户
+  useradd snbftp
+  # 或者 adduser snbftp
+  # 修改密码
+  passwd snbftp
+  ```
+
+- 赋予sftp权限
+
+  ```sh
+  vim /etc/ssh/sshd_config
+  ```
+
+  在末尾添加
+
+  ```sh
+  Match User snbftp
+      ChrootDirectory /home/snbftp
+      ForceCommand internal-sftp
+      AllowTcpForwarding no
+      X11Forwarding no
+  ```
+
+- 创建用户根目录及权限
+
+  ```sh
+  mkdir -p /home/snbftp/snbftp
+  chown root:root /home/snbftp
+  chmod 755 /home/snbftp
+  chown snbftp:snbftp /home/snbftp/snbftp
+  ```
+
+- 重启服务
+
+  ```shell
+  systemctl restart sshd
+  ```
 
 ## 安装nginx
 

@@ -66,5 +66,26 @@ xe =
 
 
 
+## 使用
 
+### 存储过程
 
+#### 查看存错过程包体
+
+选中包名称之后右击，之后可以查看包头包体
+
+![image-20250509154408432](http://img.myfox.fun/img/image-20250509154408432.png)
+
+![image-20250509154427683](http://img.myfox.fun/img/image-20250509154427683.png)
+
+#### 批量编译存储过程
+
+批量编译之后选择编译
+
+![image-20250509154607821](http://img.myfox.fun/img/image-20250509154607821.png)
+
+### dblinks
+
+#### 设置dblink
+
+![image-20250509154824810](http://img.myfox.fun/img/image-20250509154824810.png)
