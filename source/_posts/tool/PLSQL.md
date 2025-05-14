@@ -89,3 +89,21 @@ xe =
 #### 设置dblink
 
 ![image-20250509154824810](http://img.myfox.fun/img/image-20250509154824810.png)
+
+### 两个库，数据比较迁移
+
+#### 选择库，点击右下角比较按钮
+
+![image-20250514104246681](http://img.myfox.fun/img/image-20250514104246681.png)
+
+#### 比较与迁移
+
+![image-20250514105413172](http://img.myfox.fun/img/image-20250514105413172.png)
+
+#### 查看差异
+
+![image-20250514110131575](http://img.myfox.fun/img/image-20250514110131575.png)
+
+#### 应用于目标库
+
+![image-20250514110144664](http://img.myfox.fun/img/image-20250514110144664.png)
