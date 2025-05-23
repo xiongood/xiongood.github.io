@@ -64,8 +64,6 @@ xe =
 
 ![image-20230829150504783](https://img.myfox.fun/img/20230829150505.png)
 
-
-
 ## 使用
 
 ### 存储过程
@@ -83,6 +81,34 @@ xe =
 批量编译之后选择编译
 
 ![image-20250509154607821](http://img.myfox.fun/img/image-20250509154607821.png)
+
+### 测试存储过程
+
+![image-20250519110720024](http://img.myfox.fun/img/image-20250519110720024.png)
+
+```sql
+-- Created on 2025/5/19 by XIONG 
+declare 
+  -- Local variables here
+  i integer;
+begin
+	-- 此处输入要测试的存储过程
+  DECLARE -- 此处定义出参
+    v_msg_code   NUMBER;
+    v_msg_info   VARCHAR2(4000);
+  BEGIN
+  	-- 定义要执行的存储过程
+    dz_fqlm_business_pkg.DEAL_ZHZT_RET_DATA(
+      P_START_DATE => TO_DATE('2025-05-01', 'YYYY-MM-DD'), -- 替换为你需要的日期
+      P_MSG_CODE   => v_msg_code,
+      P_MSG_INFO   => v_msg_info
+    );
+	-- 打印出来出参
+    DBMS_OUTPUT.PUT_LINE('返回码: ' || v_msg_code);
+    DBMS_OUTPUT.PUT_LINE('提示信息: ' || v_msg_info);
+  END;
+end;
+```
 
 ### dblinks
 

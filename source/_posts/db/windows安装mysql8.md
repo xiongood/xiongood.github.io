@@ -26,6 +26,12 @@ tags:
 https://downloads.mysql.com/archives/installer/
 ```
 
+或者用这个
+
+```http
+https://downloads.mysql.com/archives/community/
+```
+
 ![image-20230519182123603](https://img.myfox.fun/img/20230519182124.png)
 
 ## 安装
