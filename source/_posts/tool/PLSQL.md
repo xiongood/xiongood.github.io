@@ -82,6 +82,10 @@ xe =
 
 ![image-20250509154607821](http://img.myfox.fun/img/image-20250509154607821.png)
 
+#### 批量编译存储过程2
+
+![image-20250527113747312](http://img.myfox.fun/img/image-20250527113747312.png)
+
 ### 测试存储过程
 
 ![image-20250519110720024](http://img.myfox.fun/img/image-20250519110720024.png)
