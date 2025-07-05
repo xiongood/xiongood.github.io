@@ -99,7 +99,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 #theme: hexo-theme-matery-master
-theme: hexo-theme-matery-master
+theme: xoxo
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 #deploy:
@@ -114,7 +114,8 @@ deploy:
 search:
   path: search.xml
   field: post
-
+  content: true
+  format: html
 
 prism_plugin:
   mode: "preprocess" # realtime/preprocess
