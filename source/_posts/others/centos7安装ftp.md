@@ -128,9 +128,21 @@ auth required pam_shells.so
 vim /etc/vsftpd/vsftpd.conf
 # 添加
 allow_writeable_chroot=YES
+
+
+# 临时关闭SELinux（重启后失效）
+sudo setenforce 0
+
+# 永久修改（编辑配置文件）
+sudo vi /etc/selinux/config
+# 将SELINUX=enforcing改为SELINUX=permissive
 ```
 
-
+- 启动防火墙：`systemctl start firewalld`
+- 停止防火墙：`systemctl stop firewalld`
+- 重启防火墙：`systemctl restart firewalld`
+- 设置开机自启：`systemctl enable firewalld`
+- 禁止开机自启：`systemctl disable firewalld`
 
 ### 启动
 
