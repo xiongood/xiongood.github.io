@@ -245,6 +245,8 @@ taskschd.msc
 
 ![image-20230821093443802](https://img.myfox.fun/img/20230821093444.png)
 
+![image-20250715170114259](http://img.myfox.fun/img/image-20250715170114259.png)
+
 #### 选择事件
 
 选择bat文件
