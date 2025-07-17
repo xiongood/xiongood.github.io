@@ -109,5 +109,24 @@ nvm use 16.20.0
 
 ![image-20230517181008038](https://img.myfox.fun/img/20230517181009.png)
 
-## linux
+### PNPM
+
+安装
+
+```sh
+npm install -g pnpm
+
+npm install -g pnpm@latest
+
+```
+
+安装最新node
+
+```sh
+nvm install --lts 
+nvm use --lts
+npm install -g pnpm
+```
+
+
 
