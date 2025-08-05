@@ -1,52 +1,26 @@
-import os
+# 读取文件内容
+with open(r"./node_modules/hexo-prism-plugin/src/index.js", "r", encoding="utf-8") as f:
+    content = f.read()
 
-modified_files = 0
-total_files = 0
-directory = './public'
+# 定义新的map对象
+new_map = """const map = {
+  '&#39;': '\'',
+  '&amp;': '&',
+  '&gt;': '>',
+  '&lt;': '<',
+  '&quot;': '"',
+  '&#123;': '{',
+  '&#125;': '}'
+};"""
 
-def replace_entities_in_file(file_path):
-    """替换单个文件中的实体"""
-    try:
-        print(file_path)
-        # 读取文件内容
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
+# 查找并替换map部分（从const map = {开始到};结束）
+start = content.find("const map = {")
+end = content.find("};", start) + 2  # 包含};
+modified_content = content[:start] + new_map + content[end:]
 
-        # 替换实体
-        new_content = content.replace('&#123;', '{').replace('&#125;', '}')
+# 写回文件
+with open(r"./node_modules/hexo-prism-plugin/src/index.js", "w", encoding="utf-8") as f:
+    f.write(modified_content)
 
-        # 如果内容有变化才写入
-        if new_content != content:
-            with open(file_path, 'w', encoding='utf-8') as file:
-                file.write(new_content)
-            return True
-        return False
-
-    except UnicodeDecodeError:
-        print(f"警告: 无法以UTF-8编码读取文件 {file_path}，已跳过")
-        return False
-    except Exception as e:
-        print(f"处理文件 {file_path} 时出错: {str(e)}")
-        return False
-
-
-
-# 递归遍历目录
-for root, dirs, files in os.walk(directory):
-    for file in files:
-        # 检查是否是HTML文件
-        if file.lower().endswith('.html'):
-            total_files += 1
-            file_path = os.path.join(root, file)
-            if replace_entities_in_file(file_path):
-                modified_files += 1
-                print(f"已修改: {file_path}")
-
-
-
-
-
-
-
-
+print("map对象已更新")
 
