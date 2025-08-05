@@ -34,6 +34,12 @@ jobs:
           # 验证远程仓库配置（公开仓库无需认证）
           git remote -v
 
+      # 拉取github代码
+      - name: Pull latest from GitHub first
+        run: |
+          git pull origin main --rebase  # 先拉取 GitHub 最新代码
+        continue-on-error: false
+
       # 步骤 4: 从 Gitee 拉取最新代码（公开仓库无需令牌）.
       - name: Pull from Gitee
         run: |
