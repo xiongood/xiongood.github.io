@@ -50,7 +50,7 @@ nacos.core.auth.enabled=true
 nacos.core.auth.caching.enabled=true
 nacos.core.auth.server.identity.key=test
 nacos.core.auth.server.identity.value=test
-nacos.core.auth.plugin.nacos.token.secret.key=VGhpc0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
+nacos.core.auth.plugin.nacos.token.secret.key=VG_h_p_c_0lzTXlDdXN0b21TZWNyZXRLZXkwMTIzNDU2Nzg=
 ```
 
 ### 启动
