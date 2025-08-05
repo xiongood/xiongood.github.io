@@ -1,4 +1,4 @@
-name: Sync Public Gitee to GitHub
+name: 把gitee代码复制到github中
 
 # 触发条件：每天 UTC 0 点自动执行，也可手动触发
 on:
