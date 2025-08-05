@@ -58,7 +58,7 @@ jobs:
       # 步骤 5: 推送到 GitHub 仓库。
       - name: Push to GitHub
         run: |
-          git push origin main  # 若主分支为 master 请修改此处
+          git push origin main --force-with-lease
         env:
           # 使用 GitHub 内置令牌进行推送认证
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
