@@ -1,6 +1,5 @@
 ---
 title: mysql(8.0)的安装及集群搭建
-img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:

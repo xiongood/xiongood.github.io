@@ -2,7 +2,6 @@
 
 title: gradle的安装
 summary: 据说这个比maven要好用，但是普及率还不是很高，我们可以不用，但是不能不会！
-img: https://img.myfox.fun/img/gradle.jpg
 categories:
  - 工具
 tags:

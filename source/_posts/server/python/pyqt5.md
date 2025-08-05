@@ -1,6 +1,5 @@
 ---
 title: pyqt的安装及使用
-img: https://img.myfox.fun/img/python.jpg
 author: 张一雄
 summary: pyqt的安装及使用
 categories:

@@ -2,7 +2,6 @@
 title: plsql的使用技巧
 author: 张一雄
 summary: oracle官方客户端工具，功能是不少，但是我感觉这软件里面的操作挺反人类的！
-img: https://img.myfox.fun/img/sql.jpg
 categories:
  - 工具
 tags:

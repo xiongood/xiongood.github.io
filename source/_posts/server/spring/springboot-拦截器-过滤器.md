@@ -1,6 +1,5 @@
 ---
 title: springboot拦截器、过滤器的使用
-img: https://img.myfox.fun/img/springboot.jpg
 categories:
  - 后端
 tags:

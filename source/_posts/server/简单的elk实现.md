@@ -2,7 +2,6 @@
 title: 简单的elk实现
 author: 张一雄
 summary: 简单的elk的实现，方便理解其运行过程及实现原理！
-img: https://img.myfox.fun/img/elk.jpg
 categories:
  - 后端
 tags:

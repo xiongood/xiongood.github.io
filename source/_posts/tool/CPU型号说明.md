@@ -2,7 +2,6 @@
 title: CPU说明
 author: 张一雄
 summary: 购买电脑的时候看一看
-img: https://img.myfox.fun/img/cpu.jpg
 categories:
  - 工具
 tags:

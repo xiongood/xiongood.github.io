@@ -1,7 +1,6 @@
 ---
 title: CentOS7系统安装
 summary: centos7的安装以及网络的配置
-img: https://img.myfox.fun/img/linux.jpg
 categories:
  - linux
 tags:

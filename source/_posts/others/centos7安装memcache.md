@@ -2,7 +2,6 @@
 title: centos7安装memcached
 author: 张一雄
 summary: 缓存工具
-img: https://img.myfox.fun/img/memcached.jpg
 categories:
  - 工具
 tags:

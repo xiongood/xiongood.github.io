@@ -1,7 +1,6 @@
 ---
 title: oracle常用sql
 summary: oracle常用sql，持续更新
-img: https://img.myfox.fun/img/oracle.jpg
 categories:
  - 数据库
 tags:

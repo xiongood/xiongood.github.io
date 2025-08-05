@@ -1,6 +1,5 @@
 ---
 title: VUE常用方法
-img: https://img.myfox.fun/img/vue.jpg
 categories:
  - 前端
 tags:

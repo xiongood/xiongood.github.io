@@ -1,7 +1,6 @@
 ---
 title: idea常用配置
 summary: java程序员离不开的工具，期待国产的开发工具能早日发扬光大
-img: https://img.myfox.fun/img/idea.jpg
 categories:
  - 工具
 tags:
@@ -407,6 +406,12 @@ R2OWuOKu0JLNCg9w7xDxPtsBjwXj79Pc
 ## mybatisX
 
 ![image-20240821174120186](https://img.myfox.fun/img/image-20240821174120186.png)
+
+### 关于前端
+
+### 关闭ES
+
+![image-20250801093104879](http://img.myfox.fun/img/image-20250801093104879.png)
 
 ## 关于jdk
 

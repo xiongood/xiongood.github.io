@@ -1,6 +1,5 @@
 ---
-title: mysqlchangyongsql
-img: https://img.myfox.fun/img/mysql.jpg
+title: mysql常用sql
 categories:
  - 数据库
 tags:

@@ -1,6 +1,5 @@
 ---
 title: nacos单机版使用
-img: https://img.myfox.fun/img/nacos.jpg
 categories:
  - 后端
 tags:

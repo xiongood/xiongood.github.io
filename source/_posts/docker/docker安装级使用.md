@@ -1,7 +1,6 @@
 ---
 title: docker的安装与使用
 summary: 有了docker，就可以偷懒了，安装电脑软件的时候，再也不用手写各种配置了！
-img: https://img.myfox.fun/img/docker.jpg
 categories:
  - 工具
 tags:

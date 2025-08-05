@@ -2,7 +2,6 @@
 title: windows常用配置
 author: 张一雄
 summary: 遇到不常见的设置，我就会将其记录在此文档下，持续更新
-img: https://img.myfox.fun/img/windows.jpg
 categories:
  - 工具
 tags:

@@ -1,7 +1,6 @@
 ---
 title: cetos7安装gitlib
 summary: 私域的git，每个公司的必备工具。当然也可以用github、gitee等！
-img: https://img.myfox.fun/img/gitlib.jpg
 categories:
  - 工具
 tags:

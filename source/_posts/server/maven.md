@@ -2,7 +2,6 @@
 title: maven的使用
 author: 张一雄
 summary: java程序员离不开的jar包管理工具！
-img: https://img.myfox.fun/img/maven.jpg
 categories:
  - 后端
 tags:

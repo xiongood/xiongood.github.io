@@ -1,6 +1,5 @@
 ---
 title: html中使用js自定义弹窗
-img: https://img.myfox.fun/img/html.jpg
 categories:
  - 前端
 tags:

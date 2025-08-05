@@ -4,7 +4,7 @@
 
 # Site
 title: xiongood
-subtitle: 'XIONGOOD'
+subtitle: 'Xiongood'
 description: '输入进行搜索↓↓↓'
 keywords:
 author: 张一雄
@@ -99,7 +99,7 @@ ignore:
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 #theme: hexo-theme-matery-master
-theme: xoxo
+theme: hexo-theme-matery-master
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 #deploy:
@@ -114,8 +114,7 @@ deploy:
 search:
   path: search.xml
   field: post
-  content: true
-  format: html
+
 
 prism_plugin:
   mode: "preprocess" # realtime/preprocess

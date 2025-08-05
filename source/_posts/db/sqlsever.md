@@ -1,6 +1,5 @@
 ---
 title: sqlsever的安装
-img: https://img.myfox.fun/img/sqlserver.jpg
 categories:
  - 数据库
 tags:

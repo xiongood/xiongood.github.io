@@ -2,7 +2,6 @@
 title: SoapUI常用配置
 author: 张一雄
 summary: 调试webservice的神器
-img: https://img.myfox.fun/img/SoapUI.jpg
 categories:
  - 工具
 tags:

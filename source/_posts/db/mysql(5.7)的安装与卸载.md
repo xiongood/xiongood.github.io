@@ -1,6 +1,5 @@
 ---
 title: mysql(5.7)的安装与卸载
-img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:

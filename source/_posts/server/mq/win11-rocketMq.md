@@ -1,6 +1,5 @@
 ---
 title: windows下部署recketMQ
-img: https://img.myfox.fun/img/recket.jpg
 categories:
  - 后端
 tags:

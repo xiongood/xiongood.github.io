@@ -4,43 +4,7 @@ menu:
   Index:
     url: /
     icon: fas fa-home
-#  Tags:
-#    url: /tags
-#    icon: fas fa-tags
-#  Categories:
-#    url: /categories
-#    icon: fas fa-bookmark
-#  Archives:
-#    url: /archives
-#    icon: fas fa-archive
-#  About:
-#    url: /about
-#    icon: fas fa-user-circle
-#  Contact:
-#    url: /contact
-#    icon: fas fa-comments
-#  Friends:
-#    url: /friends
-#    icon: fas fa-address-book
-  # 二级菜单写法如下
-  #Medias:
-  #  icon: fas fa-list
-  #  children:
-  #    - name: Musics
-  #      url: /musics
-  #      icon: fas fa-music
-  #    - name: Movies
-  #      url: /movies
-  #      icon: fas fa-film
-  #    - name: Books
-  #      url: /books
-  #      icon: fas fa-book
-  #    - name: Galleries
-  #      url: /galleries
-  #      icon: fas fa-image
 
-# Website start time.
-# 站点运行开始时间.
 time:
   enable: false
   year: 2019 # 年份
@@ -463,30 +427,114 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/0.jpg
-- /medias/featureimages/12.jpg
-- /medias/featureimages/13.jpg
-- /medias/featureimages/14.jpg
-- /medias/featureimages/15.jpg
-- /medias/featureimages/16.jpg
-- /medias/featureimages/17.jpg
-- /medias/featureimages/18.jpg
-- /medias/featureimages/19.jpg
-- /medias/featureimages/20.jpg
-- /medias/featureimages/21.jpg
-- /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+- https://c.53326.com/d/file/newpc202302/iu1l2typujw.jpg
+- https://c.53326.com/d/file/newpc202302/twmgpf51c25.jpg
+- https://c.53326.com/d/file/newpc202302/5kixmmzkygc.jpg
+- https://c.53326.com/d/file/newpc202302/ac11pw3lf0g.jpg
+- https://c.53326.com/d/file/newpc202302/je3goyzvnaj.jpg
+- https://c.53326.com/d/file/newpc202302/aouks4vjyuh.jpg
+- https://c.53326.com/d/file/newpc202302/p3lp1ri4avw.jpg
+- https://c.53326.com/d/file/newpc202302/mqszexfcrlr.jpg
+- https://c.53326.com/d/file/newpc202302/nu0my5bwjpb.jpg
+- https://c.53326.com/d/file/newpc202302/121cvduq3k2.jpg
+- https://c.53326.com/d/file/newpc202302/bqy01bl2xmb.jpg
+- https://c.53326.com/d/file/newpc202302/yhldxgs4d1j.jpg
+- https://c.53326.com/d/file/newpc202302/wcx21wdztjm.jpg
+- https://c.53326.com/d/file/newpc202302/yzbknzdwtv1.jpg
+- https://c.53326.com/d/file/newpc202302/dizmmpommxe.jpg
+- https://c.53326.com/d/file/newpc202302/xsyarj24s1v.jpg
+- https://c.53326.com/d/file/newpc202302/yfoqw5osgna.jpg
+- https://c.53326.com/d/file/newpc202302/3mwcbv32uo2.jpg
+- https://c.53326.com/d/file/newpc202302/mowm0hq45xn.jpg
+- https://c.53326.com/d/file/newpc202302/hasjg0sq5i1.jpg
+- https://c.53326.com/d/file/newpc202302/qarfh5bovfy.jpg
+- https://c.53326.com/d/file/newpc202302/cynwoc5laqu.jpg
+- https://c.53326.com/d/file/newpc202302/im14imzy0d3.jpg
+- https://c.53326.com/d/file/newpc202302/d2tgfgufyra.jpg
+- https://c.53326.com/d/file/newpc202302/32fuczemfny.jpg
+- https://c.53326.com/d/file/newpc202302/11rt2kystkr.jpg
+- https://c.53326.com/d/file/newpc202302/zozb3lo2eif.jpg
+- https://c.53326.com/d/file/newpc202302/mwov2hjq0ym.jpg
+- https://c.53326.com/d/file/newpc202302/gyciakdcxpd.jpg
+- https://c.53326.com/d/file/newpc202302/vwcu3ucosuy.jpg
+- https://c.53326.com/d/file/newpc202302/evjfsmwotoa.jpg
+- https://c.53326.com/d/file/newpc202302/0x0tzu5i5xp.jpg
+- https://c.53326.com/d/file/newpc202302/45xt01ge2l1.jpg
+- https://c.53326.com/d/file/newpc202302/2zuuzgec2w1.jpg
+- https://c.53326.com/d/file/newpc202302/coau4sx3e0y.jpg
+- https://c.53326.com/d/file/newpc202302/wds2rhqmj0y.jpg
+- https://c.53326.com/d/file/newpc202302/a0tey1p1dui.jpg
+- https://c.53326.com/d/file/newpc202302/r1z10tapvek.jpg
+- https://c.53326.com/d/file/newpc202302/hcfdqehe5bp.jpg
+- https://c.53326.com/d/file/newpc202302/toh0zlgihgz.jpg
+- https://c.53326.com/d/file/newpc202302/gsotuhbyq4v.jpg
+- https://c.53326.com/d/file/newpc202302/zcd5lywvtt5.jpg
+- https://c.53326.com/d/file/newpc202302/gaewndvxn55.jpg
+- https://c.53326.com/d/file/newpc202302/3ksbyfoqouo.jpg
+- https://c.53326.com/d/file/newpc202302/lcy0vp3vstb.jpg
+- https://c.53326.com/d/file/newpc202302/yj3r2vtetxi.jpg
+- https://c.53326.com/d/file/newpc202302/tb132frefgs.jpg
+- https://c.53326.com/d/file/newpc202302/t5zpjnapkxj.jpg
+- https://c.53326.com/d/file/newpc202302/om3q2qfaznx.jpg
+- https://c.53326.com/d/file/newpc202302/vloeatjssli.jpg
+- https://c.53326.com/d/file/newpc202302/4gmogw1qork.jpg
+- https://c.53326.com/d/file/newpc202302/v5p1is5bjhv.jpg
+- https://c.53326.com/d/file/newpc202302/t1j14xpm0a3.jpg
+- https://c.53326.com/d/file/newpc202302/xtahox3huq1.jpg
+- https://c.53326.com/d/file/newpc202302/v3gvxyzzgdn.jpg
+- https://c.53326.com/d/file/newpc202302/ymcdlj5ko10.jpg
+- https://c.53326.com/d/file/newpc202302/jlyau34k3pa.jpg
+- https://c.53326.com/d/file/newpc202302/lwe3yrdelsh.jpg
+- https://c.53326.com/d/file/newpc202302/r5zvczdlddm.jpg
+- https://c.53326.com/d/file/newpc202302/0ywptlvfkkx.jpg
+- https://c.53326.com/d/file/newpc202302/0mqvtydf5ni.jpg
+- https://c.53326.com/d/file/newpc202302/0p3bbnut1nf.jpg
+- https://c.53326.com/d/file/newpc202302/wtiaeevia4c.jpg
+- https://c.53326.com/d/file/newpc202302/h1yj2fnzv5y.jpg
+- https://c.53326.com/d/file/newpc202302/rida3ict3yp.jpg
+- https://c.53326.com/d/file/newpc202302/1yrkxwdfsnu.jpg
+- https://c.53326.com/d/file/newpc202302/v323zvex14i.jpg
+- https://c.53326.com/d/file/newpc202302/3acciaj4cvp.jpg
+- https://c.53326.com/d/file/newpc202302/qrfzoufy1dh.jpg
+- https://c.53326.com/d/file/newpc202302/j3je0ov43m0.jpg
+- https://c.53326.com/d/file/newpc202302/bajqnonv4v5.jpg
+- https://c.53326.com/d/file/newpc202302/hepuzwsu0xm.jpg
+- https://c.53326.com/d/file/newpc202302/ovct1qslj0c.jpg
+- https://c.53326.com/d/file/newpc202302/51xwiir0emn.jpg
+- https://c.53326.com/d/file/newpc202302/dhwvjhzgcvr.jpg
+- https://c.53326.com/d/file/newpc202302/iug10u2ywtl.jpg
+- https://c.53326.com/d/file/newpc202302/cycbvsglf2f.jpg
+- https://c.53326.com/d/file/newpc202302/owtjikddj42.jpg
+- https://c.53326.com/d/file/newpc202302/pfnb3blh20p.jpg
+- https://c.53326.com/d/file/newpc202302/jzamwgyfmdl.jpg
+- https://c.53326.com/d/file/newpc202302/s4c2hl3tdgp.jpg
+- https://c.53326.com/d/file/newpc202302/zwqc4qfpp5a.jpg
+- https://c.53326.com/d/file/newpc202302/0jkzhajl212.jpg
+- https://c.53326.com/d/file/newpc202302/wjyouqnldnj.jpg
+- https://c.53326.com/d/file/newpc202302/au5iosg1ulo.jpg
+- https://c.53326.com/d/file/newpc202302/bg0d23kmivv.jpg
+- https://c.53326.com/d/file/newpc202302/hvlw1w5pej0.jpg
+- https://c.53326.com/d/file/newpc202302/2xqpfs3k2vy.jpg
+- https://c.53326.com/d/file/newpc202302/v1c34ps2iqn.jpg
+- https://c.53326.com/d/file/newpc202302/wmlwr3m0sf0.jpg
+- https://c.53326.com/d/file/newpc202302/jj5fo0swu0b.jpg
+- https://c.53326.com/d/file/newpc202302/gz3hdodsh3m.jpg
+- https://c.53326.com/d/file/newpc202302/wsrfjb521re.jpg
+- https://c.53326.com/d/file/newpc202302/vzzzzszssln.jpg
+- https://c.53326.com/d/file/newpc202302/uz2il0bcw3t.jpg
+- https://c.53326.com/d/file/newpc202302/x1m3ceof0dn.jpg
+- https://c.53326.com/d/file/newpc202302/1vknb53as0z.jpg
+- https://c.53326.com/d/file/newpc202302/hvhxjlipqad.jpg
+- https://c.53326.com/d/file/newpc202302/3qbf51dk0ts.jpg
+- https://c.53326.com/d/file/newpc202302/kesoep1usul.jpg
+- https://c.53326.com/d/file/newpc202302/f4y1ibrrgyp.jpg
+- https://c.53326.com/d/file/newpc202302/xdl02xkfin0.jpg
+- https://c.53326.com/d/file/newpc202302/d1u0nbaecwa.jpg
+- https://c.53326.com/d/file/newpc202302/gcc1vfvrtrf.jpg
+- https://c.53326.com/d/file/newpc202302/0v3a5bobe0h.jpg
+- https://c.53326.com/d/file/newpc202302/uv4m0glt5go.jpg
+- https://c.53326.com/d/file/newpc202302/f21rfzcxdpf.jpg
+- https://c.53326.com/d/file/newpc202302/4cqs2j1ebl1.jpg
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -604,7 +652,7 @@ jsDelivr:
 # 网站背景图
 background:
   enable: true
-  url: "/medias/banner/a.jpg"
+  url: "/medias/banner/11.jpg"
 
 # 说说 https://artitalk.js.org/
 artitalk:

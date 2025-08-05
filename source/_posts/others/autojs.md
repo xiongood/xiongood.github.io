@@ -2,7 +2,6 @@
 title: autojs手机自动化
 author: 张一雄
 summary: 油猴插件确实好用，希望网络长城早日放开
-img: http://img.myfox.fun/img/autojs.jpg
 categories:
  - 周边
 tags:

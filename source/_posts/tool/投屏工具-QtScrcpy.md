@@ -2,7 +2,6 @@
 title: 投屏软件-QtScrcpy
 author: 张一雄
 summary: 投屏软件-QtScrcpy
-img: http://img.myfox.fun/img/QtScrcpy.jpg
 categories:
  - 工具
 tags:

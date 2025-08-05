@@ -1,6 +1,5 @@
 ---
 title: springSecurity的使用
-img: https://img.myfox.fun/img/security.jpg
 categories:
  - 后端
 tags:

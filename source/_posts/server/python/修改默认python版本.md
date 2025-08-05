@@ -1,6 +1,5 @@
 ---
 title: 修改默认python版本
-img: https://img.myfox.fun/img/python.jpg
 author: 张一雄
 summary: 爬取壁纸网站
 categories:

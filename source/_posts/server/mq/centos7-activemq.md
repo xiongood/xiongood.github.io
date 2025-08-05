@@ -1,6 +1,5 @@
 ---
 title: centos7下部署activemq
-img: https://img.myfox.fun/img/activemq.jpg
 categories:
  - 后端
 tags:

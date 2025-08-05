@@ -1,7 +1,6 @@
 ---
 title: activiti-app
 summary: activiti画图工具，当然网上还有好多其他的工具！
-img: https://img.myfox.fun/img/activiti.jpg
 categories:
  - 工具
 tags:

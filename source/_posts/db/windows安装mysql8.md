@@ -1,6 +1,5 @@
 ---
 title: win11安装mysql(8.0)
-img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:

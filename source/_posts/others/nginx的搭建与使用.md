@@ -2,7 +2,6 @@
 title: nginx的搭建与使用
 author: 张一雄
 summary: 程序员必会中间件之一，其强大程度难以想象！
-img: https://img.myfox.fun/img/nginx.jpg
 categories:
  - 周边
 tags:

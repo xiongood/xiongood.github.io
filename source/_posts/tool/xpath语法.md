@@ -1,6 +1,5 @@
 ---
 title: xpath的使用
-img: https://img.myfox.fun/img/xpath.jpg
 categories:
  - 工具
 tags:

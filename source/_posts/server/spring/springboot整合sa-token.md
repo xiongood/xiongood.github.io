@@ -1,6 +1,5 @@
 ---
 title: springboot整合sa-token
-img: https://img.myfox.fun/img/satoken.jpg
 categories:
  - 后端
 tags:

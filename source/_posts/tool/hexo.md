@@ -2,7 +2,6 @@
 title: hexo常用命令
 author: 张一雄
 summary: hexo常用命令
-img: https://img.myfox.fun/img/hexo.jpg
 categories:
  - 工具
 tags:

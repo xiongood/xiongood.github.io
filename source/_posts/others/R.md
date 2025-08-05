@@ -2,7 +2,6 @@
 title: R语言环境搭建
 author: 张一雄
 summary: R语言环境搭建
-img: http://img.myfox.fun/img/R.png
 categories:
  - 周边
 tags:

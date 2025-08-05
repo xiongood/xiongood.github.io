@@ -1,7 +1,6 @@
 ---
 title: linux常用命令
 summary: 这东西，长时间不用了就忘记了，得隔三岔五的看一遍才行！
-img: https://img.myfox.fun/img/linux.jpg
 categories:
  - linux
 tags:

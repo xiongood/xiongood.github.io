@@ -2,7 +2,6 @@
 title: kettle的使用
 author: 张一雄
 summary: 数据抽取工具
-img: https://img.myfox.fun/img/kettle.jpg
 categories:
  - 周边
 tags:

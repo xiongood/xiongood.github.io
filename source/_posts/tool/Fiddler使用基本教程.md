@@ -2,7 +2,6 @@
 title: fiddler的搭建与使用
 author: 张一雄
 summary: 测试抓包工具
-img: https://img.myfox.fun/img/fiddler.jpg
 categories:
  - 周边
 tags:

@@ -1,6 +1,5 @@
 ---
 title: springboot发送邮件
-img: https://img.myfox.fun/img/springboot.jpg
 categories:
  - 后端
 tags:

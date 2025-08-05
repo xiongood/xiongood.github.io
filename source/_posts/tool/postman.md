@@ -2,7 +2,6 @@
 title: postman常用配置
 author: 张一雄
 summary: 调试的神器，但是现在测试记录默认存在了云端，如果网络不好的话，不建议使用，我就好多次找不到测试记录，而影响了开发进度！
-img: https://img.myfox.fun/img/postman.jpg
 categories:
  - 工具
 tags:

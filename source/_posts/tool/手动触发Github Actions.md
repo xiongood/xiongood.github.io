@@ -2,7 +2,6 @@
 title: 手动触发Github Actions
 author: 张一雄
 summary: 手动触发Github Actions
-img: https://img.myfox.fun/img/github.jpg
 categories:
  - 工具
 tags:

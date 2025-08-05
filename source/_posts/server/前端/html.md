@@ -1,6 +1,5 @@
 ---
 title: html常用方法
-img: https://img.myfox.fun/img/html.jpg
 categories:
  - 前端
 tags:

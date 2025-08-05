@@ -1,7 +1,6 @@
 ---
 title: SVN常用设置
 summary: 版本控制
-img: https://img.myfox.fun/img/svn.jpg
 categories:
  - 工具
 tags:

@@ -1,6 +1,5 @@
 ---
 title: activemq的部署与使用
-img: https://img.myfox.fun/img/activemq.jpg
 categories:
  - 后端
 tags:

@@ -1,7 +1,6 @@
 ---
 title: apache-cxf的使用
 summary: 根据约束文件生成webservice代码的工具，简单快捷，非常好用！
-img: https://img.myfox.fun/img/cxf.jpg
 categories:
  - 工具
 tags:

@@ -1,6 +1,5 @@
 ---
 title: 数据库连接池-druid
-img: https://img.myfox.fun/img/druid.jpg
 categories:
  - 后端
 tags:

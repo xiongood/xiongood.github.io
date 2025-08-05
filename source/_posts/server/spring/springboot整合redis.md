@@ -1,6 +1,5 @@
 ---
 title: springboot整合redis
-img: https://img.myfox.fun/img/springboot.jpg
 categories:
  - 后端
 tags:

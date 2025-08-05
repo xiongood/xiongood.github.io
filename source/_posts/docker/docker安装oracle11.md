@@ -1,6 +1,5 @@
 ---
 title: docker安装oracle-11
-img: https://img.myfox.fun/img/oracle.jpg
 categories:
  - 数据库
 tags:

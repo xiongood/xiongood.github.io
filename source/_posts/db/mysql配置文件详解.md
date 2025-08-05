@@ -1,6 +1,5 @@
 ---
 title: mysql配置文件详解
-img: https://img.myfox.fun/img/mysql.jpg
 categories:
  - 数据库
 tags:

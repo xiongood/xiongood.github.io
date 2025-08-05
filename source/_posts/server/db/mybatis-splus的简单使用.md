@@ -1,6 +1,5 @@
 ---
 title: mybatis-plus的简单使用
-img: https://img.myfox.fun/img/mybatis.jpg
 categories:
  - 后端
 tags:

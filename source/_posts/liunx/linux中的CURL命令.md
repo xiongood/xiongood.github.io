@@ -2,7 +2,6 @@
 title: linux中的CURL命令
 author: 张一雄
 summary: 我们前端程序员所依赖的开发运行工具！
-img: https://img.myfox.fun/img/linux.jpg
 categories:
  - 工具
 tags:

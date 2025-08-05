@@ -2,7 +2,6 @@
 title: office的使用技巧
 author: 张一雄
 summary: 遇到不常见的快捷操作，我就会记录在这个文档下面，持续更新
-img: https://img.myfox.fun/img/office.jpg
 categories:
  - 工具
 tags:

@@ -2,7 +2,6 @@
 title: 使用gitee搭建免费的图床
 author: 张一雄
 summary: 这个功能非常用好，我的博客全部用的就是gitee的图床，当然github也行哦！
-img: https://img.myfox.fun/img/gitee.jpg
 categories:
  - 周边
 tags:

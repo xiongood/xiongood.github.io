@@ -1,7 +1,6 @@
 ---
 title: docker安装oracle12C
 summary: 感觉如果手动安装oracle实在是太费劲了，所以偷懒用了dockers，学习测试使用
-img: https://img.myfox.fun/img/oracle.jpg
 categories:
  - 数据库
 tags:

@@ -1,6 +1,5 @@
 ---
 title: sentinel的简单使用
-img: https://img.myfox.fun/img/sentinel.jpg
 categories:
  - 后端
 tags:

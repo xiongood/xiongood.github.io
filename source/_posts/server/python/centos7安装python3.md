@@ -1,6 +1,5 @@
 ---
 title: centos7安装python
-img: https://img.myfox.fun/img/python.jpg
 author: 张一雄
 summary: 爬取壁纸网站
 categories:

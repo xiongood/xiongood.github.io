@@ -9,20 +9,6 @@ npm uninstall hexo-cli -g
 hexo -version
 ```
 
-## 创建新项目
-
-```sh
-# 新建
-hexo init
-# 下载依赖
-npm i
-# 编译和启动
-hexo g
-hexo s
-```
-
-
-
 ## 修改环境
 
 ![image-20250213123757314](http://img.myfox.fun/img/image-20250213123757314.png)

@@ -1,6 +1,5 @@
 ---
 title: mybatis-plus多数据源
-img: https://img.myfox.fun/img/mybatis.jpg
 categories:
  - 后端
 tags:

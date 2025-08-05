@@ -2,7 +2,6 @@
 title: nodejs的使用
 author: 张一雄
 summary: 我们前端程序员所依赖的开发运行工具！
-img: https://img.myfox.fun/img/nodejs.jpg
 categories:
  - 工具
 tags:
@@ -109,24 +108,5 @@ nvm use 16.20.0
 
 ![image-20230517181008038](https://img.myfox.fun/img/20230517181009.png)
 
-### PNPM
-
-安装
-
-```sh
-npm install -g pnpm
-
-npm install -g pnpm@latest
-
-```
-
-安装最新node
-
-```sh
-nvm install --lts 
-nvm use --lts
-npm install -g pnpm
-```
-
-
+## linux
 

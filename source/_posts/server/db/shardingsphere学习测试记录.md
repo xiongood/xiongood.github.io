@@ -1,6 +1,5 @@
 ---
 title: shardingsphere-jdbc的使用
-img: https://img.myfox.fun/img/shrdingSphere.jpg
 categories:
  - 后端
 tags:
