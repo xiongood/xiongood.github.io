@@ -38,6 +38,14 @@ jobs:
           node-version: 20.x  # 使用 Node.js 20 版本
           cache: 'npm'        # 缓存 npm 依赖
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: 修改图片
+        run: pythonChangeImage.py
+
       # 安装依赖
       - name: 安装 Hexo 及依赖
         run: |
@@ -48,6 +56,10 @@ jobs:
       - name: 构建 Hexo 网站
         run: hexo generate
 
+      - name: 解决乱码问题
+        run: pythonUpdateLuanMa.py      
+
+        
       # 上传构建产物
       - name: 上传构建结果
         uses: actions/upload-pages-artifact@v3
