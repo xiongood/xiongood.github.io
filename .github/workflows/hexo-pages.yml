@@ -1,0 +1,68 @@
+# 用于构建和部署 Hexo 网站到 GitHub Pages 的工作流
+name: 部署 Hexo 到 GitHub Pages
+
+# 触发条件：推送到 main 分支时自动运行，也可手动触发
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发控制：避免同时部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 构建任务
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 检出子模块（如果有主题使用子模块）
+          fetch-depth: 0    # 获取完整的提交历史
+
+      # 设置 Node.js 环境
+      - name: 配置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x  # 使用 Node.js 20 版本
+          cache: 'npm'        # 缓存 npm 依赖
+
+      # 安装依赖
+      - name: 安装 Hexo 及依赖
+        run: |
+          npm install hexo-cli -g
+          npm install
+
+      # 构建静态文件
+      - name: 构建 Hexo 网站
+        run: hexo generate
+
+      # 上传构建产物
+      - name: 上传构建结果
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public  # Hexo 构建输出目录
+
+  # 部署任务
+  deploy:
+    needs: build  # 依赖 build 任务完成
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # 部署到 GitHub Pages
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
