@@ -1,5 +1,5 @@
 # 用于构建和部署 Hexo 网站到 GitHub Pages 的工作流
-name: 部署 Hexo 到 GitHub Pages
+name: 部署 Hexo 到 GitHub Pages.
 
 # 触发条件：推送到 main 分支时自动运行，也可手动触发。
 on:
