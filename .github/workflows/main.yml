@@ -11,12 +11,15 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # 授予写入内容的权限
     steps:
       # 步骤 1: 检出当前 GitHub 仓库
       - name: Checkout GitHub repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 获取完整历史记录，确保同步完整性
+          token: ${{ secrets.GITHUBTOKEN }}  # 显式指定使用 GitHub 令牌
 
       # 步骤 2: 配置 Git 身份信息
       - name: Configure Git
