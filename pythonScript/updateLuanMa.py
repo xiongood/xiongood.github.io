@@ -4,7 +4,7 @@ with open(r"./node_modules/hexo-prism-plugin/src/index.js", "r", encoding="utf-8
 
 # 定义新的map对象
 new_map = """const map = {
-  '&#39;': '\'',
+  '&#39;': '\\'',
   '&amp;': '&',
   '&gt;': '>',
   '&lt;': '<',
