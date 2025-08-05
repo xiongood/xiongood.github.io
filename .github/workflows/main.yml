@@ -31,7 +31,7 @@ jobs:
           # 验证远程仓库配置（公开仓库无需认证）
           git remote -v
 
-      # 步骤 4: 从 Gitee 拉取最新代码（公开仓库无需令牌）
+      # 步骤 4: 从 Gitee 拉取最新代码（公开仓库无需令牌）.
       - name: Pull from Gitee
         run: |
           # 尝试正常拉取并变基
