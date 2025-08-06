@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="copyFiles1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/source/downloads/copyFiles.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
