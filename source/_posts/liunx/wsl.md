@@ -76,3 +76,12 @@ ln -s /mnt/c/Users/xiong/Desktop ./desktop
 rm desktop
 ```
 
+### 查看图片
+
+```sh
+# 安装-弹出窗口打开图片
+sudo apt update && sudo apt install fim
+# 查看
+fim 图片路径  # 例如：fim ~/images/photo.jpg
+```
+
