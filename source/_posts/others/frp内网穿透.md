@@ -9,6 +9,8 @@ tags:
  - linux
 ---
 
+## frp
+
 ### 准备：
 
 #### 一个具有公网ip的主机
@@ -163,3 +165,129 @@ systemctl enable frps
   ```sh
   ./frpc -c ./frpc.ini
   ```
+
+## nodeJS
+
+### 官网
+
+```http
+https://theboroer.github.io/localtunnel-www/
+```
+
+### 使用
+
+```sh
+npm install -g localtunnel
+lt --port 8000
+```
+
+### 密码
+
+```http
+https://loca.lt/mytunnelpassword
+```
+
+显示的就是密码啦
+
+## cloudflare
+
+### 方式一 临时
+
+#### 下载
+
+下载之后，将文件放到path中，可以直接用命令行使用
+
+```http
+https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/
+```
+
+#### 登录
+
+```sh
+cloudflared tunnel login
+```
+
+#### 创建隧道名
+
+注意记录隧道生成的uuid
+
+```sh
+# 创建
+cloudflared tunnel create my-tunnel
+# 删除
+cloudflared tunnel delete my-tunnel
+```
+
+#### 开启服务
+
+`--url`：本地服务地址（如`http://127.0.0.1:3000`、`https://localhost:8443`）
+
+`--hostname`：你的 Cloudflare 域名（如`app.yourdomain.com`）
+
+```sh
+# 将本地8080端口的服务暴露到你的域名（需已添加到Cloudflare）
+cloudflared tunnel --url http://localhost:8080 --hostname test.example.com
+```
+
+### 方式二 长期
+
+### 1. 安装 Cloudflare CLI 工具（cloudflared）
+
+- 访问 [Cloudflare 官方下载页](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/) 下载 Windows 版本的 `cloudflared`
+- 解压后将 `cloudflared.exe` 放入一个方便的目录（如 `C:\cloudflared`）
+- 将该目录添加到系统环境变量 `PATH` 中（便于在任意命令行窗口调用）
+
+### 2. 登录 Cloudflare 账号
+
+打开命令提示符（CMD）或 PowerShell，执行以下命令：
+
+```bash
+cloudflared tunnel login
+```
+
+这会自动打开浏览器，登录你的 Cloudflare 账号并授权。成功后会在 `C:\Users\你的用户名\.cloudflared\` 目录下生成证书文件。
+
+### 3. 创建隧道
+
+```bash
+cloudflared tunnel create <隧道名称>
+```
+
+例如：`cloudflared tunnel create mytunnel`
+
+执行成功后，会显示隧道 ID 并在 `.cloudflared` 目录生成 JSON 配置文件（包含隧道密钥）。
+
+### 4. 配置隧道
+
+创建配置文件（如 `config.yml`），内容示例：
+
+```yaml
+tunnel: <你的隧道ID>
+credentials-file: C:\Users\你的用户名\.cloudflared\<隧道ID>.json
+
+ingress:
+  - hostname: example.yourdomain.com  # 你的域名（需已添加到Cloudflare）
+    service: http://localhost:8080    # 本地服务地址和端口
+  - service: http_status:404  # 未匹配的请求返回404
+```
+
+### 5. 将隧道与域名关联
+
+```bash
+cloudflared tunnel route dns <隧道名称> example.yourdomain.com
+```
+
+### 6. 启动隧道
+
+```bash
+cloudflared tunnel --config C:\Users\Administrator\.cloudflared\config.yml run <隧道名称>
+```
+
+### 7. 验证
+
+访问 `example.yourdomain.com` 应该能看到你本地 `http://localhost:8080` 服务的内容。
+
+
+
+
+
