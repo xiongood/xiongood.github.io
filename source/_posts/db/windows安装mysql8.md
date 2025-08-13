@@ -75,3 +75,28 @@ win+r，输入 service.msc（或者：右击我的电脑，选择【服务】，
 
 ![image-20230519182900946](https://img.myfox.fun/img/20230519182901.png)
 
+##  设置外网可访问
+
+### 进入安装目录
+
+```sh
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+```
+
+### 进入mysql命令行
+
+```sh
+mysql -u root -p
+```
+
+### 创建用户及权限
+
+```sh
+# 创建用户
+CREATE USER IF NOT EXISTS 'xiong'@'%' IDENTIFIED BY 'xiong1991';
+# 赋予权限
+GRANT ALL PRIVILEGES ON *.* TO 'xiong'@'%' WITH GRANT OPTION;
+# 刷新权限
+FLUSH PRIVILEGES;
+```
+
