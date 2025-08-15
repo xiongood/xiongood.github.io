@@ -2,8 +2,8 @@ import os
 
 # 定义目录和文件名
 directory = "./public"
-filename = "c02f16713e69a269186ba5f4acf3a14f.txt"
-content = "f11081790563918932379b0deb40e52741d187db"
+filename = "c76c82749449274fdad08560b01a1e5f.txt"
+content = "1cb44d145c5cbab1c32c321c92aba0f483884ed9"
 
 # 确保目录存在，如果不存在则创建
 os.makedirs(directory, exist_ok=True)
