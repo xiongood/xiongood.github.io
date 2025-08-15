@@ -67,7 +67,10 @@ jobs:
         run: hexo generate
 
       - name: 创建微信认证文件
-        run: python tengXunAuth.py
+        run: python pythonTengXunAuth.py
+        
+      - name: 复制wifi详情的html
+        run: python pythonCopyWifi.py
         
       # 上传构建产物
       - name: 上传构建结果
