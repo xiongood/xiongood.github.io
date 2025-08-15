@@ -65,6 +65,9 @@ jobs:
       # 构建静态文件
       - name: 构建 Hexo 网站
         run: hexo generate
+
+      - name: 创建微信认证文件
+        run: python tengXunAuth.py
         
       # 上传构建产物
       - name: 上传构建结果
