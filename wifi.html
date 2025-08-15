@@ -44,17 +44,6 @@
     </style>
 </head>
 <body class="bg-neutral font-inter text-dark min-h-screen">
-    <!-- 页面标题 -->
-    <header class="bg-primary text-white py-8 px-4 md:px-8">
-        <div class="container mx-auto">
-            <h1 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold flex items-center">
-                <i class="fa fa-wifi mr-3 text-secondary"></i>
-                网络设备信息管理
-            </h1>
-            <p class="mt-2 text-blue-100">集中管理网络设备账号密码信息</p>
-        </div>
-    </header>
-
     <!-- 主要内容 -->
     <main class="container mx-auto py-8 px-4 md:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -89,6 +78,71 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 路由器信息卡片 -->
+            <div class="bg-white rounded-xl p-6 card-shadow transition-all duration-300 hover:shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                        <i class="fa fa-exchange text-green-600 text-xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold">路由器信息</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
+                        <span class="text-gray-600">管理页面地址</span>
+                        <div class="flex items-center">
+                            <span id="router-url" class="mr-2 font-medium">192.168.110.1</span>
+                            <button onclick="copyToClipboard('router-url', this)" class="copy-btn-hover bg-green-100 hover:bg-green-200 text-green-600 p-2 rounded-lg">
+                                <i class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
+                        <span class="text-gray-600">管理员密码</span>
+                        <div class="flex items-center">
+                            <span id="router-password" class="mr-2 font-medium">Xiong1991!@#</span>
+                            <button onclick="copyToClipboard('router-password', this)" class="copy-btn-hover bg-green-100 hover:bg-green-200 text-green-600 p-2 rounded-lg">
+                                <i class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 宽带信息卡片 -->
+            <div class="bg-white rounded-xl p-6 card-shadow transition-all duration-300 hover:shadow-lg">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mr-3">
+                        <i class="fa fa-globe text-secondary text-xl"></i>
+                    </div>
+                    <h2 class="text-xl font-bold">宽带信息</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
+                        <span class="text-gray-600">宽带账号</span>
+                        <div class="flex items-center">
+                            <span id="broadband-username" class="mr-2 font-medium">15230869574</span>
+                            <button onclick="copyToClipboard('broadband-username', this)" class="copy-btn-hover bg-secondary/10 hover:bg-secondary/20 text-secondary p-2 rounded-lg">
+                                <i class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
+                        <span class="text-gray-600">宽带密码</span>
+                        <div class="flex items-center">
+                            <span id="broadband-password" class="mr-2 font-medium">011826</span>
+                            <button onclick="copyToClipboard('broadband-password', this)" class="copy-btn-hover bg-secondary/10 hover:bg-secondary/20 text-secondary p-2 rounded-lg">
+                                <i class="fa fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 光猫信息卡片 -->
             <div class="bg-white rounded-xl p-6 card-shadow transition-all duration-300 hover:shadow-lg">
                 <div class="flex items-center mb-4">
@@ -151,91 +205,8 @@
                 </div>
             </div>
 
-            <!-- 宽带信息卡片 -->
-            <div class="bg-white rounded-xl p-6 card-shadow transition-all duration-300 hover:shadow-lg">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center mr-3">
-                        <i class="fa fa-globe text-secondary text-xl"></i>
-                    </div>
-                    <h2 class="text-xl font-bold">宽带信息</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
-                        <span class="text-gray-600">宽带账号</span>
-                        <div class="flex items-center">
-                            <span id="broadband-username" class="mr-2 font-medium">15230869574</span>
-                            <button onclick="copyToClipboard('broadband-username', this)" class="copy-btn-hover bg-secondary/10 hover:bg-secondary/20 text-secondary p-2 rounded-lg">
-                                <i class="fa fa-copy"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
-                        <span class="text-gray-600">宽带密码</span>
-                        <div class="flex items-center">
-                            <span id="broadband-password" class="mr-2 font-medium">011826</span>
-                            <button onclick="copyToClipboard('broadband-password', this)" class="copy-btn-hover bg-secondary/10 hover:bg-secondary/20 text-secondary p-2 rounded-lg">
-                                <i class="fa fa-copy"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 路由器信息卡片 -->
-            <div class="bg-white rounded-xl p-6 card-shadow transition-all duration-300 hover:shadow-lg">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3">
-                        <i class="fa fa-exchange text-green-600 text-xl"></i>
-                    </div>
-                    <h2 class="text-xl font-bold">路由器信息</h2>
-                </div>
-
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
-                        <span class="text-gray-600">管理页面地址</span>
-                        <div class="flex items-center">
-                            <span id="router-url" class="mr-2 font-medium">192.168.110.1</span>
-                            <button onclick="copyToClipboard('router-url', this)" class="copy-btn-hover bg-green-100 hover:bg-green-200 text-green-600 p-2 rounded-lg">
-                                <i class="fa fa-copy"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
-                        <span class="text-gray-600">管理员账号</span>
-                        <div class="flex items-center">
-                            <span id="router-username" class="mr-2 font-medium">无</span>
-                            <button onclick="copyToClipboard('router-username', this)" class="copy-btn-hover bg-green-100 hover:bg-green-200 text-green-600 p-2 rounded-lg">
-                                <i class="fa fa-copy"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center justify-between p-3 border border-gray-100 rounded-lg bg-gray-50">
-                        <span class="text-gray-600">管理员密码</span>
-                        <div class="flex items-center">
-                            <span id="router-password" class="mr-2 font-medium">Xiong1991!@#</span>
-                            <button onclick="copyToClipboard('router-password', this)" class="copy-btn-hover bg-green-100 hover:bg-green-200 text-green-600 p-2 rounded-lg">
-                                <i class="fa fa-copy"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
     </main>
-
-    <!-- 页脚 -->
-    <footer class="bg-dark text-white py-6 px-4 mt-12">
-        <div class="container mx-auto text-center text-gray-400">
-            <p>网络设备信息管理 &copy; 张一雄2025</p>
-            <p class="text-sm mt-1">注意：请妥善保管您的网络信息，避免泄露</p>
-        </div>
-    </footer>
 
     <!-- 复制成功提示 -->
     <div id="toast" class="fixed top-4 right-0 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 flex items-center">
