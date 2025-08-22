@@ -519,3 +519,41 @@ server {
     }  
 }  
 ```
+
+
+
+#### 指向ipv6
+
+```sh
+worker_processes  1;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
+
+    server {
+        listen       9999;			# IPv4
+		listen       [::]:9999;     # IPv6
+        server_name  localhost;
+        
+        location / {
+            # 自动构建索引
+            autoindex on;
+            root  C:\SFTP\furuikang;
+			try_files $uri $uri/ =403;  
+        }
+		
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+}
+```
+
