@@ -89,8 +89,13 @@ pasv_max_port=5000
 sudo systemctl restart vsftpd
 ```
 
-### 注意
+## 创建用户
 
-2、ip可以直接写localhost
+```sh
+# 创建用户（例如 ftpuser）
+sudo adduser ftpuser
 
-1、只能不能通过root在客户端登录！
+# （可选）限制该用户只能使用 FTP，不能登录系统
+sudo usermod -s /usr/sbin/nologin ftpuser
+```
+
