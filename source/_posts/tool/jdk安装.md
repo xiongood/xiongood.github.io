@@ -75,7 +75,14 @@ java -version
 
 ## centost-yum
 
-待整理
+```sh
+# 查看列表
+yum list java-1.8.0-openjdk*
+# 安装
+yum install -y java-1.8.0-openjdk-devel.x86_64
+```
+
+
 
 ### windows
 

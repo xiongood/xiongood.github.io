@@ -63,6 +63,23 @@ ip addr
 
 ### ping 不通百度
 
+#### 修改dns
+
+```sh
+vi /etc/resolv.conf
+```
+
+```txt
+nameserver 223.5.5.5  # 阿里云DNS（国内速度快、稳定）
+nameserver 8.8.8.8    # 谷歌DNS（备用，避免单一DNS失效）
+```
+
+```sh
+ping www.baidu.com
+```
+
+#### 修改网络策略
+
 NAT 模式虽然可以简单的链接上互联网，但是有两个问题，1、虚拟机ping不通主机；2、其他局域网机器ping不通虚拟机，只能单机玩，完整版的网络，可以用桥接模式，下面有记录⬇️
 
 ![image-20240828170513587](https://img.myfox.fun/img/image-20240828170513587.png)

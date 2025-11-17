@@ -23,7 +23,8 @@ source ~/.oceanbase-all-in-one/bin/env.sh
 **注意看账号的密码**
 
 ```sh
-obd demo
+obd demo # 启动
+obd cluster restart demo # 重启
 ```
 
 #### 可能的错误
