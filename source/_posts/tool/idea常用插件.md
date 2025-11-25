@@ -154,3 +154,8 @@ mybaitsX
 
 
 
+## 其他
+
+### 前端vue启动npm项目
+
+![image-20251125142354958](http://img.myfox.fun/img/image-20251125142354958.png)
