@@ -108,5 +108,29 @@ nvm use 16.20.0
 
 ![image-20230517181008038](https://img.myfox.fun/img/20230517181009.png)
 
-## linux
+### 安装nrm
+
+```sh
+npm install -g nrm
+```
+
+查询可用源
+
+```sh
+nrm ls
+```
+
+使用
+
+```sh
+nrm use taobao
+```
+
+测试速度
+
+```sh
+nrm test
+```
+
+
 
