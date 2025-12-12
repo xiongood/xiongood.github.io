@@ -1,5 +1,5 @@
 ---
-title DBeaver的使用技巧
+title: DBeaver的使用技巧
 ---
 
 

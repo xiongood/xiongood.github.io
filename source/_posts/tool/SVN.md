@@ -60,3 +60,11 @@ tags:
 在合并后的项目中，提交代码
 
 ![image-20251127092151086](http://img.myfox.fun/img/image-20251127092151086.png)
+
+发生冲突
+
+![image-20251212110833552](http://img.myfox.fun/img/image-20251212110833552.png)
+
+编辑冲突
+
+![image-20251212111502949](http://img.myfox.fun/img/image-20251212111502949.png)
